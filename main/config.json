@@ -1,0 +1,20 @@
+{
+    "gene_information": {
+        "gene_name" : "TREX1",
+        "ncbi_name" : "NM_007248",
+        "chromosome_name" : "3"
+    },
+    
+    "compl_dict": {
+        "A": "T", 
+        "T": "A",
+        "U": "A", 
+        "C": "G", 
+        "G": "C", 
+        "-": "-"},
+
+        "data" : {
+            "mirna_table" : "data/TREX1 sirna.xlsx",
+            "mirna_table_correct" : "data/TREX1 sirna_correct.csv"
+        }
+}
