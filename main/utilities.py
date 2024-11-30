@@ -47,6 +47,31 @@ def ncbi_data(ncbi_name):
 
     return refseq_sequence, features_list, cds_start, cds_end, exons
 
+def correct_sequences(mirna_data, refseq_sequence, compl_dict):
+# Check that in table correct strand and fix if not (miRNA should be complimentary to transcript)
+    mirna_data['start_mirna'] = 0
+    mirna_data['end_mirna'] = 0
+    for ind in mirna_data.index:
+        mirna_i = mirna_data.loc[ind]['sequence']
+        mirna_i = mirna_i.upper().replace('U', 'T')
+        mirna_r_i = ''.join([compl_dict[s] for s in mirna_i][::-1]) 
+        if mirna_i[:-2] in refseq_sequence:
+            mirna_correct = mirna_r_i
+            mirna_rev = mirna_i
+        else:
+            mirna_correct = mirna_i
+            mirna_rev = mirna_r_i
+
+        mirna_data.loc[ind, 'sequence'] = mirna_correct
+
+        start_pos = len(refseq_sequence.split(mirna_rev)[0])
+        end_pos = start_pos + len(mirna_i)
+        mirna_data.loc[ind, 'start_mirna'] = start_pos
+        mirna_data.loc[ind, 'end_mirna'] = end_pos
+
+    mirna_data = mirna_data[pd.notna(mirna_data['sequence'])]
+    return mirna_data
+
 def data_for_vienna(mirna_data, refseq_sequence, file_name, ncbi_name):
     all_alignments = []
     for step, sirna_i in enumerate(mirna_data['sequence']):
@@ -174,37 +199,31 @@ def rnafold_mirna_results(mirna_seq_path, vienna_output_directory):
 
     return mirnafold_data
 
-def rnahybrid_coding_results(transcripts_path, lncrna_path, mirna_seq_path, vienna_output_directory):
-    # Launch RNAcofold tool
-    rnahybrid_output = mirna_seq_path.replace('.fasta', '.txt')
-    with open(rnahybrid_output, "w") as outfile:
-        subprocess.run(
-            ["RNAhybrid", "-t", transcripts_path, "-q", lncrna_path, "-s", "3utr_human"],
-            stdout=outfile,
-            check=True,
-            cwd=vienna_output_directory
-            )
+def mrna_region(start, end, cds_start, cds_end):
+    if (start>=cds_start) & (end<=cds_end):
+        return 'CDS'
+    elif start<cds_start:
+        return '5-UTR'
+    else:
+        return '3-UTR'
 
-    with open(rnahybrid_output) as f:
-        rna_hybrid_crna = f.read()
+def exon_name(start, exons):
+    return list(filter(lambda p: (start>=p[1]) & (start<=p[2]), exons))[0][0]
 
-    rna_hybrid_crna = rna_hybrid_crna.split('target:')[1:]
-    rna_hybrid_crna = list(filter(lambda p: 'target too long' not in p, rna_hybrid_crna))
+def transcript_features(mirna_data, cds_start, cds_end, exons):
+# Check that in table correct strand and fix if not (miRNA should be complimentary to transcript)
+    mirna_data['region'] = 0
+    mirna_data['exon'] = 0
+    for ind in mirna_data.index:
+        start_mirna = mirna_data.loc[ind]['start_mirna']
+        end_mirna = mirna_data.loc[ind]['end_mirna']
+        region = mrna_region(start_mirna, end_mirna, cds_start, cds_end)
+        exon = exon_name(start_mirna, exons)
+        mirna_data.loc[ind, 'region'] = region
+        mirna_data.loc[ind, 'exon'] = exon
+    return mirna_data
 
-    rna_hybrid_crna_data = []
-    for rna_i in rna_hybrid_crna:
-        gene_name = rna_i.split(' ')[1].split('\n')[0]
-        sirna = rna_i.split('miRNA : ')[1].split('\n')[0]
-        mfe = rna_i.split('mfe: ')[1].split(' ')[0]
-        p_value = rna_i.split('p-value: ')[1].split('\n')[0]
-        rna_hybrid_crna_data.append([gene_name, sirna, float(mfe), float(p_value)])
+def compute_GC_context(sequence):
+    return (list(sequence).count('G') 
+            + list(sequence).count('C'))/len(sequence)
 
-    rna_hybrid_crna_data = pd.DataFrame(rna_hybrid_crna_data, 
-                                        columns=('gene_name', 'sequence', 'mfe_transcript', 'p_value'))
-    rna_hybrid_crna_data = rna_hybrid_crna_data[rna_hybrid_crna_data['p_value']<=0.05]
-    rna_hybrid_crna_data = rna_hybrid_crna_data[rna_hybrid_crna_data['mfe_transcript']<=-25]
-
-    rna_hybrid_crna_data = rna_hybrid_crna_data.groupby(by=['sequence'], as_index=False).agg({'mfe_transcript': 'mean', 'p_value':'count'})
-    rna_hybrid_crna_data.rename(columns={'p_value':'off_targets_count_transcripts'}, inplace=True)
-
-    return rna_hybrid_crna_data

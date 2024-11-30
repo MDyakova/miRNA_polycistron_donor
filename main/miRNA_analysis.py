@@ -4,7 +4,15 @@ import os
 import json 
 import subprocess
 import time
-from utilities import ensembl_data, ncbi_data, data_for_vienna, rnacofold_results, rnafold_results, rnafold_mirna_results, rnahybrid_coding_results
+from utilities import (ensembl_data, 
+                       ncbi_data, 
+                       data_for_vienna, 
+                       rnacofold_results, 
+                       rnafold_results, 
+                       rnafold_mirna_results, 
+                       correct_sequences,
+                       transcript_features,
+                       compute_GC_context)
 
 # Load config
 
@@ -48,21 +56,14 @@ mirna_data = mirna_data.groupby(by=['sequence'], as_index=False).agg({'Name/gene
                                                         'count_sourses':len, 'type':max, 'Note':max})
 mirna_data = mirna_data[['Name/gene name', 'sequence', 'sourse', 'count_sourses', 'type', 'Note']]
 
-# Check that in table correct strand and fix if not (miRNA shoul be complimentary to transcript)
-for ind in mirna_data.index:
-    mirna_i = mirna_data.loc[ind]['sequence']
-    mirna_i = mirna_i.upper().replace('U', 'T')
-    mirna_r_i = ''.join([compl_dict[s] for s in mirna_i][::-1]) 
-    if mirna_i[:-2] in refseq_sequence:
-        mirna_data.loc[ind, 'sequence'] = mirna_r_i
-
-mirna_data = mirna_data[pd.notna(mirna_data['sequence'])]
+# Check that in table correct strand and fix if not (miRNA should be complimentary to transcript)
+mirna_correct = correct_sequences(mirna_data, refseq_sequence, compl_dict)
 
 # Save correct sequences to file
 mirna_correct_sequences_path = os.path.join('files', 
                                             'outputs', 
                                             f'{file_name}_correct_sequences.csv')
-mirna_data.to_csv(mirna_correct_sequences_path, index=None)
+mirna_correct.to_csv(mirna_correct_sequences_path, index=None)
 
 # Directory for all vienna results
 vienna_output_directory = os.path.join('files', 'outputs', 'vienna')
@@ -72,17 +73,17 @@ os.makedirs(vienna_output_directory, exist_ok=True)
 (rnacofold_input, 
  alignments_path,
  transcript_path,
- mirna_seq_path) = data_for_vienna(mirna_data, 
-                                        refseq_sequence, 
-                                        file_name, 
-                                        ncbi_name)
+ mirna_seq_path) = data_for_vienna(mirna_correct, 
+                                    refseq_sequence, 
+                                    file_name, 
+                                    ncbi_name)
 
 # Launch RNAcofold tool
 rnacofold_data = rnacofold_results(rnacofold_input, vienna_output_directory)
 
 # Launch RNAfold
 all_alignments_results = pd.read_csv(alignments_path)
-rnafold_data = rnafold_results(mirna_data, 
+rnafold_data = rnafold_results(mirna_correct, 
                                all_alignments_results, 
                                transcript_path, 
                                vienna_output_directory, 
@@ -91,12 +92,18 @@ rnafold_data = rnafold_results(mirna_data,
 # Launch RNAfold for mirna
 mirnafold_data = rnafold_mirna_results(mirna_seq_path, vienna_output_directory)
 
-# Search potential off-targets
+# Add transcript features
+mirna_with_features = transcript_features(mirna_correct, cds_start, cds_end, exons)
 
-# # For coding rna
-# transcripts_path = os.path.join('databases', 'gene_transcripts.fa')
-# lncrna_path = os.path.join('databases', 'lncRNA.fa')
-# rna_hybrid_crna_data = rnahybrid_coding_results(transcripts_path, lncrna_path, mirna_seq_path, vienna_output_directory)
+# Join all results together
+mirna_with_features['GC_content'] = mirna_with_features['sequence'].apply(lambda p:compute_GC_context(p))
+mirna_with_features = pd.merge(mirna_with_features, rnacofold_data, on=['sequence'], how='left')
+mirna_with_features = pd.merge(mirna_with_features, rnafold_data, on=['sequence'], how='left')
+mirna_with_features = pd.merge(mirna_with_features, mirnafold_data, on=['sequence'], how='left')
+mirna_with_features['choice'] = 0
+
+# Save results
+mirna_with_features.to_csv(os.path.join('files', 'outputs', 'mirna_with_features.csv'), index=None)
 
 time.sleep(100000)
 
