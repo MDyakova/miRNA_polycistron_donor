@@ -12,9 +12,7 @@ from utilities_polycistron import (mirna_polycistron_data,
                                    sirna_data,
                                    mirna_sirna_pairs,
                                    get_new_scaffold,
-                                   get_new_sequence,
-                                   get_mature_sequence_coords,
-                                   energy_sites)
+                                   full_scaffold_structures)
 
 
 # Load config
@@ -58,9 +56,9 @@ mirna_file = os.path.join(output_folder, f'{file_name}_mirna_with_features.csv')
 if not os.path.exists(os.path.join(output_folder, 'sirna_with_structure_error.txt')):
     with open(os.path.join(output_folder, 'sirna_with_structure_error.txt'), 'w') as f:
         f.write('')
-if not os.path.exists(os.path.join(output_folder, 'sirna_with_incorrect_energy.txt')):
-    with open(os.path.join(output_folder, 'sirna_with_incorrect_energy.txt'), 'w') as f:
-        f.write('')
+# if not os.path.exists(os.path.join(output_folder, 'sirna_with_incorrect_energy.txt')):
+with open(os.path.join(output_folder, 'sirna_with_incorrect_energy.txt'), 'w') as f:
+    f.write('')
 
 # Get transcript_sequence
 refseq_sequence, _, _, _, _ = ncbi_data(ncbi_name)
@@ -111,6 +109,12 @@ pairs, all_alignments = mirna_sirna_pairs(mirna_in_polycistrons, scaffold, all_s
 with open(os.path.join(output_folder, f'{file_name}_sequence.fa'), 'w') as f:
     f.write(f'> {file_name}\n')
     f.write(left_flank + scaffold_new + right_flank + '\n')
+
+full_scaffold_structures(scaffold_clean, scaffold_new, left_flank, right_flank, 
+                         all_old_sequences, all_new_sequences, 
+                         mirna_names, sirna_names, sequence,
+                         rna_fold_file, rna_fold_out_file,
+                        vienna_output_directory, output_folder)
 
 
 time.sleep(100000)

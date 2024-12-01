@@ -578,7 +578,7 @@ def structure_coords(file_name, probabilities_all):
 
     return probabilities_all
 
-def structure_picture(probabilities_all, all_sequences, all_names, sequence, picture_name):
+def structure_picture(probabilities_all, all_sequences, all_names, sequence, picture_name, output_folder):
     colors = plt.cm.jet(np.linspace(0,1,len(all_sequences)))
     plt.figure()
     plt.plot(probabilities_all['X'], probabilities_all['Y'], 'k', linewidth=0.5)
@@ -591,11 +591,13 @@ def structure_picture(probabilities_all, all_sequences, all_names, sequence, pic
         plt.plot(prob_seq['X'], prob_seq['Y'], c = colors[step], linewidth=1, label=name)
         plt.title(picture_name)
         plt.legend()
-        plt.savefig(output_folder + output_name + ' ' + picture_name + '.jpg')
+        plt.savefig(os.path.join(output_folder, f'{picture_name}.jpg'))
 
 def full_scaffold_structures(scaffold_clean, scaffold_new, left_flank, right_flank, 
                              all_old_sequences, all_new_sequences,  
-                             mirna_names, sirna_names, sequence):
+                             mirna_names, sirna_names, sequence,
+                             rna_fold_file, rna_fold_out_file,
+                             vienna_output_directory, output_folder):
     scaffold_clean = left_flank + scaffold_clean + right_flank
     scaffold_new = left_flank + scaffold_new + right_flank
     
@@ -606,6 +608,8 @@ def full_scaffold_structures(scaffold_clean, scaffold_new, left_flank, right_fla
         f.write(scaffold_new.replace('T', 'U')  + '\n')
     
     # !RNAfold -p -d2 < $rna_fold_file > $rna_fold_out_file
+    with open(rna_fold_file, "r") as infile, open(rna_fold_out_file, "w") as outfile:
+        subprocess.run(["RNAfold", "-p", "-d2"], stdin=infile, stdout=outfile, check=True, cwd=vienna_output_directory)
     
     with open(rna_fold_out_file) as f:
         RNAfold_output = f.readlines()
@@ -615,21 +619,21 @@ def full_scaffold_structures(scaffold_clean, scaffold_new, left_flank, right_fla
     old_energy = float(RNAfold_output[2].split(' ')[1].split('(')[1].split(')')[0])
     new_energy = float(RNAfold_output[8].split(' ')[1].split('(')[1].split(')')[0])
     
-    file_name = 'old_dp.ps'
+    file_name = os.path.join(vienna_output_directory, 'old_dp.ps')
     structure, probabilities_all, sequence = structure_prob(file_name)
     
-    file_name = 'old_ss.ps'
+    file_name = os.path.join(vienna_output_directory, 'old_ss.ps')
     probabilities_all = structure_coords(file_name, probabilities_all)
 
-    structure_picture(probabilities_all, all_old_sequences, mirna_names, sequence, 'mirna polycistron folding')
+    structure_picture(probabilities_all, all_old_sequences, mirna_names, sequence, 'old polycistron folding', output_folder)
 
-    file_name = 'new_dp.ps'
+    file_name = os.path.join(vienna_output_directory, 'new_dp.ps')
     structure, probabilities_all, sequence = structure_prob(file_name)
     
-    file_name = 'new_ss.ps'
+    file_name = os.path.join(vienna_output_directory, 'new_ss.ps')
     probabilities_all = structure_coords(file_name, probabilities_all)
 
-    structure_picture(probabilities_all, all_new_sequences, sirna_names, sequence, 'sirna polycistron folding')
+    structure_picture(probabilities_all, all_new_sequences, sirna_names, sequence, 'new polycistron folding', output_folder)
 
 
 def hairpin_plots(all_old_sequences, all_new_sequences, mirna_names, sirna_names):
