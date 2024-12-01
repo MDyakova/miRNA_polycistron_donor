@@ -1,8 +1,15 @@
 import numpy as np
 import pandas as pd
 import os
-import json,
+import json
 import time
+
+from utilities import ncbi_data
+from utilities_polycistron import (mirna_polycistron_data, 
+                                   mirna_members_data,
+                                   check_motif,
+                                   mirna_loading)
+
 
 # Load config
 
@@ -35,8 +42,40 @@ rna_cofold_out_file = config['polycistron_data']['rna_cofold_out_file']
 mirna_file = os.path.join(output_folder, f'{file_name}_mirna_with_features.csv')
 
 
+# Files for control results
+if not os.path.exists(os.path.join(output_folder, 'sirna_with_structure_error.txt')):
+    with open(os.path.join(output_folder, 'sirna_with_structure_error.txt'), 'w') as f:
+        f.write('')
+if not os.path.exists(os.path.join(output_folder, 'sirna_with_incorrect_energy.txt')):
+    with open(os.path.join(output_folder, 'sirna_with_incorrect_energy.txt'), 'w') as f:
+        f.write('')
 
+# Get transcript_sequence
+refseq_sequence, _, _, _, _ = ncbi_data(ncbi_name)
 
+# Get natural polycistron data
+(members, 
+ scaffold_mirna, 
+ left_flank, 
+ right_flank, 
+ sequence) = mirna_polycistron_data(mirna_polycistrons_file, 
+                                    cluster_name, 
+                                    flank_size = 200)
+
+# Get matural mirna
+scaffold, all_members, mirna_in_polycistrons = mirna_members_data(mirna_in_polycistron_file, 
+                                                                  mirna_members, 
+                                                                  scaffold_mirna, 
+                                                                  members)
+
+# Check neccesary parameters and save
+loops_motifs_check, spacer_motifs_check = check_motif(scaffold_mirna, sequence, all_members)
+
+motif_results = pd.concat([loops_motifs_check, spacer_motifs_check])
+motif_results.to_csv(os.path.join(output_folder, f'{cluster_name}_motif_check_results.csv'), index=None)
+
+# Load information for mirna from mirbase db
+mirna_with_info = mirna_loading(mirna_in_polycistrons)
 
 
 time.sleep(100000)
