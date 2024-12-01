@@ -1,0 +1,2361 @@
+mir_id,mirbase_name,gene_symbol,structure,cluster_size,chromosome,start,end,strand,mature_mirna1,evidence1,mature_mirna2,evidence2
+MI0000060,hsa-let-7a-1,MIRLET7A1,"     U                     uuagg   aca    c 
+uggga GAGGUAGUAGGUUGUAUAGUU     guc   ccca c
+||||| |||||||||||||||||||||     |||   ||||  
+aucCU UUCUGUCAUCUAACAUAUCaa     uag   gggu a
+     -                     -----   --a    c",3,9,94175957,94176036,+,hsa-let-7a-5p,"                                    cloned [1-3,5-8], Northern [1], Illumina [9]",hsa-let-7a-5p,                                    cloned [6]
+MI0000061,hsa-let-7a-2,MIRLET7A2,"   uU   G   U             uagaauuac   aa 
+agg  GAG UAG AGGUUGUAUAGUU         auc  g
+|||  ||| ||| |||||||||||||         |||   
+uCC  UUC AUC UCCGACAUGUCaa         uag  g
+   -U   G   C             ---------   ag",3,11,122146522,122146593,-,hsa-let-7a-5p,"                                    cloned [1-3,5-8], Northern [1], Illumina [9]",hsa-let-7a-5p,                                    qRT-PCR [9]
+MI0000062,hsa-let-7a-3,MIRLET7A3,"   U                     ---------      u 
+ggg GAGGUAGUAGGUUGUAUAGUU         uggggc  
+||| |||||||||||||||||||||         |||||| c
+ucC UUCUGUCAUCUAACAUAUCaa         gucccg  
+   U                     uaggguauc      u",3,22,46112749,46112822,+,hsa-let-7a-5p,"                                    cloned [1-3,5-8], Northern [1], Illumina [9]",hsa-let-7a-5p,                                    cloned [6]
+MI0000063,hsa-let-7b,MIRLET7B,"     U                    -----   --a      u 
+cgggg GAGGUAGUAGGUUGUGUGGU     Uuc   gggcag g
+||||| ||||||||||||||||||||     |||   |||||| a
+guCCC UUCCGUCAUCCAACAUAUCa     agg   cccguu u
+     -                    auaga   cuc      g",3,22,46113686,46113768,+,hsa-let-7b-5p,"                                    cloned [1,3-5], Northern [1]",hsa-let-7b-5p,                                    cloned [4-5]
+MI0000064,hsa-let-7c,MIRLET7C,"  a      uU   G   U             ua  g ua  c 
+gc uccggg  GAG UAG AGGUUGUAUGGUU  ga u  ca  
+|| ||||||  ||| ||| |||||||||||||  || |  || c
+cg agguuC  UUC AUC UCCAACAUGUCaa  uu a  gu  
+  -      CU   G   U             --  g gg  c",2,21,16539828,16539911,+,hsa-let-7c-5p,"                                    cloned [1-4], Northern [1], Illumina [5-6]",hsa-let-7c-5p,                                    Illumina [6]
+MI0000065,hsa-let-7d,MIRLET7D,"       A              C      -------uua      g 
+ccuagga GAGGUAGUAGGUUG AUAGUU          gggcag g
+||||||| |||||||||||||| ||||||          |||||| a
+ggauUCU UUCCGUCGUCCAGC UAUCaa          cccguu u
+       -              A      uggaggaaca      u",3,9,94178834,94178920,+,hsa-let-7d-5p,"                                    cloned [1-4], Northern [1], Illumina [5]",hsa-let-7d-5p,                                    cloned [3]
+MI0000066,hsa-let-7e,MIRLET7E,"  c   cU   G                U  -------  a g 
+cc ggg  GAG UAGGAGGUUGUAUAGU ga       gg g a
+|| |||  ||| |||||||||||||||| ||       || |  
+gg ccC  UUC AUCCUCCGGCAUAUCa cu       cc c c
+  a   CU   G                -  agaggaa  - a",3,19,51692786,51692864,+,hsa-let-7e-5p,"                                    cloned [1-4], Northern [1], Illumina [5]",hsa-let-7e-5p,                                    cloned [3]
+MI0000067,hsa-let-7f-1,MIRLET7F1,"    a U                       ---------       u 
+ucag g GAGGUAGUAGAUUGUAUAGUUgu         gggguag g
+|||| | |||||||||||||||||||||||         ||||||| a
+aguC C UUCCGUUAUCUAACAUAUCaaua         ucccauu u
+    - C                       gaggacuug       u",3,9,94176347,94176433,+,hsa-let-7f-5p,"                                    cloned [1,3-5], Northern [1], Illumina [6]",hsa-let-7f-5p,                                    cloned [4]
+MI0000068,hsa-let-7f-2,MIRLET7F2,"u      U                    ----        cau 
+ guggga GAGGUAGUAGAUUGUAUAGU    Uuuagggu   a
+ |||||| ||||||||||||||||||||    ||||||||    
+ cacCCU UUCUGUCAUCUGACAUAUCa    agguucua   c
+g      -                    auag        ccc",2,X,53557192,53557274,-,hsa-let-7f-5p,"                                    cloned [1,3-5], Northern [1], Illumina [6]",hsa-let-7f-5p,                                    cloned [4]
+MI0000069,hsa-mir-15a,MIR15A,"     gaguaaa UA        UA          gauuu 
+ccuug       g  GCAGCACA  AUGGUUUGUG     u
+|||||       |  ||||||||  ||||||||||     g
+ggaac       C  CGUCGUGU  UACCGGACgu     a
+     auaaaaA UC        UA          ggaaa",2,13,50049119,50049201,-,hsa-miR-15a-5p,"                                    cloned [1,3-6], Northern [1]",hsa-miR-15a-5p,                                    cloned [5]
+MI0000070,hsa-mir-16-1,MIR16-1,"      ag   c          -  A        C u   gauu 
+gucagc  ugc uUAGCAGCAC GU AAUAUUGG G uaa    c
+||||||  ||| |||||||||| || |||||||| | |||     
+caguug  aug AGUCGUCGUG CA UUAUGACC c auu    u
+      ga   a          U  A        u u   aaaa",2,13,50048973,50049061,-,hsa-miR-16-5p,"                                    cloned [1,3-4,6-8], Northern [3]",hsa-miR-16-5p,                                    cloned [8]
+MI0000071,hsa-mir-17,MIR17,"    ga       -CA        A  G     G   -  au 
+guca  auaaugu   AAGUGCUU CA UGCAG UAG ug  a
+||||  |||||||   |||||||| || ||||| ||| ||  u
+cagu  uauuacG   UUCACGGA GU ACGUC Auc ac  g
+    gg       AUG        A  G     -   u  gu",6,13,91350605,91350688,+,hsa-miR-17-5p,"                                    cloned [2,5-8], Northern [4]",hsa-miR-17-5p,"                                    cloned [1,5,7-8], Northern [1]"
+MI0000072,hsa-mir-18a,MIR18A,"    cU    U    C   U    A   -  aa u 
+uguu  AAGG GCAU UAG GCAG UAG ug  g a
+||||  |||| |||| ||| |||| ||| ||  | g
+acGG  UUCC CGUG AUC CGUC Auc ac  u a
+    UC    U    A   C    -   u  ga u",6,13,91350751,91350821,+,hsa-miR-18a-5p,"                                    cloned [1,3-6], Northern [1]",hsa-miR-18a-5p,                                    cloned [4-6]
+MI0000073,hsa-mir-19a,MIR19A,"    u  u                 --      ---    ag 
+gcag cc cuguuAGUUUUGCAUAG  UUGCAC   UACA  a
+|||| || |||||||||||||||||  ||||||   ||||  a
+cguc gg gguAGUCAAAACGUAUC  AACGUG   augu  g
+    c  u                 UA      Uug    aa",6,13,91350891,91350972,+,hsa-miR-19a-5p,                                    cloned [4],hsa-miR-19a-5p,"                                    cloned [1-5], Northern [1]"
+MI0000074,hsa-mir-19b-1,MIR19B1,"     uu                 -  -      UC    ugugu 
+cacug  cuaugguuAGUUUUGCA GG UUUGCA  CAGC     g
+|||||  ||||||||||||||||| || ||||||  ||||     a
+gugau  ggugucAGUCAAAACGU CC AAACGU  GUcg     u
+     --                 A  U      --    ucuua",6,13,91351192,91351278,+,hsa-miR-19b-1-5p,                                    cloned [8],hsa-miR-19b-1-5p,"                                    cloned [1-3,6-9], Northern [1,5]"
+MI0000075,hsa-mir-19b-2,MIR19B2,"      cuac                 -  -       UUCA       u 
+acauug    uuacaauuAGUUUUGCA GG UUUGCAU    gcguaua a
+||||||    ||||||||||||||||| || |||||||    |||||||  
+uguaau    aguguuAGUCAAAACGU CC AAACGUG    uguauau u
+      ----                 A  U       Ucgg       g",6,X,134169671,134169766,-,hsa-miR-19b-3p,"                                    cloned [1-3,6-9], Northern [1,5]",hsa-miR-19b-3p,                                    cloned [8]
+MI0000076,hsa-mir-20a,MIR20A,"    c   -A                 G   uguu 
+guag acU  AAGUGCUUAUAGUGCAG UAG    u
+|||| |||  ||||||||||||||||| |||    a
+cguc uGA  UUCACGAGUAUUACGUC Auc    g
+    a   AA                 -   uauu",6,13,91351065,91351135,+,hsa-miR-20a-5p,"                                    cloned [1,4-7], Northern [1]",hsa-miR-20a-5p,                                    cloned [6]
+MI0000079,hsa-mir-23a,MIR23A,"  c   c     -       G    G      cuuc 
+gg cgg uGGGG UUCCUGG GAUG GAUUUg    c
+|| ||| ||||| ||||||| |||| ||||||     
+cc gcc aCCUU AGGGACC UUAC CUAaac    u
+  a   a     U       G    A      acug",3,19,13836587,13836659,-,hsa-miR-23a-5p,                                    cloned [6-7],hsa-miR-23a-5p,"                                    cloned [1,4-7], Northern [1]"
+MI0000080,hsa-mir-24-1,MIR24-1,"    g  G   A         UA     ucuca 
+cucc gU CCU CUGAGCUGA  UCAGU     u
+|||| || ||| |||||||||  |||||     u
+gagG CA GGA GACUUGACU  GGUca     u
+    A  A   C         -C     cacau",4,9,95086021,95086088,+,hsa-miR-24-1-5p,                                    cloned [7],hsa-miR-24-1-5p,"                                    cloned [1,4-7], Northern [1], Illumina [8]"
+MI0000081,hsa-mir-24-2,MIR24-2,"     cc   c  GCCU         --AA      u 
+cucug  ucc gU    ACUGAGCUG    ACACAG u
+|||||  ||| ||    |||||||||    |||||| g
+ggGAC  AGG CG    UGACUCGGU    uguguu g
+     -A   A  -ACU         caca      u",3,19,13836287,13836359,-,hsa-miR-24-3p,"                                    cloned [1,4-7], Northern [1], Illumina [8]",hsa-miR-24-3p,                                    cloned [6]
+MI0000082,hsa-mir-25,MIR25,"    a      ag    G     UU G     UG    acg 
+ggcc guguug  AGGC GAGAC  G GCAAU  cugg   c
+|||| ||||||  |||| |||||  | |||||  ||||    
+ccgg cgugac  UCUG CUCUG  C CGUUA  gguc   u
+    c      AG    G     UU A     Cg    ccg",3,7,100093560,100093643,-,hsa-miR-25-5p,                                    cloned [3],hsa-miR-25-5p,"                                    cloned [1-4], Northern [1]"
+MI0000085,hsa-mir-27a,MIR27A,"   a  a  A             U       g  u cac 
+cug gg gc GGGCUUAGCUGCU GUGAGCA gg c   a
+||| || || ||||||||||||| ||||||| || |    
+gac cc CG CUUGAAUCGGUGA CACUUgu cu g   c
+   c  c  C             -       g  - aac",3,19,13836440,13836517,-,hsa-miR-27a-5p,                                    cloned [4],hsa-miR-27a-5p,"                                    cloned [1,3-5], Northern [1]"
+MI0000087,hsa-mir-29a,MIR29A,"            UUU       C    ucaa 
+augACUGAUUUC   UGGUGUU AGag    u
+||||||||||||   ||||||| ||||    a
+uAUUGGCUAAAG   ACCACGA Ucuu    u
+            UCU       -    uuaa",2,7,130876747,130876810,-,hsa-miR-29a-5p,                                    cloned [6],hsa-miR-29a-5p,"                                    cloned [1-3,5-7], Northern [1,4], Illumina [8]"
+MI0000093,hsa-mir-92a-1,MIR92A1,"-cuuu  ac            C   U           uu 
+     cu  acAGGUUGGGAU GGU GCAAUGCUgug  u
+     ||  |||||||||||| ||| |||||||||||   
+     ga  UGUCCGGCCCUG UCA CGUUAUgguau  c
+gguuu  gu            U   -           gu",6,13,91351314,91351391,+,hsa-miR-92a-1-5p,                                    cloned [7-8],hsa-miR-92a-1-5p,"                                    cloned [1,3,5-8], Northern [4]"
+MI0000094,hsa-mir-92a-2,MIR92A2,"  a   c     G     UU  U   U     -    u 
+uc ucc uGGGU GGGAU  GU GCA UACuu gugu  
+|| ||| ||||| |||||  || ||| ||||| |||| c
+ag agg GUCCG CCCUG  CA CGU AUgaa uaua  
+  a   U     G     UU  -   U     a    u",6,X,134169538,134169612,-,hsa-miR-92a-3p,"                                    cloned [1,3,5-8], Northern [4]",hsa-miR-92a-3p,                                    cloned [7]
+MI0000095,hsa-mir-93,MIR93,"          -CA       -     U    G   u  gau 
+cugggggcuc   AAGUGCU GUUCG GCAG UAG gu   u
+||||||||||   ||||||| ||||| |||| ||| ||   a
+ggcccccgaG   UUCACGA CGAGU CGUC Auc ca   c
+          CCC       U     -    -   -  acc",3,7,100093768,100093847,-,hsa-miR-93-5p,"                                    cloned [1,3-6], Northern [4]",hsa-miR-93-5p,                                    cloned [5]
+MI0000098,hsa-mir-96,MIR96,"ugg  g  U        A      UU      ---   uc 
+   cc au UUGGCACU GCACAU  UUGCUu   gug  u
+   || || |||||||| ||||||  ||||||   |||   
+   gg UA AACCGUGA CGUGUA  AAcgag   cgc  c
+aaa  G  U        -      CU      ucu   cu",3,7,129774692,129774769,-,hsa-miR-96-5p,                                    cloned [1-3],hsa-miR-96-5p,                                    cloned [2]
+MI0000100,hsa-mir-98,MIR98,"a    uc    -          U                 U    ---------      aggg 
+ ggau  ugcu caugccaggg GAGGUAGUAAGUUGUAU GUUg         uggggu    a
+ ||||  |||| |||||||||| ||||||||||||||||| ||||         ||||||    u
+ cuua  acgg gugugguCCC UUUCAUCAUUCAACAUA Caau         accccg    a
+a    -u    u          -                 U    agaagauua      gauu",2,X,53556223,53556341,-,hsa-miR-98-5p,"                                    cloned [1-3], SOLiD [4]",hsa-miR-98-5p,                                    SOLiD [4]
+MI0000101,hsa-mir-99a,MIR99A,"cc          A         UC   U      g  aag 
+  cauuggcaua ACCCGUAGA  CGA CUUGUG ug   u
+  |||||||||| |||||||||  ||| |||||| ||    
+  gugacuguGU UGGGUAUCU  GCU GAACac gc   g
+gu          C         UC   C      -  cag",2,21,16539089,16539169,+,hsa-miR-99a-5p,                                    cloned [1-3],hsa-miR-99a-5p,                                    cloned [2]
+MI0000102,hsa-mir-100,MIR100,"    -uugc    A   C      C   A      guau 
+ccug     caca ACC GUAGAU CGA CUUGUG    u
+||||     |||| ||| |||||| ||| ||||||    a
+ggau     guGU UGG UAUCUA GUU GAACac    g
+    ugucu    A   A      U   C      gccu",3,11,122152229,122152308,-,hsa-miR-100-5p,"                                    cloned [1-3], Illumina [4]",hsa-miR-100-5p,                                    cloned [2]
+MI0000103,hsa-mir-101-1,MIR101-1,"    cuggc                  A    gucua 
+ugcc     uCAGUUAUCACAGUGCUG UGCU     u
+||||     |||||||||||||||||| ||||      
+acgg     AGUCAAUAGUGUCAUGAC AUgg     u
+    uaggA                  -    aaauc",2,1,65058434,65058508,-,hsa-miR-101-5p,                                    cloned [3-4],hsa-miR-101-5p,                                    cloned [1-4]
+MI0000105,hsa-mir-29b-1,MIR29B1,"-         -          U      GU      uuaaa 
+ cuucaggaa GCUGGUUUCA AUGGUG  UUAGAu     u
+ ||||||||| |||||||||| ||||||  ||||||     a
+ gggguucUU UGACUAAAGU UACCAC  GAUcug     g
+g         G          U      --      uuagu",2,7,130877459,130877539,-,hsa-miR-29b-1-5p,                                    cloned [3-4],hsa-miR-29b-1-5p,"                                    cloned [1-4], Northern [2]"
+MI0000107,hsa-mir-29b-2,MIR29B2,"         -          C      G  U    uuuucc 
+cuucuggaa gCUGGUUUCA AUGGUG CU AGau      a
+||||||||| |||||||||| |||||| || ||||       
+gaggauuUU UGACUAAAGU UACCAC GA Ucua      u
+         G          U      -  -    uguuuc",2,1,207802443,207802523,-,hsa-miR-29b-3p,"                                    cloned [1-4], Northern [2]",hsa-miR-29b-3p,                                    cloned [3]
+MI0000108,hsa-mir-103a-2,MIR103A2,"uu  g      --   U  U           C   u g a 
+  gu cuuucA  GCU CU UACAGUGCUGC UUG a c u
+  || ||||||  ||| || ||||||||||| ||| | | u
+  ca gaaAGU  CGG GA AUGUUACGACG Aac u g c
+ac  a      AU   -  C           -   - g a",2,20,3917494,3917571,+,hsa-miR-103a-2-5p,                                    454 [5],hsa-miR-103a-2-5p,"                                    cloned [1-4], Northern [2], Illumina [5]"
+MI0000109,hsa-mir-103a-1,MIR103A1,"uac    c  --    U  U           C   u g a 
+   ugcc uc  GGCU CU UACAGUGCUGC UUG u c u
+   |||| ||  |||| || ||||||||||| ||| | |  
+   acgg AG  UCGG GA AUGUUACGACG Aac a g a
+guu    a  UA    -  C           -   u g u",2,5,168560896,168560973,-,hsa-miR-103a-3p,"                                    cloned [1-4], Northern [2], Illumina [5]",hsa-miR-103a-3p,
+MI0000111,hsa-mir-105-1,MIR105-1,"ugu         U  A          UC        gcug 
+   gcaucgugg CA AUGCUCAGAC  CUGUGGUg    c
+   ||||||||| || ||||||||||  ||||||||     
+   uguggcAUC GU UACGAGUUUG  GGCAccac    u
+auc         -  G          UA        guac",3,X,152392219,152392299,-,hsa-miR-105-5p,                                    cloned [1-2],hsa-miR-105-5p,                                    cloned [2]
+MI0000112,hsa-mir-105-2,MIR105-2,"ugu         U  A          UC        gcug 
+   gcaucgugg CA AUGCUCAGAC  CUGUGGUg    c
+   ||||||||| || ||||||||||  ||||||||     
+   ugugguAUC GU UACGAGUUUG  GGCAccac    u
+auc         -  G          UA        guau",3,X,152394412,152394492,-,hsa-miR-105-5p,                                    cloned [1-2],hsa-miR-105-5p,                                    cloned [2]
+MI0000113,hsa-mir-106a,MIR106A,"  u   cc      -           G     G   c   u 
+cc ugg  auguAA AAGUGCUUACA UGCAG UAG uuu  
+|| |||  |||||| ||||||||||| ||||| ||| ||| u
+gg acc  uaCAUU UUCACGAAUGU ACGUC auc aga  
+  u   au      C           A     -   u   g",6,X,134170198,134170278,-,hsa-miR-106a-5p,                                    cloned [2-3],hsa-miR-106a-5p,                                    cloned [3]
+MI0000115,hsa-mir-16-2,MIR16-2,"   c    cU         UA        C  agugaaa 
+guu cacu  AGCAGCACG  AAUAUUGG Gu       u
+||| ||||  |||||||||  |||||||| ||       a
+cag gugA  UCGUCGUGU  UUAUAACC ca       u
+   u    UU         CA        a  aauuaua",2,3,160404745,160404825,+,hsa-miR-16-5p,"                                    cloned [1,3-4,6-8], Northern [3]",hsa-miR-16-5p,                                    cloned [7]
+MI0000234,hsa-mir-192,MIR192,"gccgagacc   u  --   g g  C         -     A       ugcucuc 
+         gag gc  aca g cu UGACCUAUG AAUUG CAGCCag       g
+         ||| ||  ||| | || ||||||||| ||||| |||||||        
+         cuc cg  ugu u GA ACUGGAUAC UUAAC GUCgguc       u
+cgaccguaa   -  cu   a g  C         C     C       uccccuc",3,11,64891137,64891246,-,hsa-miR-192-5p,                                    cloned [3-4],hsa-miR-192-5p,                                    cloned [4]
+MI0000255,hsa-mir-30d,MIR30D,"guu  U         CCC           guaaga 
+   gu GUAAACAUC   GACUGGAAGcu      c
+   || |||||||||   |||||||||||       
+   CG CGUUUGUAG   CUGACUUUCga      a
+cau  U         --A           aucgac",2,8,134804876,134804945,-,hsa-miR-30d-5p,                                    cloned [2-4],hsa-miR-30d-5p,                                    cloned [2]
+MI0000264,hsa-mir-7-2,MIR7-2,"cuggauacaga    acc       c    cU  A     A U     U       ucuua 
+           gugg   ggcuggc ccau  GG AGACU G GAUUU GUUGUUg     c
+           ||||   ||||||| ||||  || ||||| | ||||| |||||||      
+           cgcu   ccgaccg gguA  CC UCUGA C CUAAA CAACaac     u
+----------a    --a       u    AU  A     C -     -       ucgcg",3,15,88611825,88611934,+,hsa-miR-7-5p,                                    cloned [2-3],hsa-miR-7-5p,                                    cloned [2]
+MI0000269,hsa-mir-181a-2,MIR181A2,"agaagggcuaucaggccagccuuca             A   U      CU       A    ggga 
+                         gaggacuccaagg ACA UCAACG  GUCGGUG GUuu    u
+                         ||||||||||||| ||| ||||||  ||||||| ||||    u
+                         uuccugggguuCC UGU AGUUGC  CAGUCAC CAaa    u
+------------------------a             A   C      --       -    aaag",2,9,124692442,124692551,+,hsa-miR-181a-5p,"                                    cloned [2,4-6]",hsa-miR-181a-5p,                                    cloned [4]
+MI0000270,hsa-mir-181b-1,MIR181B1,"ccugugcagagauuauuuuuuaaaa       aucAA         CUG          gaac   g 
+                         ggucaca     CAUUCAUUG   UCGGUGGGUu    ugu u
+                         |||||||     |||||||||   ||||||||||    |||  
+                         ccggugu     GUAAGUAAC   AGUCACUCga    aca g
+-------------------uucgcc       -cAAC         --A          ----   g",2,1,198858873,198858982,-,hsa-miR-181b-5p,                                    cloned [3-5],hsa-miR-181b-5p,
+MI0000271,hsa-mir-181c,MIR181C,"c   -aaauuug   ag     g    AA        CU       A     ggca 
+ gga        cca  gguuu gggg  CAUUCAAC  GUCGGUG GUuug    g
+ |||        |||  ||||| ||||  ||||||||  ||||||| |||||    c
+ ccu        ggu  ccgga uccC  GUGAGUUG  CAGCUAC CAAac    u
+u   accguuaa   --     g    AG        -C       -     ggac",2,19,13874699,13874808,+,hsa-miR-181c-5p,                                    cloned [2],hsa-miR-181c-5p,                                    cloned [2]
+MI0000272,hsa-mir-182,MIR182,"ga    -  -u -    c      uU       UGG      UCA      ugaggu 
+  gcug cu  g ccuc ccccgu  UUGGCAA   UAGAAC   CACUgg      a
+  |||| ||  | |||| ||||||  |||||||   ||||||   ||||||       
+  cggc ga  c ggag gggguA  AACCGUU   AUCUUG   GUggcc      a
+ca    c  cu a    c      UC       CAG      ---      uaggac",3,7,129770383,129770492,-,hsa-miR-182-5p,                                    cloned [2-3],hsa-miR-182-5p,
+MI0000273,hsa-mir-183,MIR183,"c  ca  g g  a   c        g      A  --    GA        --   ac 
+ cg  ga u ug cuc uguucugu UAUGGC CU  GGUA  AUUCACUg  uga  a
+ ||  || | || ||| |||||||| |||||| ||  ||||  ||||||||  |||   
+ gc  cu a ac gag acgagaca AUACCG GA  CCAU  UAAGUGac  acu  g
+a  ac  - g  a   -        A      G  AG    --        ug   cu",3,7,129774905,129775014,-,hsa-miR-183-5p,                                    cloned [2-4],hsa-miR-183-5p,                                    cloned [3]
+MI0000281,hsa-mir-199a-2,MIR199A2,"aggaa   u  ggaga    -    c   gcC       U        C   U  --  ac 
+     gcu cu     uccu gcuc guc   CCAGUGU CAGACUAC UGU Ca  gg  a
+     ||| ||     |||| |||| |||   ||||||| |||||||| ||| ||  ||   
+     cga ga     ggga cggg cag   GGUUACA GUCUGAUG ACA gu  cc  a
+----a   -  -----    a    u   AUU       C        -   u  ug  gu",3,1,172144535,172144644,-,hsa-miR-199a-5p,                                    cloned [2-4],hsa-miR-199a-5p,"                                    cloned [4], Illumina [5]"
+MI0000282,hsa-mir-199b,MIR199B,"  a    -acacc    -   c     C       U       U    U   gacu 
+cc gagg      ucca cuc gucua CCAGUGU UAGACUA CUGU Cag    c
+|| ||||      |||| ||| ||||| ||||||| ||||||| |||| |||     
+gg cucc      gggu ggg cggAU GGUUACA GUCUGAU GACA guu    c
+  -    cagauu    c   u     U       C       -    u   aaac",2,9,128244721,128244830,-,hsa-miR-199b-5p,                                    cloned [2-3],hsa-miR-199b-5p,                                    cloned [3]
+MI0000283,hsa-mir-203a,MIR203A,"g     gg a u   g         c         U    G    A     - ug 
+ uguug  g c cgc cgcuggguc AGUGGUUCU AACA UUCA CAGUU c  u
+ |||||  | | ||| ||||||||| ||||||||| |||| |||| ||||| |   
+ gcgac  c g gcg gcggcccaG UCACCAGGA UUGU AAGU Guuaa g  a
+a     ag g c   g         A         U    A    -     c cg",2,14,104117405,104117514,+,hsa-miR-203a-3p,                                    cloned [2],hsa-miR-203a-3p,
+MI0000288,hsa-mir-212,MIR212,"--      accccgcccgga   c   c   -cA  U     CU      C      ccc   c 
+  cggggc            cag gcg cgg   CC UGGCU  AGACUG UUACUg   ggg  
+  ||||||            ||| ||| |||   || |||||  |||||| ||||||   ||| c
+  gccccg            guc cgc gcc   GG ACUGA  UCUGAC AAUgac   ccc  
+cc      ------------   -   a   aCC  C     CC      -      --u   g",2,17,2050271,2050380,-,,,,
+MI0000289,hsa-mir-181a-1,MIR181A1,"-u    -uu   -    -   uc  u A   U      CU       A    g  au 
+  gagu   uga gguu gcu  ag g ACA UCAACG  GUCGGUG GUuu ga  u
+  ||||   ||| |||| |||  || | ||| ||||||  ||||||| |||| ||  a
+  cuca   acu ccaa cgg  uc C UGU AGUUGC  CAGCUAC CAaa cu  a
+ac    ucu   a    u   ua  C A   U      --       -    a  aa",2,1,198859044,198859153,-,hsa-miR-181a-5p,"                                    cloned [2,4-6]",hsa-miR-181a-5p,                                    cloned [4]
+MI0000290,hsa-mir-214,MIR214,"ggccu      acaga           u          ACA            aacau 
+     ggcugg     guugucaugug cUGCCUGUCU   CUUGCUGUGCag     c
+     ||||||     ||||||||||| ||||||||||   ||||||||||||     c
+     ccgacc     caacaguacac GACGGACAGA   GGACGACAuguc     g
+----u      -----           U          CAC            cacuc",3,1,172138798,172138907,-,hsa-miR-214-5p,"                                    cloned [2-3], Northern [3]",hsa-miR-214-5p,                                    cloned [2]
+MI0000291,hsa-mir-215,MIR215,"aucauucagaa     -        aaA  A    -U   U          uaua 
+           auggu auacagga   UG CCUA  GAA UGACAGACaa    g
+           ||||| ||||||||   || ||||  ||| ||||||||||    c
+           uguca uaugucuu   AC GGAU  CUU ACUGUCUguu    u
+-aacuucaucg     g        AUA  C    UU   U          ugag",2,1,220117853,220117962,-,hsa-miR-215-5p,"                                    cloned [2], Illumina [3]",hsa-miR-215-5p,                                    Illumina [3]
+MI0000292,hsa-mir-216a,MIR216A,"----  u     u   ----------     u         CU   A        ---a   u 
+    ga ggcug gag          uuggc UAAUCUCAG  GGC ACUGUGAg    ugu c
+    || ||||| |||          ||||| |||||||||  ||| ||||||||    |||  
+    cu ccgau cuu          aaucg AUUAGGGUC  CUG UGACACUc    aca a
+agca  c     c   uaacgagaca     U         -U   G        ccua   u",2,2,55988950,55989059,-,hsa-miR-216a-5p,"                                    cloned [2], SOLiD [3]",hsa-miR-216a-5p,                                    SOLiD [3]
+MI0000293,hsa-mir-217,MIR217,"aguauaauuauuacaua    uu     c c  a  C     C          U -   aag 
+                 guuu  gaugu g ag UA UGCAU AGGAACUGAU G GAu   a
+                 ||||  ||||| | || || ||||| |||||||||| | |||    
+                 caaa  cuacg c uC GU ACGUA UCCUUGACUA c cug   a
+--------------gaa    -u     a u  C  U     A          C a   acu",2,2,55982967,55983076,-,hsa-miR-217-5p,                                    cloned [2],hsa-miR-217-5p,
+MI0000298,hsa-mir-221,MIR221,"-u     ----       cugg   a    -       U         AUUU    -   c 
+  gaaca    uccaggu    ggc ugaA CCUGGCA ACAAUGUAG    cugu guu g
+  |||||    |||||||    ||| |||| ||||||| |||||||||    |||| ||| u
+  cuugu    aggucca    ucg aCUU GGGUCGU UGUUACAUC    GAca cgg u
+cu     acaa       ----   g    U       C         ----    a   a",2,X,45746157,45746266,-,hsa-miR-221-5p,                                    cloned [3],hsa-miR-221-5p,"                                    cloned [2-4], Illumina [5]"
+MI0000299,hsa-mir-222,MIR222,"gcu           uaggua  c   au              -     AUC   ucuu 
+   gcuggaaggug      cc uca  ggCUCAGUAGCCAG UGUAG   CUg    u
+   |||||||||||      || |||  |||||||||||||| |||||   |||    c
+   cgaucuucuac      gg agu  cUGGGUCAUCGGUC ACAUC   gac    g
+--u           ------  u   cu              U     GAc   uaau",2,X,45747015,45747124,-,hsa-miR-222-5p,                                    cloned [4],hsa-miR-222-5p,"                                    cloned [2-5], Northern [2]"
+MI0000301,hsa-mir-224,MIR224,"       CA         U   U      A u       u 
+gggcuuU  AGUCACUAG GGU CCGUUU G agaugau g
+|||||||  ||||||||| ||| |||||| | ||||||| u
+cccgaaA  UCAGUGAUC CCG GGUAAA c uuuguua g
+       CA         -   U      A -       c",2,X,151958578,151958658,-,hsa-miR-224-5p,                                    cloned [1-4],hsa-miR-224-5p,"                                    qRT-PCR [5], 454 [6]"
+MI0000342,hsa-mir-200b,MIR200B,"cca  uc    ag    g c    -           C      ug  gu 
+   gc  gggc  ccgu g CAUC UUACUGGGCAG AUUGGA  ga  c
+   ||  ||||  |||| | |||| ||||||||||| ||||||  ||   
+   cg  cccg  ggcg c GUAG AAUGGUCCGUC UAAUcu  cu  a
+gca  -u    -a    g A    U           A      --  gg",3,1,1167104,1167198,+,hsa-miR-200b-5p,                                    cloned [4],hsa-miR-200b-5p,"                                    Northern [1], cloned [2-5]"
+MI0000437,hsa-mir-1-2,MIR1-2,"a      c                     ac     ug aca 
+ ccuacu agaguacauacuucuuuaugu  ccaua  a   u
+ |||||| |||||||||||||||||||||  |||||  |    
+ ggaugg uuuUAUGUAUGAAGAAAUGUA  GGUau  u   a
+c      u                     -A     cg aac",2,18,21829004,21829088,-,hsa-miR-1-3p,"                                    cloned [2], Illumina [3]",,
+MI0000438,hsa-mir-15b,MIR15B,"u    --g       gua   U       C  C       A   g  ac 
+ ugag   ccuuaaa   cug AGCAGCA AU AUGGUUU CAu cu  a
+ ||||   |||||||   ||| ||||||| || ||||||| ||| ||  g
+ acuu   ggaauuu   gAU UCGUCGU UA UACUAAG gua ga  u
+u    aaa       aaa   C       U  U       C   -  ac",2,3,160404588,160404685,+,hsa-miR-15b-5p,                                    cloned [2-5],hsa-miR-15b-5p,                                    cloned [4-5]
+MI0000439,hsa-mir-23b,MIR23B,"c     u c  -   c   u   --          -  C      gugacu 
+ ucagg g uc ugg ugc UGG  GUUCCUGGCA UG UGAUUU      u
+ ||||| | || ||| ||| |||  |||||||||| || ||||||       
+ gguuc c ag acc acg ACC  UAGGGACCGU AC ACUAaa      a
+c     - -  c   a   C   AU          U  -      auuaga",4,9,95085208,95085304,+,hsa-miR-23b-5p,                                    cloned [3],hsa-miR-23b-5p,                                    cloned [2-3]
+MI0000440,hsa-mir-27b,MIR27B,"-    -    aaca                 G    G       ugau   u 
+ accu cucu    aggugcAGAGCUUAGCU AUUG UGAACag    ugg  
+ |||| ||||    ||||||||||||||||| |||| |||||||    ||| u
+ ugga gaga    uccaCGUCUUGAAUCGG UGAC ACUUguu    gcc  
+g    a    --ag                 -    -       --uc   u",4,9,95085445,95085541,+,hsa-miR-27b-5p,                                    cloned [4-5],hsa-miR-27b-5p,                                    cloned [2-5]
+MI0000441,hsa-mir-30b,MIR30B,"a     uu      caU          U  -A        uaaua 
+ ccaag  ucaguu   GUAAACAUCC AC  CUCAGCUg     c
+ |||||  ||||||   |||||||||| ||  ||||||||      
+ gguuc  agucga   CAUUUGUAGG UG  GGGUCggu     a
+a     --      CUU          -  GA        uaggu",2,8,134800520,134800607,-,hsa-miR-30b-5p,                                    cloned [2-3],hsa-miR-30b-5p,                                    cloned [2]
+MI0000442,hsa-mir-122,MIR122,"c        -      GG       C           ugucu 
+ cuuagcag agcugU  AGUGUGA AAUGGUGUUUG     a
+ |||||||| ||||||  ||||||| |||||||||||      
+ ggaucguc ucgAUA  UCACACU UUACCGCAAac     a
+c        a      AA       A           uauca",2,18,58451074,58451158,+,hsa-miR-122-5p,"                                    cloned [2-3], Northern [2]",hsa-miR-122-5p,                                    cloned [3]
+MI0000449,hsa-mir-132,MIR132,"c   cccc    -  c a    a         UUC          --gu g 
+ cgc    gcgu cu c gggc ACCGUGGCU   GAUUGUUACU    g g
+ |||    |||| || | |||| |||||||||   ||||||||||    |  
+ gcg    cgca ga g cccG UGGUACCGA   CUGACAAUgg    c a
+c   cacc    c  c c    C         CAU          aggu a",2,17,2049908,2050008,-,hsa-miR-132-5p,                                    cloned [2],hsa-miR-132-5p,                                    cloned [2-3]
+MI0000450,hsa-mir-133a-1,MIR133A1,"a      uuu    g       AA  U  A        gccuc 
+ caaugc   gcua AGCUGGU  AA GG ACCAAAUc     u
+ ||||||   |||| |||||||  || || ||||||||      
+ guuacg   cgau UCGACCA  UU CC UGGUUUag     u
+a      uau    G       AC  C  C        guaac",2,18,21825698,21825785,-,hsa-miR-133a-3p,"                                    cloned [2], Illumina [3]",hsa-miR-133a-3p,                                    Illumina [3]
+MI0000454,hsa-mir-137,MIR137,"g u  u   --           ug   G             G      -  g 
+ g cc cug  acucucuucgg  ACG GUAUUCUUGGGUG AUAAUa cg a
+ | || |||  |||||||||||  ||| ||||||||||||| |||||| || u
+ c gg gac  ugagaggagcu  UGC CAUAAGAAUUCGU UAUUgu gc u
+a -  c   ca           GA   G             -      u  a",2,1,98046070,98046171,-,hsa-miR-137-3p,                                    cloned [2],hsa-miR-137-3p,
+MI0000457,hsa-mir-141,MIR141,"c    g    u   -u       --    U        -   ugg  ua 
+ ggcc gccc ggg  cCAUCUU  CCAG ACAGUGUU GGA   uc  a
+ |||| |||| |||  |||||||  |||| |||||||| |||   ||  u
+ uugg uggg ccc  GGUAGAA  GGUC UGUCACAA ccu   ag  u
+c    g    -   uc       AU    -        U   cga  ug",2,12,6964097,6964191,+,hsa-miR-141-5p,                                    cloned [3],hsa-miR-141-5p,                                    cloned [2-4]
+MI0000458,hsa-mir-142,MIR142,"g        g   c           A         Uaa ag a 
+ acagugca uca cCAUAAAGUAG AAGCACUAC   c  c c
+ |||||||| ||| ||||||||||| |||||||||   |  |  
+ ugucaugu agu GGUAUUUCAUC UUUGUGAUG   g  g u
+g        g   A           C         -Ug ga g",2,17,58331232,58331318,-,hsa-miR-142-5p,                                    cloned [3-4],hsa-miR-142-5p,                                    cloned [2-4]
+MI0000459,hsa-mir-143,MIR143,"  -    c  ccug    c ag      G         G      U  -  ag 
+gc gcag gc    ucuc c  ccugaG UGCAGUGCU CAUCUC GG Uc  u
+|| |||| ||    |||| |  |||||| ||||||||| |||||| || ||   
+cg cguc ug    agag g  ggaCUC AUGUCACGA GUAGAG cu ag  u
+  a    u  uuga    a aa      G         A      U  g  gg",2,5,149428918,149429023,+,hsa-miR-143-5p,                                    cloned [3],hsa-miR-143-5p,"                                    cloned [2-3], Illumina [4]"
+MI0000460,hsa-mir-144,MIR144,"-u   -    u      G        A         -A    gc 
+  ggg gccc ggcugG AUAUCAUC UAUACUGUA  Guuu  g
+  ||| |||| |||||| |||||||| |||||||||  ||||   
+  ccc cggg cugaUC UGUAGUAG AUAUGACAU  caga  a
+cc   a    c      A        -         ca    gu",4,17,28861533,28861618,-,hsa-miR-144-5p,                                    cloned [2],hsa-miR-144-5p,                                    cloned [2]
+MI0000461,hsa-mir-145,MIR145,"c   u  u     c  UC    U  C            uagau 
+ acc ug ccuca gG  CAGU UU CCAGGAAUCCCU     g
+ ||| || ||||| ||  |||| || ||||||||||||     c
+ ugg ac ggagu UC  GUCA AA GGUCCUUAGGgg     u
+u   u  u     -  UU    U  A            uagaa",2,5,149430646,149430733,+,hsa-miR-145-5p,                                    cloned [2-4],hsa-miR-145-5p,                                    cloned [4]
+MI0000462,hsa-mir-152,MIR152,"u    cc  c              G  A    CC    cgg   c 
+ gucc  cc ggcccAGGUUCUGU AU CACU  GACU   gcu u
+ ||||  || |||||||||||||| || ||||  ||||   |||  
+ cagg  gg ccgGGUUCAAGACA UA GUGA  CUga   cga g
+c    aa  c              G  C    --    ---   g",2,17,48037161,48037247,-,hsa-miR-152-3p,"                                    cloned [2-3], Illumina [4-5]",hsa-miR-152-3p,                                    Illumina [5]
+MI0000465,hsa-mir-191,MIR191,"c   u   c      CA         C  AA       --u   cu 
+ ggc gga agcggg  ACGGAAUCC AA  GCAGCUG   ugu  c
+ ||| ||| ||||||  ||||||||| ||  |||||||   |||  c
+ ccg ccu ucguCC  UGCUUUAGG UU  CGUCGac   acg  a
+u   u   c      CC         -  CG       cuu   ag",2,3,49020618,49020709,-,hsa-miR-191-5p,                                    cloned [2-5],hsa-miR-191-5p,                                    cloned [2-4]
+MI0000469,hsa-mir-125a,MIR125A,"u     u u      C       C    UA        ----  a 
+ gccag c cuaggU CCUGAGA CCUU  ACCUGUGA    gg c
+ ||||| | |||||| ||||||| ||||  ||||||||    ||  
+ cgguc g gguCCG GGGUUCU GGAG  UGGACAcu    cc a
+c     u c      A       U    --        ggga  u",3,19,51693254,51693339,+,hsa-miR-125a-5p,                                    cloned [2-3],hsa-miR-125a-5p,                                    cloned [2-3]
+MI0000472,hsa-mir-127,MIR127,"u     --c   guc   a   u   G         G  C      --  a 
+ gugau   acu   ucc gcc gCU AAGCUCAGA GG UCUGAU  uc g
+ |||||   |||   ||| ||| ||| ||||||||| || ||||||  || a
+ uacua   uga   agg ugg CGG UUCGAGUCU CC AGGCUa  ag a
+c     cuc   ---   c   U   -         G  U      cu  a",7,14,100882979,100883075,+,hsa-miR-127-5p,                                    cloned [3-4],hsa-miR-127-5p,                                    cloned [2-3]
+MI0000474,hsa-mir-134,MIR134,"c     gU        U  -A   G    ---    g 
+ agggu  GUGACUGG UG  CCA AGGG   Gcau c
+ |||||  |||||||| ||  ||| ||||   |||| a
+ ucccA  CACUGAUC AC  GGU UCCc   ugug c
+c     AC        C  CG   G    acu    u",16,14,101054687,101054759,+,hsa-miR-134-5p,"                                    cloned [2-4], Illumina [5]",hsa-miR-134-5p,                                    Illumina [5]
+MI0000475,hsa-mir-136,MIR136,"u        g        C     UUU          uuc 
+ gagcccuc gaggACUC AUUUG   UGAUGAUGGA   u
+ |||||||| |||||||| |||||   ||||||||||   u
+ cuugggag cuUCUGAG UAAAC   GCUACUACcu   a
+u        a        -     UCU          cgu",6,14,100884702,100884783,+,hsa-miR-136-5p,                                    cloned [2-4],hsa-miR-136-5p,                                    cloned [4]
+MI0000480,hsa-mir-154,MIR154,"g       u            U      -  --C U    uu 
+ ugguacu gaagaUAGGUUA CCGUGU UG   C UCGc  u
+ ||||||| |||||||||||| |||||| ||   | ||||  a
+ accauga uuuUUAUCCAGU GGCACA AC   g agug  u
+a       c            U      U  UAA c    uu",15,14,101059755,101059838,+,hsa-miR-154-5p,                                    cloned [3-4],hsa-miR-154-5p,"                                    cloned [2,4], Northern [2]"
+MI0000484,hsa-mir-188,MIR188,"u    -  uc   ca  UC         GU      -ugag u 
+ gcuc cc  ucu  CA  CCUUGCAUG  GGAGGG     c u
+ |||| ||  |||  ||  |||||||||  ||||||     | u
+ cgag gg  agg  GU  GGGACGUAC  CCUCcc     g c
+c    c  -u   AC  UU         AC      caaaa u",7,X,50003503,50003588,+,hsa-miR-188-5p,                                    cloned [2],hsa-miR-188-5p,                                    cloned [2-3]
+MI0000488,hsa-mir-194-1,MIR194-1,"a     -u       U         A      G    cu  gu 
+ uggug  uaucaag GUAACAGCA CUCCAU UGGA  gu  a
+ |||||  ||||||| ||||||||| |||||| ||||  ||   
+ accau  guaguuu cauugucgu gaggug accu  ua  c
+a     ug       u         a      -    -u  ac",2,1,220118157,220118241,-,hsa-miR-194-5p,                                    cloned [2-3],,
+MI0000489,hsa-mir-195,MIR195,"a   u     g  cU          -A          ca  gaa 
+ gcu cccug cu  AGCAGCACAG  AAUAUUGGCa  gg   g
+ ||| ||||| ||  ||||||||||  ||||||||||  ||    
+ ugg gggac ga  UCGUCGUGUC  UUAUAACCgu  cu   c
+g   u     g  CC          GG          --  gag",2,17,7017615,7017701,-,hsa-miR-195-5p,                                    cloned [2],hsa-miR-195-5p,                                    cloned [2]
+MI0000490,hsa-mir-206,MIR206,"u    c                        cc     u g uu 
+ gcuu ccgaggccacaugcuucuuuauau  ccaua g a  a
+ |||| ||||||||||||||||||||||||  ||||| | |   
+ ugaa ggcuuuGGUGUGUGAAGGAAUGUA  GGUau c u  c
+g    c                        -A     - g uu",2,6,52144349,52144434,+,hsa-miR-206,                                    cloned [2],,
+MI0000650,hsa-mir-200c,MIR200C,"c    -   -      A        U   u  ggu 
+ ccuC GUC UUACCC GCAGUGUU GGg gc   u
+ |||| ||| |||||| |||||||| ||| ||    
+ ggAG UAG AAUGGG CGUCAUAA cuc ug   g
+-    G   U      C        U   -  agg",2,12,6963699,6963766,+,hsa-miR-200c-5p,                                    cloned [3],hsa-miR-200c-5p,"                                    cloned [1-4], Northern [2]"
+MI0000683,hsa-mir-181b-2,MIR181B2,"cuga   -     cucAA         CU           u  gu 
+    ugg cugca     CAUUCAUUG  GUCGGUGGGUu ga  c
+    ||| |||||     |||||||||  ||||||||||| ||  u
+    acc ggcgu     GUAAGUAAC  UAGUCACUCaa cu  g
+acaa   a     caaAC         --           -  aa",2,9,124693710,124693798,+,hsa-miR-181b-5p,                                    cloned [3-5],hsa-miR-181b-5p,
+MI0000732,hsa-mir-194-2,MIR194-2,"-      c      cU         A      G    agu   c 
+ ugguuc cgcccc  GUAACAGCA CUCCAU UGGA   gcc a
+ |||||| ||||||  ||||||||| |||||| ||||   |||  
+ accggg gcgggG  UAUUGUCGU GGGGUG ACCu   ugg c
+g      a      UC         C      -    ---   u",3,11,64891355,64891439,-,hsa-miR-194-5p,                                    cloned [2-3],hsa-miR-194-5p,                                    cloned [3]
+MI0000734,hsa-mir-106b,MIR106B,"     c     -UA       G       A A    --  uc 
+ccugc ggggc   AAGUGCU ACAGUGC G Uagu  gg  c
+||||| |||||   ||||||| ||||||| | ||||  ||   
+ggacg ccuCG   UUCAUGG UGUCACG C aucg  cc  u
+     a     UCG       G       C -    ug  uc",3,7,100093993,100094074,-,hsa-miR-106b-5p,                                    cloned [3-6],hsa-miR-106b-5p,"                                    cloned [5-7], Northern [7]"
+MI0000735,hsa-mir-29c,MIR29C,"au        -  ggc           UCC       C   gucu 
+  cucuuaca ca   UGACCGAUUUC   UGGUGUU aga    g
+  |||||||| ||   |||||||||||   ||||||| |||    u
+  ggggaugu gu   AUUGGCUAAAG   ACCACGA Ucu    u
+ag        a  ---           UUU       -   guuu",2,1,207801852,207801939,-,hsa-miR-29c-5p,                                    cloned [3],hsa-miR-29c-5p,                                    cloned [2-4]
+MI0000736,hsa-mir-30c-1,MIR30C1,"a     cu    ugu U       U   ACA         guga   c 
+ ccaug  guag   g GUAAACA CCU   CUCUCAGCu    gcu  
+ |||||  ||||   | ||||||| |||   |||||||||    ||| a
+ gguac  cguc   C CAUUUGU GGG   GAGGGUCgg    ugg  
+a     --    uuC U       U   --A         ----   a",2,1,40757284,40757372,+,hsa-miR-30c-5p,"                                    cloned [2,4-6]",hsa-miR-30c-5p,                                    cloned [5]
+MI0000737,hsa-mir-200a,MIR200A,"c    - c   g        -            -----------     A 
+ cggg c ccu ugagCAUC UUACCGGACAGU           GCUGG u
+ |||| | ||| |||||||| ||||||||||||           ||||| u
+ gccc g gga acuUGUAG AAUGGUCUGUCA           cgacc u
+c    a u   a        C            CAAUcucaguu     c",3,1,1167863,1167952,+,hsa-miR-200a-5p,                                    cloned [3-4],hsa-miR-200a-5p,                                    cloned [3-5]
+MI0000738,hsa-mir-302a,MIR302A,"   c    U         U           gaa 
+cca cACU AAACGUGGA GUACUUGCUuu   a
+||| |||| ||||||||| |||||||||||   c
+ggu GUGG UUUGUACCU CGUGAAUgaag   u
+   A    U         U           aaa",5,4,112648183,112648251,-,hsa-miR-302a-5p,"                                    cloned [2,4], Northern [2]",hsa-miR-302a-5p,"                                    cloned [2,4], Northern [2]"
+MI0000740,hsa-mir-219a-2,MIR219A2,"a   a       c     U   U     AA           uac a   u 
+ cuc ggggcuu gccac GAU GUCCA  CGCAAUUCUug   g guc  
+ ||| ||||||| ||||| ||| |||||  |||||||||||   | ||| g
+ ggg ccucgag cggUG CUA CAGGU  GUGUUAAGAgc   c cgg  
+-   -       u     U   -     CG           caa -   c",2,9,128392618,128392714,-,hsa-miR-219a-5p,                                    cloned [3],hsa-miR-219a-5p,                                    cloned [3]
+MI0000742,hsa-mir-34b,MIR34B,"     cg    -gUA       UCA    C        -  g 
+gugcu  guuu    GGCAGUG   UUAG UGAUUGua cu u
+|||||  ||||    |||||||   |||| |||||||| || g
+cacgg  caaa    CCGUCAC   AAUC ACUAACau gg g
+     aa    acUA       CUC    -        u  u",2,11,111512938,111513021,+,hsa-miR-34b-5p,                                    cloned [2],hsa-miR-34b-5p,
+MI0000743,hsa-mir-34c,MIR34C,"a    ag     A   A    A     C      C  a 
+ gucu  uuacu GGC GUGU GUUAG UGAUUG ua u
+ ||||  ||||| ||| |||| ||||| |||||| ||  
+ uaga  aauGG CCG CACA CAAUC ACUAAc au a
+u    aa     A   G    C     -      c  g",2,11,111513439,111513515,+,hsa-miR-34c-5p,                                    cloned [2],hsa-miR-34c-5p,                                    cloned [2]
+MI0000744,hsa-mir-299,MIR299,"     a                      uu 
+aagaa UGGUUUACCGUCCCACAUACAU  u
+||||| ||||||||||||||||||||||  g
+uucUU GCCAAAUGGUAGGGUGUAUgua  a
+     C                      ua",13,14,101023794,101023856,+,hsa-miR-299-5p,                                    cloned [4],hsa-miR-299-5p,                                    cloned [3-4]
+MI0000746,hsa-mir-99b,MIR99B,"     cC         AC   C    --C g   c 
+ggcac  ACCCGUAGA  CGA CUUG   G ggc u
+|||||  |||||||||  ||| ||||   | |||  
+cuguG  UGGGUGUCU  GCU GAAC   c ccg u
+     CC         GU   C    aca g   c",3,19,51692612,51692681,+,hsa-miR-99b-5p,                                    cloned [4-6],hsa-miR-99b-5p,                                    cloned [5]
+MI0000747,hsa-mir-296,MIR296,"a   -      ca       C  C         G   ugc 
+ gga cccuuc  gAGGGCC CC CUCAAUCCU Uug   c
+ ||| ||||||  ||||||| || ||||||||| |||   u
+ ucu gggaag  CUCUCGG GG GGGUUGGGA Gac   a
+-   c      uC       A  U         -   uua",2,20,58817615,58817694,-,hsa-miR-296-5p,"                                    cloned [2,4-5]",hsa-miR-296-5p,                                    cloned [4]
+MI0000748,hsa-mir-130b,MIR130B,"      c    cA       CC         A  --a   g 
+ggccug ccga  CUCUUUC  UGUUGCACU Cu   uag c
+|||||| ||||  |||||||  ||||||||| ||   |||  
+cuggac ggcU  GGGAAAG  GUAACGUGA ga   guc c
+      u    AC       UA         C  agg   g",2,22,21653304,21653385,+,hsa-miR-130b-5p,                                    cloned [4-5],hsa-miR-130b-5p,                                    cloned [3-5]
+MI0000749,hsa-mir-30e,MIR30E,"g        uu   a            UU           g aag u 
+ ggcagucu  gcu cUGUAAACAUCC  GACUGGAAGcu u   g g
+ ||||||||  ||| ||||||||||||  ||||||||||| |   |  
+ ccgucgga  cgg GACAUUUGUAGG  CUGACUUUCga g   c u
+a        --   C            --           g aga u",2,1,40754355,40754446,+,hsa-miR-30e-5p,"                                    cloned [3,5-6]",hsa-miR-30e-5p,"                                    cloned [3,5]"
+MI0000762,hsa-mir-362,MIR362,"c             ACC        -A     a 
+ uugAAUCCUUGGA   UAGGUGUG  GUgcu u
+ |||||||||||||   ||||||||  ||||| u
+ aACUUAGGAACUU   AUCCACAC  cguga u
+a             ---        AA     c",8,X,50008964,50009028,+,hsa-miR-362-5p,"                                    array-cloned [1], cloned [2-3]",hsa-miR-362-5p,                                    cloned [3]
+MI0000764,hsa-mir-363,MIR363,"u   gu         CA  A         gaugagua 
+ guu  CGGGUGGAU  CG UGCAAUUUu        u
+ |||  |||||||||  || |||||||||         
+ caa  GUCUACCUA  GC ACGUUAAaa        c
+c   AU         UG  -         agaggaua",6,X,134169378,134169452,-,hsa-miR-363-5p,                                    cloned [2-3],hsa-miR-363-5p,"                                    array-cloned [1], cloned [2-3]"
+MI0000767,hsa-mir-365a,MIR365A,"acc      aa        AC           ----   -   uuu 
+   gcaggg  aaugAGGG  UUUUGGGGGCA    GAU GUG   c
+   ||||||  ||||||||  |||||||||||    ||| |||   c
+   cguucu  uUAUUCCU  AAAAUCCCCGU    cua cac   a
+--a      cg        -A           AAUa   u   cuu",2,16,14309285,14309371,+,hsa-miR-365a-3p,"                                    cloned [1,3-4], array-cloned [2]",hsa-miR-365a-3p,
+MI0000769,hsa-mir-365b,MIR365B,"agaguguucaa g   --       a        AC   C       -----    U   u 
+           g aca  gcaagaa aaugAGGG  UUU AGGGGCA     GCUG guu u
+           | |||  ||||||| ||||||||  ||| |||||||     |||| |||  
+           c ugu  cguucuu uUAUUCCU  AAA UCCCCGU     ugac cag c
+-----gggcua g   ga       g        -A   A       AAUac    u   u",2,17,31575411,31575521,+,hsa-miR-365b-5p,                                    454 [5],hsa-miR-365b-5p,"                                    cloned [1,3-4], array-cloned [2]"
+MI0000772,hsa-mir-302b,MIR302B,"gcucc    a   UU               U  guga 
+     cuuc ACU  AACAUGGAAGUGCUU Cu    c
+     |||| |||  ||||||||||||||| ||    u
+     gagG UGA  UUGUACCUUCGUGAA ga    u
+----u    A   UU               U  aaau",5,4,112648485,112648557,-,hsa-miR-302b-5p,"                                    cloned [1-2], Northern [1]",hsa-miR-302b-5p,"                                    cloned [1-2], Northern [1]"
+MI0000773,hsa-mir-302c,MIR302C,"        UU             C    -G   g 
+ccuuugcU  AACAUGGGGGUAC UGCU  ugu  
+||||||||  ||||||||||||| ||||  ||| a
+ggaGGUGA  UUGUACCUUCGUG AUga  aca  
+        CU             A    aa   a",5,4,112648363,112648430,-,hsa-miR-302c-5p,"                                    cloned [1-2], Northern [1]",hsa-miR-302c-5p,"                                    cloned [1-2], Northern [1]"
+MI0000774,hsa-mir-302d,MIR302D,"  uc     U                ---C   ga 
+cc  uACUU AACAUGGAGGCACUUG    ugu  c
+||  ||||| ||||||||||||||||    |||   
+gg  GUGAG UUGUACCUUCGUGAAU    aca  a
+  -U     U                aaaa   gu",5,4,112648004,112648071,-,hsa-miR-302d-5p,                                    cloned [2],hsa-miR-302d-5p,"                                    cloned [1-2], Northern [1]"
+MI0000775,hsa-mir-367,MIR367,"                UA     C    u gaa 
+ccauuACUGUUGCUAA  UGCAA UCUg u   u
+||||||||||||||||  ||||| |||| |    
+gguAGUGGUAACGAUU  ACGUU Aggu a   a
+                UC     A    u aau",5,4,112647874,112647941,-,hsa-miR-367-5p,                                    cloned [3],hsa-miR-367-5p,"                                    cloned [1-3], Northern [1]"
+MI0000776,hsa-mir-376c,MIR376C,"    G     UA     U         uguua 
+aaaa GUGGA  UUCCU CUAUGUUua     u
+|||| |||||  ||||| |||||||||     u
+uuuU CACCU  AAGGA GAUACAAau     u
+    G     UA     -         uggua",17,14,101039690,101039755,+,hsa-miR-376c-3p,"                                    cloned [1-2,4], Northern [1], SOLiD [5]",hsa-miR-376c-3p,                                    SOLiD [5]
+MI0000777,hsa-mir-369,MIR369,"u   a                UA      Cuuua 
+ uga gggAGAUCGACCGUGU  UAUUCG     u
+ ||| ||||||||||||||||  ||||||      
+ acu uUUUCUAGUUGGUACA  AUAAgc     u
+g   c                UA      uucag",10,14,101065598,101065667,+,hsa-miR-369-5p,                                    cloned [2-4],hsa-miR-369-5p,                                    cloned [1-4]
+MI0000779,hsa-mir-371a,MIR371A,"            CU    G         u   c 
+guggcACUCAAA  GUGG GGCACUuuc gcu u
+||||||||||||  |||| ||||||||| |||  
+cauUGUGAGUUU  UACC CCGUGAAag ugg c
+            UC    G         -   u",4,19,53787675,53787741,+,hsa-miR-371a-5p,                                    cloned [2],hsa-miR-371a-5p,"                                    cloned [1-2], Northern [1]"
+MI0000780,hsa-mir-372,MIR372,"gug   -         G -      A    ga g 
+   ggC CUCAAAUGU G AGCACU UUCU  u u
+   ||| ||||||||| | |||||| ||||  | c
+   cUG GAGUUUACA C UCGUGA AAgg  a c
+-ca   C         G G      -    ug a",4,19,53787890,53787956,+,hsa-miR-372-3p,"                                    cloned [1-2], Northern [1], Illumina [3]",hsa-miR-372-3p,                                    Illumina [3]
+MI0000781,hsa-mir-373,MIR373,"         -     G            uuuuug 
+gggauACUC AAAAU GGGGCGCUUUCC      u
+||||||||| ||||| ||||||||||||       
+cccUGUGGG UUUUA CUUCGUGAAGgg      c
+         G     G            ucaugu",4,19,53788705,53788773,+,hsa-miR-373-5p,                                    cloned [1],hsa-miR-373-5p,"                                    cloned [1-2], Northern [1]"
+MI0000782,hsa-mir-374a,MIR374A,"     c   c            C           u 
+uacau ggc aUUAUAAUACAA CUGAUAAGUGu a
+||||| ||| |||||||||||| |||||||||||  
+augug cug UAAUGUUAUGUU GACUAUUCacg u
+     u   U            A           a",2,X,74287286,74287357,-,hsa-miR-374a-5p,"                                    cloned [1-4], Northern [1]",hsa-miR-374a-5p,                                    cloned [3]
+MI0000784,hsa-mir-376a-1,MIR376A1,"u    g  A    C    U      --GUA   u 
+ aaaa GU GAUU UCCU CUAUGA     cau a
+ |||| || |||| |||| ||||||     ||| u
+ uuuU CA CUAA AGGA GAUACU     gua u
+c    G  C    A    -      Aauua   u",16,14,101040782,101040849,+,hsa-miR-376a-5p,"                                    cloned [2,4]",hsa-miR-376a-5p,"                                    cloned [1,3], SOLiD [4]"
+MI0000785,hsa-mir-377,MIR377,"uu              C   -    A    - uuu 
+  gagcAGAGGUUGCC UUG GUGA UUCg c   a
+  |||||||||||||| ||| |||| |||| |   u
+  uuUGUUUUCAACGG AAC CACU Aagu g   u
+-g              A   A    -    u uau",15,14,101062050,101062118,+,hsa-miR-377-5p,                                    cloned [3],hsa-miR-377-5p,                                    cloned [1-3]
+MI0000787,hsa-mir-379,MIR379,"    a    A       GA       -  uuau 
+agag UGGU GACUAUG  ACGUAGG cg    g
+|||| |||| |||||||  ||||||| ||     
+ucUC AUCA CUGGUAC  UGUAUcc gu    a
+    A    C       AA       a  cuuu",12,14,101022066,101022132,+,hsa-miR-379-5p,                                    cloned [2-4],hsa-miR-379-5p,                                    cloned [4]
+MI0000788,hsa-mir-380,MIR380,"      GUU       GA       C   c 
+aagaUG   GACCAUA  ACAUGCG uau u
+||||||   |||||||  ||||||| |||  
+UUCUAC   CUGGUAU  UGUAUgc gug c
+      -AC       AA       u   u",13,14,101025017,101025077,+,hsa-miR-380-5p,                                    cloned [3],hsa-miR-380-5p,
+MI0000789,hsa-mir-381,MIR381,"      a  C   G        U        g  uua 
+uacuua AG GAG UUGCCCUU GUAUAUuc gu   u
+|||||| || ||| |||||||| |||||||| ||    
+augagU UC CUC AACGGGAA CAUAUaag ua   u
+      G  U   G        -        g  cag",19,14,101045920,101045994,+,hsa-miR-381-3p,"                                    cloned [1-2], SOLiD [3]",hsa-miR-381-3p,                                    SOLiD [3]
+MI0000790,hsa-mir-382,MIR382,"    u       -A           UG      - uuu 
+uacu gaagaGA  GUUGUUCGUGG  GAUUCG c   a
+|||| |||||||  |||||||||||  |||||| |   c
+auga cuuuuUU  CAACAGGCACU  CUAAgc g   u
+    -       CA           UA      a uau",15,14,101054306,101054381,+,hsa-miR-382-5p,                                    cloned [1-3],hsa-miR-382-5p,
+MI0000805,hsa-mir-342,MIR342,"gaaac     u        G      --UA      AU     g ----   g 
+     ugggc caaggugA GGGUGC    UCUGUG  UGAgg a    cau g
+     ||||| |||||||| ||||||    ||||||  ||||| |    ||| u
+     auccg guuccacU CCCACG    AGACAC  ACUCU u    gua u
+-auuc     -        G      CUAA      --     g uaag   a",2,14,100109655,100109753,+,hsa-miR-342-5p,"                                    cloned [3-5], Northern [5]",hsa-miR-342-5p,                                    cloned [3-4]
+MI0000806,hsa-mir-337,MIR337,"guagucaguaguu         -   C   U     C        -   ca 
+             ggggggugg GAA GGC UCAUA AGGAGUUg aug  c
+             ||||||||| ||| ||| ||||| |||||||| |||   
+             uccccuaCU CUU CCG AGUAU UCCUCgac uau  a
+---------aacu         U   U   U     A        c   ug",7,14,100874493,100874585,+,hsa-miR-337-5p,                                    cloned [3],hsa-miR-337-5p,                                    cloned [3]
+MI0000807,hsa-mir-323a,MIR323A,"---uu      u g        G U     GC C  U    uua 
+     gguacu g agagAGGU G CCGUG  G GU CGCu   u
+     |||||| | |||||||| | |||||  | || ||||    
+     cuauga c uuUCUCCA C GGCAC  U CA gcgg   u
+cuaau      - g        G U     AU A  C    uau",13,14,101025732,101025817,+,hsa-miR-323a-5p,                                    cloned [3],hsa-miR-323a-5p,                                    cloned [3]
+MI0000812,hsa-mir-331,MIR331,"gaguuugguuuu         u        U    U       AUC  agau 
+            guuuggguu guuCUAGG AUGG CCCAGGG   Cc    c
+            ||||||||| |||||||| |||| |||||||   ||    a
+            cgaauccaa cAAGAUCC UAUC GGGUCCC   Gg    a
+----------cu         c        -    C       --C  acca",2,12,95308420,95308513,+,hsa-miR-331-5p,                                    cloned [3],hsa-miR-331-5p,                                    cloned [3-4]
+MI0000814,hsa-mir-338,MIR338,"   c      U   -         -   Gauga 
+ucu cAACAA AUC CUGGUGCUG AGU     c
+||| |||||| ||| ||||||||| |||     u
+aga GUUGUU UAG GACUACGAC Uca     c
+   a      U   U         C   gcgga",4,17,81125883,81125949,-,hsa-miR-338-5p,                                    cloned [3-4],hsa-miR-338-5p,                                    cloned [3]
+MI0000822,hsa-mir-133b,MIR133B,"----ccucagaagaaaga    --       c        ca  c  a      u  g    c 
+                  ugcc  cccugcu uggcuggu  aa gg accaag cc ucuu  
+                  ||||  ||||||| ||||||||  || || |||||| || |||| c
+                  acgg  gggacga AUCGACCA  UU CC UGGUUU gg agag  
+agagguuccugacccgua    uc       c        AC  C  C      -  -    u",2,6,52148923,52149041,+,hsa-miR-133b,                                    cloned [2],,
+MI0001445,hsa-mir-423,MIR423,"-----auaa       u            -AG   G    A     cua 
+         aggaagu aggcUGAGGGGC   AGA CGAG CUUUu   u
+         ||||||| ||||||||||||   ||| |||| |||||   u
+         uccuucg ucUGACUCCCCG   UCU GCUC GAaaa   u
+cgcgcccaa       u            GAG   G    -     ccu",2,17,30117079,30117172,+,hsa-miR-423-5p,"                                    cloned [2-4], Northern [4], Illumina [5]",hsa-miR-423-5p,"                                    cloned [1-2], Northern [1]"
+MI0001446,hsa-mir-424,MIR424,"---------------------       a  C      AA             g    c 
+                     cgagggg ua AGCAGC  UUCAUGUUUUGAA uguu  
+                     ||||||| || ||||||  ||||||||||||| |||| u
+                     gcucccc aU UCGUCG  GAGUGCAAAACuu guaa  
+gggguggaagauggaaggggu       c  A      CG             g    a",6,X,134546614,134546711,-,hsa-miR-424-5p,"                                    cloned [1-2], Northern [1]",hsa-miR-424-5p,                                    cloned [2-3]
+MI0001448,hsa-mir-425,MIR425,"     c  u    AAU       U  C     UUGA    gcacc 
+gaaag gc uugg   GACACGA CA UCCCG    gugg     c
+||||| || ||||   ||||||| || |||||    ||||      
+cuuuc cg gaCC   CUGUGCU GU AGGGC    UAcc     g
+     u  u    CGC       -  A     ----    gaaga",2,3,49020148,49020234,-,hsa-miR-425-5p,                                    cloned [2-4],hsa-miR-425-5p,                                    cloned [2-3]
+MI0001518,hsa-mir-18b,MIR18B,"   guU    U    C   U     U  ugaagca 
+ugu   AAGG GCAU UAG GCAGU AG       g
+|||   |||| |||| ||| ||||| ||        
+aCG   UUCC CGUA AUC CGUca uc       c
+   GUC    C    A   C     -  uaagauu",6,X,134170041,134170111,-,hsa-miR-18b-5p,                                    cloned [2],hsa-miR-18b-5p,                                    cloned [2]
+MI0001519,hsa-mir-20b,MIR20B,"     -CA           G     -GU    uu 
+aguac   AAGUGCUCAUA UGCAG   AGuu  g
+|||||   ||||||||||| |||||   ||||  g
+ucauG   UUCACGGGUAU AUGUC   ucag  c
+     ACC           G     Auc    ua",6,X,134169809,134169877,-,hsa-miR-20b-5p,"                                    array-cloned [2], cloned [3-5]",hsa-miR-20b-5p,                                    cloned [4]
+MI0001641,hsa-mir-429,MIR429,"cgc    c        -uc          ug       cugg 
+   cggc gaugggcg   uuaccagaca  guuagac    c
+   |||| ||||||||   ||||||||||  |||||||     
+   gucg cuaccUGC   AAUGGUCUGU  UAAUcug    c
+--c    c        CAA          CA       ucuc",3,1,1169005,1169087,+,hsa-miR-429,                                    cloned [1-4],,
+MI0001648,hsa-mir-449a,MIR449A,"-c             c       -    U          u aa   g 
+  ugugugugaugag UGGCAGU GUAU GUUAGCUGGU g  uau u
+  ||||||||||||| ||||||| |||| |||||||||| |  |||  
+  auauacguuauuc gucguca cgua caaucggcua c  gua g
+ac             u       a    -          - -g   a",3,5,55170532,55170622,-,hsa-miR-449a,                                    cloned [1-2],,
+MI0001652,hsa-mir-450a-1,MIR450A1,"--aaac     u       UUU     U              cac 
+      gauac aaacugu   UGCGA GUGUUCCUAAUAUg   u
+      ||||| |||||||   ||||| ||||||||||||||   a
+      cuaug uuugaUA   ACGUU UACAAGGGUUAuau   u
+auauaa     u       UGU     U              aaa",6,X,134540341,134540431,-,hsa-miR-450a-5p,"                                    array-cloned [1,3], cloned [1,4]",hsa-miR-450a-5p,                                    Illumina [5]
+MI0001721,hsa-mir-431,MIR431,"---------------ucc  c     c       U          C  U A     ----   aca 
+                  ug uuguc ugcgagg GUCUUGCAGG CG C UGCAg    gcc   c
+                  || ||||| ||||||| |||||||||| || | |||||    |||    
+                  ac agcag acgcUCU CGGGACGUUC GC G ACguu    ugg   u
+gcagcaaccacuacuccu  -     a       U          U  U G     gcaa   cag",7,14,100881007,100881120,+,hsa-miR-431-5p,                                    cloned [1-2],hsa-miR-431-5p,                                    cloned [2]
+MI0001723,hsa-mir-433,MIR433,"  gg      gUA   U           U   --------  g     cu 
+cc  ggagaa   CGG GAGCCUGUCAU AUU        Ca agagg  a
+||  ||||||   ||| ||||||||||| |||        || |||||   
+gg  ccucuU   GCU CUCGGGUAGUA UAg        gu ucucc  g
+  -a      GUG   C           C   gaagaguu  g     ua",7,14,100881886,100881978,+,hsa-miR-433-3p,"                                    cloned [1-2], Illumina [3]",hsa-miR-433-3p,                                    Illumina [3]
+MI0001725,hsa-mir-329-1,MIR329-1,"     cu           UU      UUC      u  aa 
+gguac  gaagaGAGGUU  CUGGGU   UGUUUC uu  u
+|||||  |||||||||||  ||||||   |||||| ||   
+cuaug  cuUUUCUCCAA  GGUCCA   ACAAag ag  g
+     ac           UU      --C      c  ga",13,14,101026785,101026864,+,hsa-miR-329-3p,"                                    cloned [1,3-4], array-cloned [2], Illumina [5]",hsa-miR-329-3p,                                    Illumina [5]
+MI0001726,hsa-mir-329-2,MIR329-2,"g      cu           UU      UUC      u  au 
+ ugguac  gaagaGAGGUU  CUGGGU   UGUUUC uu  u
+ ||||||  |||||||||||  ||||||   |||||| ||   
+ acuaug  cuUUUCUCCAA  GGUCCA   ACAAag ag  g
+a      ac           UU      --C      c  ga",13,14,101027100,101027183,+,hsa-miR-329-3p,"                                    cloned [1,3-4], array-cloned [2], Illumina [5]",hsa-miR-329-3p,                                    Illumina [5]
+MI0001729,hsa-mir-451a,MIR451A,"c     a         A                 A 
+ uuggg auggcaagg AACCGUUACCAUUACUG G
+ ||||| ||||||||| |||||||||||||||||  
+ gaccc uaucguucu uugguaaugguaaugau U
+a     a         c                 U",4,17,28861369,28861440,-,hsa-miR-451a,                                    cloned [1-3],,
+MI0001733,hsa-mir-452,MIR452,"  u          AAC G        G  A        uuug 
+gc aagcacuuac   U UUUGCAGA GA ACUGAgac    u
+|| ||||||||||   | |||||||| || ||||||||    a
+cg uucGUGAAUG   A AAACGUCU CU ugacucug    a
+  u          --A G        A  C        uauc",2,X,151959628,151959712,-,hsa-miR-452-5p,"                                    cloned [1,3-5], array-cloned [2]",hsa-miR-452-5p,"                                    array-cloned [2], cloned [4]"
+MI0001735,hsa-mir-409,MIR409,"      u       A    AC         -    - AUc 
+ugguac cggggag GGUU  CCGAGCAAC UUUG C   u
+|||||| ||||||| ||||  ||||||||| |||| |    
+acuaug gcuuuUC CCAA  GGCUCGUUG AAGc g   g
+      -       C    GU         U    a cag",11,14,101065300,101065378,+,hsa-miR-409-5p,"                                    cloned [1,3-4]",hsa-miR-409-5p,"                                    cloned [1,3-4], array-cloned [2]"
+MI0002464,hsa-mir-412,MIR412,"----cug      gg      a    C      U   AA    -    u 
+       ggguac  ggaugg UGGU GACCAG UGG  AGUA AUug u
+       ||||||  |||||| |||| |||||| |||  |||| ||||  
+       ccuaug  ccUGCC AUCA CUGGUC ACU  UCAu uaau u
+gacgucg      --      G    C      C   --    g    c",10,14,101065447,101065537,+,hsa-miR-412-3p,                                    Illumina [2],hsa-miR-412-3p,
+MI0002465,hsa-mir-410,MIR410,"     c      g            A  A     - uuuu 
+gguac ugagaa AGGUUGUCUGUG UG GUUCG c    a
+||||| |||||| |||||||||||| || ||||| |     
+ccaug acuuuU UCCGGUAGACAC AU UAAgc g    u
+     -      G            A  A     a uaau",10,14,101065912,101065991,+,hsa-miR-410-3p,"                                    array-cloned [2], cloned [3-5], Northern [3], Illumina [6]",hsa-miR-410-3p,                                    Illumina [6]
+MI0002466,hsa-mir-376b,MIR376B,"    ccuuc         u           A     U     -UUU  guga 
+cagu     uuugguauu aaaaCGUGGAU UUCCU CUAUG    ac    u
+||||     ||||||||| ||||||||||| ||||| |||||    ||     
+gucg     aaacuauga uuUUGUACCUA AAGGA GAUAC    ug    u
+    ----u         c           A     -     UAau  gucc",16,14,101040436,101040535,+,hsa-miR-376b-3p,"                                    cloned [3], SOLiD [4]",hsa-miR-376b-3p,                                    SOLiD [4]
+MI0002469,hsa-mir-485,MIR485,"   u         CU       -    A    auuc 
+acu ggagAGAGG  GGCCGUG AUGA UUCg    a
+||| |||||||||  ||||||| |||| ||||    u
+uga uuUCUCUCC  UCGGCAC UACU Gagc    c
+   u         UC       A    -    gaaa",17,14,101055419,101055491,+,hsa-miR-485-5p,"                                    array-cloned [2], cloned [3]",hsa-miR-485-5p,"                                    cloned [1,3], array-cloned [2]"
+MI0002470,hsa-mir-486-1,MIR486-1,"gc                       gcccuuca 
+  aUCCUGUACUGAGCUGCCCCGAG        u
+  |||||||||||||||||||||||         
+  UAGGACAUGACUCGACGGGGCuc        g
+ca                       gacccguc",2,8,41660441,41660508,-,hsa-miR-486-5p,                                    Illumina [1],hsa-miR-486-5p,                                    Illumina [1]
+MI0002471,hsa-mir-487a,MIR487A,"      u     G   UUA      C    -    - uua 
+gguacu gaaga UGG   UCCCUG UGUG UUCG c   a
+|||||| ||||| |||   |||||| |||| |||| |   u
+cuauga uuuUU ACC   AGGGAC AUAC AAgc g   u
+      c     G   UAC      -    U    a uau",17,14,101052446,101052525,+,hsa-miR-487a-3p,"                                    cloned [1-3], Northern [1], Illumina [4]",hsa-miR-487a-3p,                                    Illumina [4]
+MI0003124,hsa-mir-489,MIR489,"       c     G             C C    Ua     a 
+guggcag uuggu GUCGUAUGUGUGA G CAUU  cuuga c
+||||||| ||||| ||||||||||||| | ||||  |||||  
+caucguc aauCG CGGCAUAUACACU C GUGa  ggauu c
+       a     A             A A    --     u",2,7,93483936,93484019,-,hsa-miR-489-3p,"                                    array-cloned [1], cloned [2], Illumina [3]",hsa-miR-489-3p,                                    Illumina [3]
+MI0003132,hsa-mir-493,MIR493,"     cuc        U                    cauucgu 
+cuggc   cagggcuU GUACAUGGUAGGCUUUCAUU       u
+|||||   |||||||| ||||||||||||||||||||       u
+gaccg   gucccGGA CGUGUGUCAUCUGGAAGUgg       g
+     --u        C                    cuuacac",3,14,100869060,100869148,+,hsa-miR-493-5p,"                                    array-cloned [1], cloned [2-3]",hsa-miR-493-5p,                                    cloned [2-3]
+MI0003133,hsa-mir-432,MIR432,"   -  c       U U     UA       G     a   u -  uu 
+uga cu cuccagg C UGGAG  GGUCAUU GGUGG ucc c ua  u
+||| || ||||||| | |||||  ||||||| ||||| ||| | ||   
+acu ga gagguUC G ACCUC  UCGGUAG UCacc ggg g au  c
+   a  u       U U     -C       G     -   u c  uc",7,14,100884483,100884576,+,hsa-miR-432-5p,"                                    array-cloned [1], cloned [2-3]",hsa-miR-432-5p,                                    array-cloned [1]
+MI0003134,hsa-mir-494,MIR494,"      c            G       -   C   -  Uuu 
+gauacu gaaggagAGGUU UCCGUGU UGU UUC UC   a
+|||||| |||||||||||| ||||||| ||| ||| ||   u
+cuauga uuuuuuCUCCAA GGGCACA ACA AAG ag   u
+      -            A       U   -   U  uau",13,14,101029634,101029714,+,hsa-miR-494-3p,"                                    array-cloned [1], cloned [2-3], Illumina [4]",hsa-miR-494-3p,                                    Illumina [4]
+MI0003135,hsa-mir-495,MIR495,"       u          U  -       AU     - uuu 
+ugguacc gaaaaGAAGU GC CCAUGUU  UUUCG c   a
+||||||| |||||||||| || |||||||  ||||| |   u
+acuaugg uuuUUCUUCA CG GGUACAA  AAAgc g   a
+       c          -  U       AC     a ugu",18,14,101033755,101033836,+,hsa-miR-495-3p,"                                    array-cloned [1], cloned [2], SOLiD [3]",hsa-miR-495-3p,                                    SOLiD [3]
+MI0003136,hsa-mir-496,MIR496,"      -----uca     u    u        u     gu         uua 
+cccaag        gguac cgaa ggagguug ccaug  guguucauu   u
+||||||        ||||| |||| |||||||| |||||  |||||||||    
+ggguuc        ucaug gcuu cCUCUAAC GGUAC  UAUGAGUag   u
+      uucuuaac     -    u        C     AU         uau",15,14,101060573,101060674,+,hsa-miR-496,"                                    array-cloned [1], cloned [2]",,
+MI0003137,hsa-mir-193b,MIR193B,"            u               G  A  A  uua 
+guggucucagaa CGGGGUUUUGAGGGC AG UG gu   u
+|||||||||||| ||||||||||||||| || || ||   g
+uacugggguuuU GCCCUGAAACUCCCG UC Ac ua   u
+            C               G  A  c  uuu",2,16,14303967,14304049,+,hsa-miR-193b-5p,                                    cloned [3-4],hsa-miR-193b-5p,"                                    array-cloned [1], cloned [2-4]"
+MI0003138,hsa-mir-497,MIR497,"cca  c    ----   g         - -----    G    C         U  --   ac 
+   cc cggu    ccu cucccgccc C     AGCA CACA UGUGGUUUG ac  ggc  u
+   || ||||    ||| ||||||||| |     |||| |||| ||||||||| ||  |||   
+   gg gccg    gga ggggguggg g     UUGU GUGU ACACCAAAC ug  ccg  g
+---  a    ccac   -         a cgAGA    G    C         c  ca   gu",2,17,7017911,7018022,-,hsa-miR-497-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-497-5p,                                    cloned [2]
+MI0003139,hsa-mir-181d,MIR181D,"      --      -     ----aca   ga       aucA         GUUG          g  a gac 
+gucccc  uccccu aggcc       gcc  ggucaca    ACAUUCAUU    UCGGUGGGUu ug g   u
+||||||  |||||| |||||       |||  |||||||    |||||||||    |||||||||| || |    
+cagggg  agggga uucgg       cgg  ucggugu    UGUAAGUAG    GGCCACCcag ac c   g
+      ua      a     cacagac   -g       -CAC         --GG          -  - gga",2,19,13874875,13875011,+,hsa-miR-181d-5p,"                                    array-cloned [1], cloned [2], Illumina [3]",hsa-miR-181d-5p,                                    Illumina [3]
+MI0003140,hsa-mir-512-1,MIR512-1,"u       ug   CA      CU   G         uggug 
+ cucaguc  ugg  CUCAGC  UGA GGCACUUUC     c
+ |||||||  |||  ||||||  ||| |||||||||      
+ gagucag  acC  GAGUCG  ACU UCGUGAAag     c
+g       ua   UG      AU   G         uaaga",5,19,53666679,53666762,+,hsa-miR-512-5p,                                    array-cloned [1],hsa-miR-512-5p,"                                    array-cloned [1], cloned [2]"
+MI0003141,hsa-mir-512-2,MIR512-2,"   a   --       ug   CA      CU   G         uggug 
+ggu cuu  cucaguc  ugg  CUCAGC  UGA GGCACUUUC     c
+||| |||  |||||||  |||  ||||||  ||| |||||||||      
+cca gag  gagucag  acC  GAGUCG  ACU UCGUGAAag     c
+   c   cg       ua   UG      AU   G         uaaga",6,19,53669157,53669254,+,hsa-miR-512-5p,                                    array-cloned [1],hsa-miR-512-5p,"                                    array-cloned [1], cloned [2]"
+MI0003142,hsa-mir-498,MIR498,"aaccc        aagugaag            -        - A     C       uaua 
+     uccuuggg        cucaggcuguga UUUCAAGC C GGGGG GUUUUUC    a
+     ||||||||        |||||||||||| |||||||| | ||||| |||||||    c
+     aggaaucu        gaguuugacacu GAAGUUCG G CCUCC CGAAAag    u
+-uuga        gcuaacga            C        A A     A       uagg",8,19,53674197,53674320,+,hsa-miR-498-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-498-5p,                                    Illumina [3]
+MI0003143,hsa-mir-520e,MIR520E,"    cu  u             U       G     Guug   g 
+ucuc  gc gugaccCUCAAGA GGAAGCA UUUCU    ucu  
+||||  || ||||||||||||| ||||||| |||||    ||| a
+agag  ug cauuGGGAGUUUU CCUUCGU AAAga    gga  
+    uu  u             U       G     --aa   a",9,19,53675711,53675797,+,hsa-miR-520e-3p,                                    array-cloned [1],hsa-miR-520e-3p,                                    Illumina [2]
+MI0003144,hsa-mir-515-1,MIR515-1,"     u     c  U           A    UU      gu 
+ucuca gcagu aU CUCCAAAAGAA GCAC  UCUGuu  c
+||||| ||||| || ||||||||||| ||||  ||||||  u
+agagu uguca UG GAGGUUUUCUU CGUG  AGacga  g
+     u     U  C           C    --      aa",10,19,53679003,53679085,+,hsa-miR-515-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-515-5p,"                                    array-cloned [1], cloned [2]"
+MI0003145,hsa-mir-519e,MIR519E,"     u     c  U   C       A      UC     ga 
+ucuca gcagu aU CUC AAAAGGG GCACUU  uguuu  a
+||||| ||||| || ||| ||||||| ||||||  |||||   
+agagu uguca UG GAG UUUUCCU CGUGAA  acaaa  a
+     u     U  U   A       C      --     ag",9,19,53679940,53680023,+,hsa-miR-519e-5p,                                    array-cloned [1],hsa-miR-519e-5p,"                                    array-cloned [1], cloned [2]"
+MI0003146,hsa-mir-520f,MIR520F,"        u                        ---------    u 
+ucucaggc gugacCCUCUAAAGGGAAGCGCUU         UCUg g
+|||||||| ||||||||||||||||||||||||         ||||  
+aggguuug caUUGGGAGAUUUUCCUUCGUGAA         agac g
+        c                        cgaaaagaa    u",9,19,53682159,53682245,+,hsa-miR-520f-3p,"                                    array-cloned [1], Illumina [2]",hsa-miR-520f-3p,                                    Illumina [2]
+MI0003147,hsa-mir-515-2,MIR515-2,"     u     c  U           A    UU      gu 
+ucuca gcagu aU CUCCAAAAGAA GCAC  UCUGuu  c
+||||| ||||| || ||||||||||| ||||  ||||||  u
+agagu uguca UG GAGGUUUUCUU CGUG  AGacga  g
+     u     U  C           C    --      aa",9,19,53685009,53685091,+,hsa-miR-515-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-515-5p,"                                    array-cloned [1], cloned [2]"
+MI0003148,hsa-mir-519c,MIR519C,"      c      c            A         Guug   g 
+ucucag cuguga cCUCUAGAGGGA GCGCUUUCU    ucu  
+|||||| |||||| |||||||||||| |||||||||    ||| a
+agaguu gacauU GGAGAUUUUUCU CGUGAAAga    aga  
+      u      A            A         --aa   a",9,19,53686469,53686555,+,hsa-miR-519c-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-519c-5p,                                    array-cloned [1]
+MI0003149,hsa-mir-520a,MIR520A,"         u   cC                    g  g  u 
+cucaggcug gac  UCCAGAGGGAAGUACUUUCU uu uc  
+||||||||| |||  |||||||||||||||||||| || || g
+gaguuuggc uUG  AGGUUUCCCUUCGUGAAAga aa ag  
+         u   UC                    a  g  a",10,19,53690881,53690965,+,hsa-miR-520a-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-520a-5p,                                    array-cloned [1]
+MI0003150,hsa-mir-526b,MIR526B,"      u    c     U                G  g c 
+ucaggc guga cCUCU GAGGGAAGCACUUUCU Uu u u
+|||||| |||| ||||| |||||||||||||||| || | g
+agucug cauu GGAGA UUUCCUUCGUGAAAGa aa a a
+      u    C     U                g  g a",11,19,53694393,53694475,+,hsa-miR-526b-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-526b-5p,"                                    array-cloned [1], cloned [2]"
+MI0003151,hsa-mir-519b,MIR519B,"  u  u    c            A         Guug   g 
+ca gc guga cCUCUAGAGGGA GCGCUUUCU    ucu  
+|| || |||| |||||||||||| |||||||||    ||| a
+gu ug cauU GGAGAUUUUCCU CGUGAAAga    aga  
+  u  u    U            A         --aa   a",10,19,53695213,53695293,+,hsa-miR-519b-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-519b-5p,"                                    array-cloned [1], cloned [2]"
+MI0003152,hsa-mir-525,MIR525,"             u   C       U  A      cuuaug 
+cucaagcugugac CUC AGAGGGA GC CUUUCU      u
+||||||||||||| ||| ||||||| || ||||||      g
+ggguuuggcauuG GAG UUUCCCU CG GGAAGa      a
+             C   A       U  C      aaaaaa",11,19,53697533,53697617,+,hsa-miR-525-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-525-5p,"                                    array-cloned [1], cloned [2]"
+MI0003153,hsa-mir-523,MIR523,"     ugcu           G          U    Guug   g 
+ucuca    gugaccCUCUA AGGGAAGCGC UUCU    ucu  
+|||||    ||||||||||| |||||||||| ||||    ||| a
+agagu    cauUGGGAGAU UCCCUUCGCG AAGa    aga  
+     uucc           A          C    --aa   a",11,19,53698385,53698471,+,hsa-miR-523-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-523-5p,"                                    array-cloned [1], cloned [2]"
+MI0003154,hsa-mir-518f,MIR518F,"     ugcu    c               A     ---    gu 
+ucuca    guga cCUCUAGAGGGAAGC CUUUC   UCuu  c
+|||||    |||| ||||||||||||||| |||||   ||||   
+agagu    cauu GGAGAUUUCUCUUCG GAAAG   agaa  u
+     uucu    a               C     aaa    aa",11,19,53700015,53700101,+,hsa-miR-518f-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-518f-5p,"                                    array-cloned [1], cloned [2]"
+MI0003155,hsa-mir-520b,MIR520B,"       C               guug   g 
+cCCUCUA AGGGAAGCGCUUUCu    ucu  
+||||||| |||||||||||||||    ||| a
+GGGAGAU UUCCUUCGUGAAAga    aga  
+       U               --aa   a",11,19,53701227,53701287,+,hsa-miR-520b-3p,                                    array-cloned [1],hsa-miR-520b-3p,                                    Illumina [2]
+MI0003156,hsa-mir-518b,MIR518B,"   u       c    c      a       uc    g   g 
+uca gcugugg ccuc agaggg agcgcuu  uguu ucu  
+||| ||||||| |||| |||||| |||||||  |||| ||| a
+agu uggcauu GGAG UUUCCC UCGCGAA  ACaa aga  
+   u       U    A      C       --    a   a",12,19,53702737,53702819,+,hsa-miR-518b,"                                    array-cloned [1], cloned [2]",,
+MI0003157,hsa-mir-526a-1,MIR526A1,"      cu    c               A      G  g  u 
+cucagg  guga cCUCUAGAGGGAAGC CUUUCU uu cu g
+||||||  |||| ||||||||||||||| |||||| || ||  
+gaguuu  cauu GGAGAUUUUCCUUCG GAAAGa aa ga a
+      cu    A               C      g  -  a",11,19,53706252,53706336,+,hsa-miR-526a-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-526a-5p,                                    Illumina [3]
+MI0003158,hsa-mir-520c,MIR520C,"        u  cg                       Guug   g 
+ucucaggc gu  ucCUCUAGAGGGAAGCACUUUCU    ucu  
+|||||||| ||  |||||||||||||||||||||||    ||| a
+agaguuug ca  GGGAGAUUUUCCUUCGUGAAAga    aga  
+        c  uU                       --aa   a",12,19,53707453,53707539,+,hsa-miR-520c-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-520c-5p,"                                    array-cloned [1], cloned [2]"
+MI0003159,hsa-mir-518c,MIR518C,"gcgagaaga     u        U              A   UC    g   g 
+         ucuca gcugugac CUCUGGAGGGAAGC CUU  UGuu ucu  
+         ||||| |||||||| |||||||||||||| |||  |||| ||| a
+         agagu uggcauUG GAGAUUUCUCUUCG GAA  ACaa aga  
+----cgaaa     u        U              C   --    a   a",10,19,53708735,53708835,+,hsa-miR-518c-5p,                                    array-cloned [1],hsa-miR-518c-5p,"                                    array-cloned [1], cloned [2]"
+MI0003160,hsa-mir-524,MIR524,"     u        c  A           A      Cuug   a 
+ucuca gcugugac CU CAAAGGGAAGC CUUUCU    ucc  
+||||| |||||||| || ||||||||||| ||||||    ||| a
+agagu uggcauug GA GUUUCCCUUCG GGAAGa    agg  
+     u        U  G           C      --aa   a",10,19,53711002,53711088,+,hsa-miR-524-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-524-5p,                                    array-cloned [1]
+MI0003161,hsa-mir-517a,MIR517A,"              C       U   A    U    guugua 
+ucucaggcagugac CUCUAGA GGA GCAC GUCU      u
+|||||||||||||| ||||||| ||| |||| ||||      a
+agaguuugucauUG GAGAUUU CCU CGUG UAga      a
+              U       C   A    C    aaagaa",11,19,53712268,53712354,+,hsa-miR-517-5p,                                    array-cloned [1],hsa-miR-517-5p,"                                    array-cloned [1], cloned [2]"
+MI0003162,hsa-mir-519d,MIR519D,"     u  u     C   C       A      UC      uuu 
+uccca gc gugac CUC AAAGGGA GCGCUU  UGUUug   u
+||||| || ||||| ||| ||||||| ||||||  ||||||    
+agggu ug cauuG GAG UUUCCCU CGUGAA  ACaaau   c
+     u  c     U   A       C      --      ucu",10,19,53713347,53713434,+,hsa-miR-519d-3p,"                                    array-cloned [1], cloned [2], Illumina [3]",hsa-miR-519d-3p,                                    Illumina [3]
+MI0003163,hsa-mir-521-2,MIR521-2,"     g  u     u   c         aauu   ---    gu 
+ucucg gc gugac cuc aaagggaag    uuc   ucuu  c
+||||| || ||||| ||| |||||||||    |||   ||||   
+agagu ug cauUG GAG UUUCCCUUC    AAg   agaa  u
+     g  c     U   A         ACGC   aaa    aa",10,19,53716594,53716680,+,hsa-miR-521,"                                    array-cloned [1], cloned [2]",,
+MI0003164,hsa-mir-520d,MIR520D,"             g  UA           C      guug   a 
+ucucaagcuguga uC  CAAAGGGAAGC CUUUCu    ucu  
+||||||||||||| ||  ||||||||||| ||||||    ||| a
+agaguuuggcauU GG  GUUUCUCUUCG GAAAga    aga  
+             G  UG           U      --aa   a",10,19,53720096,53720182,+,hsa-miR-520d-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-520d-5p,"                                    array-cloned [1], cloned [2]"
+MI0003165,hsa-mir-517b,MIR517B,"     C       U   A    U    guugu 
+gugac CUCUAGA GGA GCAC GUCU     c
+||||| ||||||| ||| |||| ||||     u
+cauUG GAGAUUU CCU CGUG UAga     a
+     U       C   A    C    aaaga",10,19,53721076,53721142,+,hsa-miR-517-5p,                                    array-cloned [1],hsa-miR-517-5p,                                    array-cloned [1]
+MI0003166,hsa-mir-520g,MIR520G,"     u  u     c         -        UC     guugu 
+uccca gc gugac cUCUAGAGG AAGCACUU  UGUUU     c
+||||| || ||||| ||||||||| ||||||||  |||||     u
+agggu ug cauUG GAGAUUUCC UUCGUGAA  ACAaa     g
+     u  c     U         C        --     aaaga",10,19,53722166,53722255,+,hsa-miR-520g-3p,"                                    array-cloned [1], cloned [2], Illumina [3]",hsa-miR-520g-3p,                                    Illumina [3]
+MI0003167,hsa-mir-516b-2,MIR516B2,"     -u  u      A        UAA          g guuu 
+ucuca  ga gugacc UCUGGAGG   GAAGCACUUU u    u
+|||||  || |||||| ||||||||   |||||||||| |     
+agagu  cu cauUGG AGACUUUC   CUUCGUgaaa a    g
+     uu  -      G        ---          g aagu",9,19,53725442,53725526,+,hsa-miR-516b-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-516b-5p,                                    array-cloned [1]
+MI0003168,hsa-mir-526a-2,MIR526A2,"          A      A   CU    Guug 
+gugaccCUCU GAGGGA GCA  UUCU    a
+|||||||||| |||||| |||  ||||    a
+cauugggaga uuuccu cgu  aaga    a
+          c      a   ac    aaag",9,19,53726922,53726986,+,hsa-miR-526a-5p,"                                    array-cloned [1], cloned [2]",,
+MI0003169,hsa-mir-518e,MIR518E,"      -  ug    c    A                Guuggc 
+ucucag gc  ugac CUCU GAGGGAAGCGCUUUCU      u
+|||||| ||  |||| |||| ||||||||||||||||      a
+agaguu cg  auuG GAGA UUCCCUUCGCGAAAga      a
+      u  ca    U    C                aaagaa",10,19,53729838,53729925,+,hsa-miR-518e-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-518e-5p,"                                    array-cloned [1], cloned [2]"
+MI0003170,hsa-mir-518a-1,MIR518A1,"             -  -            C      g  g c 
+ucucaagcuguga CU GCAAAGGGAAGC CUUUCu uu u u
+||||||||||||| || |||||||||||| |||||| || | g
+agaguuuggcauu GG CGUUUCCCUUCG GAAAGa aa a a
+             A  U            C      g  g a",9,19,53731006,53731090,+,hsa-miR-518a-5p,                                    array-cloned [1],hsa-miR-518a-5p,"                                    array-cloned [1], cloned [2]"
+MI0003171,hsa-mir-518d,MIR518D,"  c  u        c              A    CU   g   g 
+uc ca gcugugac CUCUAGAGGGAAGC CUUU  Guu ucu  
+|| || |||||||| |||||||||||||| ||||  ||| ||| a
+ag gu uggcauug GAGGUUUCCCUUCG GAAA  caa aga  
+  a  u        C              C    -C   -   a",9,19,53734877,53734963,+,hsa-miR-518d-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-518d-5p,                                    array-cloned [1]
+MI0003172,hsa-mir-516b-1,MIR516B1,"       cu      A        UAA            g    g 
+ucucagg  gugacc UCUGGAGG   GAAGCACUUUcu uuuu u
+|||||||  |||||| ||||||||   |||||||||||| |||| g
+agaguuu  cauUGG AGACUUUC   CUUCGUgaaaga aaga a
+       cu      G        ---            a    a",8,19,53736845,53736934,+,hsa-miR-516b-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-516b-5p,                                    array-cloned [1]
+MI0003173,hsa-mir-518a-2,MIR518A2,"             g   -            C      g  g c 
+ucucaagcugugg uCU GCAAAGGGAAGC CUUUCu uu u u
+||||||||||||| ||| |||||||||||| |||||| || | a
+agaguuuggcauu AGG CGUUUCCCUUCG GAAAGa aa a a
+             -   U            C      g  g a",8,19,53739333,53739419,+,hsa-miR-518a-5p,                                    array-cloned [1],hsa-miR-518a-5p,"                                    array-cloned [1], cloned [2]"
+MI0003174,hsa-mir-517c,MIR517C,"gaaga              C       U   A    U    guugu 
+     ucucaggcagugac CUCUAGA GGA GCAC GUCU     c
+     |||||||||||||| ||||||| ||| |||| ||||     u
+     agaguuugucauUG GAGAUUU CCU CGUG UAga     a
+cuaaa              U       U   A    C    aaaga",7,19,53741313,53741407,+,hsa-miR-517-5p,                                    array-cloned [1],hsa-miR-517-5p,"                                    array-cloned [1], cloned [2]"
+MI0003175,hsa-mir-520h,MIR520H,"     u  u     cc        -        uc     guugu 
+uccca gc gugac  ucuagagg aagcacuu  uguuu     c
+||||| || |||||  |||||||| ||||||||  |||||     u
+agggu ug cauUG  AGAUUUCC UUCGUGAA  ACAaa     g
+     u  u     --        C        --     aaaga",8,19,53742512,53742599,+,hsa-miR-520h,                                    array-cloned [1],,
+MI0003176,hsa-mir-521-1,MIR521-1,"     g  u     c   c         aa u    guug   a 
+ucuca gc gugac cuc aaagggaag  c uucu    ucu  
+||||| || ||||| ||| |||||||||  | ||||    ||| a
+agagu ug cauUG GAG UUUCCCUUC  G AAga    aga  
+     g  c     U   A         AC C    --aa   a",9,19,53748636,53748722,+,hsa-miR-521,"                                    array-cloned [1], cloned [2]",,
+MI0003177,hsa-mir-522,MIR522,"      -  u   u c            G  C     Guug   g 
+ucucag gc gug c CUCUAGAGGGAA CG UUUCU    ucu  
+|||||| || ||| | |||||||||||| || |||||    ||| a
+agaguu cg cau G GAGAUUUCCCUU GU AAAga    aga  
+      u  -   U U            G  A     --aa   a",9,19,53751211,53751297,+,hsa-miR-522-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-522-5p,"                                    array-cloned [1], cloned [2-3]"
+MI0003178,hsa-mir-519a-1,MIR519A1,"       u                 A         Guug   g 
+cucaggc gugacaCUCUAGAGGGA GCGCUUUCU    ucu  
+||||||| ||||||||||||||||| |||||||||    ||| a
+gaguuug cauUGUGAGAUUUUCCU CGUGAAAgg    aga  
+       u                 A         --aa   a",9,19,53752397,53752481,+,hsa-miR-519a-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-519a-5p,"                                    array-cloned [1], cloned [2]"
+MI0003179,hsa-mir-527,MIR527,"             --CUG           C      guug   a 
+ucucaagcuguga     CAAAGGGAAGC CUUUCu    ucu  
+|||||||||||||     ||||||||||| ||||||    ||| a
+agaguuuggcauu     guuucccuucg gaaaga    aga  
+             aagug           u      --aa   a",8,19,53754018,53754102,+,hsa-miR-527,"                                    array-cloned [1], cloned [2]",,
+MI0003180,hsa-mir-516a-1,MIR516A1,"                   C    AAA            guug   g 
+ucucaggcugugaccUUCU GAGG   GAAGCACUUUCu    ucu  
+||||||||||||||||||| ||||   ||||||||||||    ||| a
+agaguuuggcauUGGGAGA UUUC   CUUCGUgaaaga    aga  
+                   C    ---            --aa   a",8,19,53756741,53756830,+,hsa-miR-516a-5p,                                    cloned [2],hsa-miR-516a-5p,                                    array-cloned [1]
+MI0003181,hsa-mir-516a-2,MIR516A2,"                   C    AAA            guug   g 
+ucucagguugugaccUUCU GAGG   GAAGCACUUUCu    ucu  
+||||||||||||||||||| ||||   ||||||||||||    ||| a
+agaguuuggcauUGGGAGA UUUC   CUUCGUgaaaga    aga  
+                   C    ---            --aa   a",7,19,53761133,53761222,+,hsa-miR-516a-5p,                                    cloned [2],hsa-miR-516a-5p,                                    array-cloned [1]
+MI0003182,hsa-mir-519a-2,MIR519A2,"        u   u C     C     A         guug   g 
+ucucaggc gug c CUCUA AGGGA GCGCUUUCu    ucu  
+|||||||| ||| | ||||| ||||| |||||||||    ||| a
+agaguuug cau G GAGAU UUCCU CGUGAAAgg    aga  
+        u   U U     U     A         --aa   a",6,19,53762344,53762430,+,hsa-miR-519a-3p,"                                    array-cloned [1], cloned [2]",hsa-miR-519a-3p,                                    Illumina [3]
+MI0003183,hsa-mir-499a,MIR499A,"         ccugu  cuu   -    c   u  UA        A          acucc 
+gcccugucc     gc   ggg cggg ggc gU  AGACUUGC GUGAUGUUUa     u
+|||||||||     ||   ||| |||| ||| ||  |||||||| ||||||||||     c
+ugggacggg     cg   ccc gccc ucg CG  UCUGAACG CACUACAAgu     u
+         uccgu  cau   u    u   U  UG        A          gcacc",2,20,34990376,34990497,+,hsa-miR-499a-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-499a-5p,                                    cloned [2]
+MI0003184,hsa-mir-500a,MIR500A,"    c c     -U         UAC       AGAg   ugu 
+gcuc c cucuc  AAUCCUUGC   CUGGGUG    ugc   c
+|||| | |||||  |||||||||   |||||||    |||   u
+cgag g gagaG  UUAGGAACG   GGUCCAC    acg   g
+    a c     UC         ---       -GUA   uaa",8,X,50008431,50008514,+,hsa-miR-500a-5p,                                    cloned [2],hsa-miR-500a-5p,"                                    array-cloned [1], cloned [2]"
+MI0003185,hsa-mir-501,MIR501,"    u       -u       U U   U     AGAg   uuu 
+gcuc uccucuc  AAUCCUU G CCC GGGUG    ugc   c
+|||| |||||||  ||||||| | ||| |||||    |||   u
+cgag gggagag  UUAGGAA C GGG CCCAC    Acg   g
+    u       UC       - -   -     -GUA   uaa",8,X,50009722,50009805,+,hsa-miR-501-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-501-5p,                                    cloned [2]
+MI0003186,hsa-mir-502,MIR502,"u             -         UAU        UAg   ugg 
+ gcucccccucucu aAUCCUUGC   CUGGGUGC   ugc   c
+ ||||||||||||| |||||||||   ||||||||   |||   u
+ cgagggggagagA UUAGGAACG   GGUCCACG   Acg   c
+u             C         ---        -UA   uaa",6,X,50014598,50014683,+,hsa-miR-502-5p,                                    array-cloned [1],hsa-miR-502-5p,                                    cloned [2]
+MI0003187,hsa-mir-450a-2,MIR450A2,"-ccaaagaaa     u       UUU     U               aa 
+          gaugc aaacuau   UGCGA GUGUUCCUAAUAUgu  u
+          ||||| |||||||   ||||| |||||||||||||||  a
+          cuaug uuugaUA   ACGUU UACAGGGGUUAugua  u
+gguauaauaa     u       CUU     U               aa",6,X,134540508,134540607,-,hsa-miR-450a-5p,"                                    array-cloned [1,3], cloned [1,4]",hsa-miR-450a-5p,
+MI0003188,hsa-mir-503,MIR503,"      A              U  G  Gu     a 
+ugcccU GCAGCGGGAACAGU CU CA  gagcg u
+|||||| |||||||||||||| || ||  ||||| c
+augGGA CGUCGCCUUUGUUA GG Gu  cucgu g
+      C              U  G  --     g",6,X,134546328,134546398,-,hsa-miR-503-5p,"                                    array-cloned [1], cloned [2-3], SOLiD [4]",hsa-miR-503-5p,                                    SOLiD [4]
+MI0003192,hsa-mir-513a-2,MIR513A2,"           --u   -c   ucag      g        A          UC        gaa 
+ggaugccacau   cag  cau    ugugca ugccuUUC CAGGGAGGUG  AUuuaugu   c
+|||||||||||   |||  |||    |||||| |||||||| ||||||||||  ||||||||    
+ccuguggugua   guc  gua    acaugu augGGAAG GUCUUUCCAC  UAAAUaua   u
+           uac   ac   --cg      a        A          UU        aaa",3,X,147225826,147225952,-,hsa-miR-513a-5p,"                                    array-cloned [1], cloned [2]",hsa-miR-513a-5p,                                    cloned [2]
+MI0003193,hsa-mir-506,MIR506,"        caucagccaua      -   --g   c          A     UA    A     u 
+gccaccac           cuaugu gua   ugc uUAUUCAGGA GGUGU  CUUA uagau a
+||||||||           |||||| |||   ||| |||||||||| |||||  |||| |||||  
+cgguggug           gguaca cgu   aug GAUGAGUCUU CCACG  GAAU guuua a
+        --uuuacaaca      a   gua   A          C     --    -     u",4,X,147230720,147230843,-,hsa-miR-506-3p,                                    array-cloned [1],hsa-miR-506-3p,
+MI0003194,hsa-mir-507,MIR507,"   -    -     gugc            a    cau      guc 
+gug cugu gugua    uucacuucaaga gugc   gcaugu   u
+||| |||| |||||    |||||||||||| ||||   ||||||    
+cau gaca cacgu    AAGUGAGGUUUU CACG   Uguaua   a
+   a    a     aaua            C    UUU      aag",4,X,147230984,147231077,-,hsa-miR-507,"                                    array-cloned [1], cloned [2]",,
+MI0003195,hsa-mir-508,MIR508,"     --uuca  ------   -     g   c              GU  C      aaa 
+ccacc      gc      uga gugua ugc cUACUCCAGAGGGC  CA UCAUGu   c
+|||||      ||      ||| ||||| ||| ||||||||||||||  || ||||||    
+ggugg      cg      acu cacau aug GAUGAGGUUUUCCG  GU AGUaca   u
+     uuuaua  caaugc   a     a   A              AU  U      aaa",3,X,147236913,147237027,-,hsa-miR-508-5p,                                    cloned [2],hsa-miR-508-5p,"                                    array-cloned [1], cloned [2]"
+MI0003196,hsa-mir-509-1,MIR509-1,"    c   -         c     -      A   G       guaua 
+caug ugu gugugguac cUACU GCAGAC GUG CAAUCAu     a
+|||| ||| ||||||||| ||||| |||||| ||| |||||||      
+guac aca uacgucaug GAUGG UGUCUG CAU GUUAGUa     u
+    -   g         a     G      -   G       aaaau",3,X,147260532,147260625,-,hsa-miR-509-5p,                                    cloned [3],hsa-miR-509-5p,"                                    array-cloned [1], cloned [2-3]"
+MI0003197,hsa-mir-510,MIR510,"   -gug   U    -A    A  GG         gua 
+gug    ucc ACUC  GGAG GU  CAAUCACau   a
+|||    ||| ||||  |||| ||  |||||||||    
+cac    AGG UGAG  UCUC CA  GUUAgugug   u
+   aaug   -    AA    -  AA         gau",3,X,147272335,147272408,-,hsa-miR-510-5p,"                                    array-cloned [1], cloned [2], Illumina [3]",hsa-miR-510-5p,                                    Illumina [3]
+MI0003198,hsa-mir-514a-1,MIR514A1,"aac    u   -    g   c      -    G    A      U  aua 
+   augu guc ugug uac cUACUC UGGA AGUG CAAUCA Gu   a
+   |||| ||| |||| ||| |||||| |||| |||| |||||| ||    
+   ugca cag acgc aug GAUGAG GUCU UCAC GUUAgu ua   u
+gca    -   u    a   A      U    -    A      u  aau",4,X,147279247,147279344,-,hsa-miR-514a-3p,"                                    array-cloned [1], cloned [2]",hsa-miR-514a-3p,
+MI0003199,hsa-mir-514a-2,MIR514A2,"gu    -    g   c      -    G    A      U  aua 
+  uguc ugug uac cUACUC UGGA AGUG CAAUCA Gu   a
+  |||| |||| ||| |||||| |||| |||| |||||| ||    
+  acag acgc aug GAUGAG GUCU UCAC GUUAgu ua   c
+-c    u    a   A      U    -    A      u  aau",4,X,147281943,147282030,-,hsa-miR-514a-3p,"                                    array-cloned [1], cloned [2]",hsa-miR-514a-3p,
+MI0003200,hsa-mir-514a-3,MIR514A3,"gu    -    g   c      -    G    A      U  aua 
+  uguc ugug uac cUACUC UGGA AGUG CAAUCA Gu   a
+  |||| |||| ||| |||||| |||| |||| |||||| ||    
+  acag acgc aug GAUGAG GUCU UCAC GUUAgu ua   c
+-c    u    a   A      U    -    A      u  aau",3,X,147284641,147284728,-,hsa-miR-514a-3p,"                                    array-cloned [1], cloned [2]",hsa-miR-514a-3p,
+MI0003205,hsa-mir-532,MIR532,"cgacuu    u    c  c  U      A    A   CC  uggca 
+      gcuu cucu cu CA GCCUUG GUGU GGA  GU     u
+      |||| |||| || || |||||| |||| |||  ||     c
+      cgag gaga gA GU CGGAAC CACA CCU  ca     u
+----uc    c    a  C  U      C    C   CC  uuaau",6,X,50003148,50003238,+,hsa-miR-532-5p,"                                    PCR [1], cloned [2-3]",hsa-miR-532-5p,                                    cloned [2]
+MI0003514,hsa-mir-539,MIR539,"                 A      G    -    - uuu 
+auacuugaGGAGAAAUU UCCUUG UGUG Uucg c   a
+||||||||||||||||| |||||| |||| |||| |   u
+uaugaguuUUUCUUUAA AGGAAC AUAC Aagu g   u
+                 C      -    U    a uau",20,14,101047321,101047398,+,hsa-miR-539-5p,"                                    cloned [1,3], miRAP-cloned [2]",hsa-miR-539-5p,
+MI0003516,hsa-mir-545,MIR545,"cccag    - -----   a         - U            A  A     auaaa 
+     ccug g     cac uuaguaggc c CAGUAAAUGUUU UU GAUGA     u
+     |||| |     ||| ||||||||| | |||||||||||| || |||||     g
+     ggac c     gug aaucgucCG G GUUAUUUACAAA GA CUacu     a
+-----    a cucga   a         U U            C  -     cagua",2,X,74287104,74287209,-,hsa-miR-545-5p,                                    cloned [2],hsa-miR-545-5p,                                    cloned [1-2]
+MI0003529,hsa-mir-376a-2,MIR376A2,"      u    G  A         U         --   g 
+gguauu aaaa GU GAUUUUCCU CUAUGGUua  cgu u
+|||||| |||| || ||||||||| |||||||||  ||| u
+cuauga uuuU CA CUAAAAGGA GAUACUAau  gua u
+      c    G  C         -         ug   g",16,14,101040069,101040148,+,hsa-miR-376a-3p,"                                    cloned [1,3], SOLiD [4]",hsa-miR-376a-3p,                                    SOLiD [4]
+MI0003530,hsa-mir-487b,MIR487B,"u       u         UUAU      C U     uuuug 
+ ugguacu ggagaGUGG    CCCUGU C GUUCG     c
+ ||||||| |||||||||    |||||| | |||||      
+ acuauga uuuUUCACC    GGGACA G UAAgc     u
+a       c         UACU      U C     uguac",20,14,101046455,101046538,+,hsa-miR-487b-3p,"                                    cloned [1-2], Illumina [3]",hsa-miR-487b-3p,                                    Illumina [3]
+MI0003600,hsa-mir-550a-1,MIR550A1,"u  u    u c   cu   gcA                  G C     gu 
+ ga gcuu g ugg  ggu   GUGCCUGAGGGAGUAAGA C Cuguu  u
+ || |||| | |||  |||   |||||||||||||||||| | |||||  g
+ cu ugaa c acc  cUA   CACGGACUCCCUCAUUCU G gauag  u
+u  c    - a   -u   ---                  - U     aa",2,7,30289794,30289890,+,hsa-miR-550a-5p,                                    cloned [2],hsa-miR-550a-5p,"                                    RAKE [1], Illumina [2]"
+MI0003601,hsa-mir-550a-2,MIR550A2,"ugaugcuuu   g     u cA                  G C     gu 
+         gcu gcugg g  GUGCCUGAGGGAGUAAGA C Cuguu  u
+         ||| ||||| |  |||||||||||||||||| | |||||  g
+         uga cgacc c  CACGGACUCCCUCAUUCU G gauag  u
+-----ucuc   g     u UA                  - U     ac",2,7,32732981,32733077,+,hsa-miR-550a-5p,                                    cloned [2],hsa-miR-550a-5p,"                                    RAKE [1], Illumina [2]"
+MI0003611,hsa-mir-599,MIR599,"aaagacaugcu     c     --                 gg     -   u 
+           gucca agugu  guuugauaagcugacau  gacag gga u
+           ||||| |||||  |||||||||||||||||  ||||| ||| c
+           uaggu ucaua  CAAACUAUUUGACUGUG  UUGuc cuu u
+--------cag     -     cc                 --     a   u",2,8,99536636,99536730,-,hsa-miR-599,                                    SAGE [1],,
+MI0003629,hsa-mir-616,MIR616,"-------u     a       cA      A                -  gac 
+        uaggu auuccuc  CUCAAA CCCUUCAGUGACUUcc au   a
+        ||||| |||||||  |||||| |||||||||||||||| ||    
+        gucca uaaggaG  GAGUUU GGGAGGUUACUGAagg ua   u
+aaaauuuu     g       AC      -                a  aag",2,12,57519163,57519259,-,hsa-miR-616-5p,                                    SAGE [1],hsa-miR-616-5p,                                    cloned [2]
+MI0003630,hsa-mir-548c,MIR548C,"cauuggcauc                         C         Cau    u 
+          uauuagguuggugcAAAAGUAAUUG GGUUUUUGC   uacu  
+          ||||||||||||||||||||||||| |||||||||   |||| u
+          auaauucaaccaCGUUUUCAUUAAC CUAAAAACg   auga  
+-------uuc                         U         ---    c",2,12,64622509,64622605,+,hsa-miR-548c-5p,                                    cloned [2],hsa-miR-548c-5p,                                    SAGE [1]
+MI0003646,hsa-mir-33b,MIR33B,"-----  ---    -   c   c  -          UU         g   g 
+     gc   gggc ggc ccg gG UGCAUUGCUG  GCAUUGCac ugu u
+     ||   |||| ||| ||| || ||||||||||  ||||||||| ||| g
+     cg   cccg ccg ggC CC ACGUGACGGC  CGUGACgug gcg a
+cacca  guc    g   a   -  G          UC         g   g",2,17,17813836,17813931,-,hsa-miR-33b-5p,"                                    SAGE [1], cloned [2]",hsa-miR-33b-5p,                                    cloned [2]
+MI0003657,hsa-mir-642a,MIR642A,"------------aucu           G                      ggu 
+                gaguugggagg UCCCUCUCCAAAUGUGUCUUGg   g
+                ||||||||||| ||||||||||||||||||||||   g
+                cucaacccuCC AGGGAGAGGUUUACACAGAacu   g
+uuacuaccgucuccgg           A                      agg",2,19,45674928,45675024,+,hsa-miR-642a-5p,"                                    RT-PCR [1], SAGE [1], cloned [2]",hsa-miR-642a-5p,                                    SOLiD [3]
+MI0003662,hsa-mir-647,MIR647,"aggaaguguu     G     --  A  -CA        -a     ag  agc 
+          ggccu UGGCU  GC CU   CUUCCUUC  gcccc  ga   c
+          ||||| |||||  || ||   ||||||||  |||||  ||    
+          ccggg gucgg  cg ga   ggagggag  cgggg  cu   u
+------cagu     g     ga  -  cug        ga     -g  ggu",2,20,63942631,63942726,-,hsa-miR-647,"                                    Microarray [1], SAGE [1]",,
+MI0003668,hsa-mir-548d-1,MIR548D1,"aaacaaguua      gu           U                uguaa 
+          uauuag  uggugcAAAAG AAUUGUGGUUUUUGCC     a
+          ||||||  ||||||||||| ||||||||||||||||      
+          auaauc  accaCGUUUUC UUGACACCAAAAACgg     a
+-------gaa      ag           U                uaaug",2,8,123348034,123348130,-,hsa-miR-548d-5p,                                    cloned [2],hsa-miR-548d-5p,"                                    RT-PCR [1], SAGE [1], cloned [2]"
+MI0003671,hsa-mir-548d-2,MIR548D2,"gagagggaagau                 U                    a 
+            uuagguuggugcAAAAG AAUUGUGGUUUUUGCCauug a
+            ||||||||||||||||| ||||||||||||||||||||  
+            aauccaaccaCGUUUUC UUGACACCAAAAACgguaau a
+-------aaaau                 U                    g",2,17,67471489,67471585,-,hsa-miR-548d-5p,                                    cloned [2],hsa-miR-548d-5p,"                                    RT-PCR [1], SAGE [1], cloned [2]"
+MI0003673,hsa-mir-449b,MIR449B,"---------uga  u   u     A     U   UU   A C        u  gu 
+            cc gaa caggu GGCAG GUA  GUU G UGGCugcu gg  c
+            || ||| ||||| ||||| |||  ||| | |||||||| ||   
+            gg cuu guUCA CCGUC CAU  CAA C ACCGACga cu  a
+ucuucuuaaaua  u   c     -     C   --   - -        -  ga",3,5,55170646,55170742,-,hsa-miR-449b-5p,"                                    Microarray [1], RT-PCR [1], SAGE [1], cloned [2]",hsa-miR-449b-5p,                                    454 [3]
+MI0003674,hsa-mir-653,MIR653,"-----------u      cuu              U     C     cagcu 
+            ucauuc   caGUGUUGAAACAA CUCUA UGaac     u
+            ||||||   |||||||||||||| ||||| |||||     c
+            aguaag   guuAUAACUUUGUU GAGGU ACUUg     a
+cgaagguagaau      aac              U     C     aacaa",2,7,93482760,93482855,-,hsa-miR-653-5p,"                                    SAGE [1], cloned [2], Illumina [3]",hsa-miR-653-5p,                                    Illumina [3]
+MI0003675,hsa-mir-411,MIR411,"--------------       ug   a a    A      AUA       - uuu 
+              ugguacu  gag g UAGU GACCGU   GCGUACG c   a
+              |||||||  ||| | |||| ||||||   ||||||| |   u
+              acuauga  cuc C AUCA CUGGCA   UGUAUgc g   c
+gagccccuaccuaa       --   C A    C      CAA       a ugu",12,14,101023325,101023420,+,hsa-miR-411-5p,"                                    Microarray [1], RT-PCR [1], SAGE [1], cloned [2]",hsa-miR-411-5p,                                    cloned [2]
+MI0003676,hsa-mir-654,MIR654,"    aagugg    a      G C     A      - uga 
+gggu      aaag UGGUGG C GCAGA CAUGUG C   g
+||||      |||| |||||| | ||||| |||||| |   u
+cccg      uUUC ACUACC G CGUCU GUAUac g   u
+    --aaga    C      A U     -      c ugc",16,14,101040219,101040299,+,hsa-miR-654-5p,"                                    Microarray [1], SAGE [1], cloned [2]",hsa-miR-654-5p,                                    cloned [2]
+MI0003677,hsa-mir-655,MIR655,"aacuaugcaag                   U      UA      cuuca 
+           gauauuugaggAGAGGUUA CCGUGU  UGUUCg     u
+           ||||||||||||||||||| ||||||  ||||||      
+           cuauaaguuUUUCUCCAAU GGUACA  AUAagu     u
+-----cucaga                   U      UA      acuac",20,14,101049550,101049646,+,hsa-miR-655-3p,"                                    Microarray [1], RT-PCR [1], SAGE [1], cloned [2], Illumina [3]",hsa-miR-655-3p,                                    Illumina [3]
+MI0003678,hsa-mir-656,MIR656,"----------cu    u      C     A        cuu  u 
+            gaaa AGGUUG CUGUG GGUGUUCA   uc a
+            |||| |||||| ||||| ||||||||   || u
+            cuuU UCCAAC GACAU UUAUAAgu   ag a
+cuaagcuauagc    C      U     A        ---  u",9,14,101066724,101066801,+,hsa-miR-656-3p,"                                    Microarray [1], RT-PCR [1], SAGE [1], Illumina [2]",hsa-miR-656-3p,                                    Illumina [2]
+MI0003681,hsa-mir-657,MIR657,"guguaguagagcua        --   u        agcguggaccggucc       uu  G 
+              ggaggaga  ggg ccuggaga               ggguggg  cc G
+              ||||||||  ||| ||||||||               |||||||  ||  
+              ucuccucu  ccc GGAUCUCU               CCCACUC  GG C
+-------------g        ua   c        ---------------       UU  A",4,17,81125276,81125373,-,hsa-miR-657,                                    SAGE [1],,
+MI0003682,hsa-mir-658,MIR658,"g    g  g   - g --uu       --  g   gc     ---  c   c  a 
+ cucg uu ccg u g    gcgggcc  cu ccc  ccgcc   ag ucg ug c
+ |||| || ||| | |    |||||||  || |||  |||||   || ||| ||  
+ gagc aa ggc g c    UGCCUGG  GA GGG  GGCGG   uc agc ac a
+g    -  g   u g UGGU       AU  A   -A     gac  -   -  g",2,22,37844272,37844371,-,hsa-miR-658,"                                    Microarray [1], SAGE [1]",,
+MI0003683,hsa-mir-659,MIR659,"uaccgacccuc   uug   cA                         uc 
+           gau   guu  GGACCUUCCCUGAACCAAGGAagag  a
+           |||   |||  |||||||||||||||||||||||||  c
+           cug   caA  CCUGGGAGGGACUUGGUUCcuucuc  a
+----gguacuc   uaa   CC                         ug",2,22,37847678,37847774,-,hsa-miR-659-3p,"                                    Microarray [1], SAGE [1]",hsa-miR-659-3p,
+MI0003684,hsa-mir-660,MIR660,"----------cu    c      -caUAC    U      C    U   gaau 
+            gcuc uucucc      CCAU GCAUAU GGAG UGu    u
+            |||| ||||||      |||| |||||| |||| |||    c
+            cgag gggagg      GGUA CGUGUG CCUC Aca    u
+gugcuacuguuc    u      acAUUA    -      U    C   aaac",7,X,50013241,50013337,+,hsa-miR-660-5p,"                                    Microarray [1], RT-PCR [1], SAGE [1], cloned [2]",hsa-miR-660-5p,
+MI0003685,hsa-mir-421,MIR421,"----g    uu      -    uua            a   aaa 
+     caca  guaggc cuca   aauguuuguuga uga   a
+     ||||  |||||| ||||   |||||||||||| |||   a
+     gugu  cgucCG GGGU   UUACAGACAACU Acu   u
+cucua    cu      C    UAA            -   aag",3,X,74218377,74218461,-,hsa-miR-421,"                                    Microarray [1], SAGE [1], cloned [2]",,
+MI0003686,hsa-mir-542,MIR542,"----------caga        auc    GG    UCA         -A   c 
+              ucucagac   UCGG  AUCA   UGUCACGAG  uac a
+              ||||||||   ||||  ||||   |||||||||  |||  
+              agggucug   AGUC  UAGU   ACAGUGUuc  gug g
+acuucuacucaccg        gAA    AA    UAG         ac   u",6,X,134541341,134541437,-,hsa-miR-542-5p,                                    cloned [1-3],hsa-miR-542-5p,                                    cloned [1-2]
+MI0003757,hsa-mir-758,MIR758,"-gcc       a    --A    U      A -A   C   - uuu 
+    uggauac ugaG   UGGU GACCAG G  GCA ACg c   a
+    ||||||| ||||   |||| |||||| |  ||| ||| |   u
+    aucuaug acuc   AUCA CUGGUC C  UGU Ugc g   u
+cgua       -    CCA    C      - AG   U   c ugu",13,14,101026020,101026107,+,hsa-miR-758-3p,"                                    cloned [1-2], SOLiD [3]",hsa-miR-758-3p,                                    SOLiD [3]
+MI0003758,hsa-mir-1264,MIR1264,"--------    c     -    u        aaagaa 
+        aggu cucaa uaag auuuguug      u
+        |||| ||||| |||| ||||||||      a
+        UCCA GAGUU AUUC UGAACaac      a
+guguaUUG    C     U    -        caaaua",2,X,114652655,114652723,+,hsa-miR-1264,                                    Illumina [2],,
+MI0003761,hsa-mir-668,MIR668,"    a   C   ---        G          a 
+ggua gUG GCC   UCGGGUGA CAUGcacuua  
+|||| ||| |||   |||||||| |||||||||| u
+cCAU CAC CGG   GGCUCACU GUaugugggu  
+    -   C   CUC        -          g",16,14,101055258,101055323,+,hsa-miR-668-3p,"                                    cloned [1], Illumina [2]",hsa-miR-668-3p,                                    Illumina [2]
+MI0003763,hsa-mir-767,MIR767,"  -uuuu   u  u             UGC       UU  C      U    c 
+gc     aua ug agguuuuugcuca   ACCAUGG  GU UGAGCA Gcag a
+||     ||| || |||||||||||||   |||||||  || |||||| |||| u
+cg     ugu ac uccaaggacgagU   UGGUACC  CA ACUCGU Uguu g
+  ucauc   u  u             CUU       -C  U      C    c",3,X,152393421,152393529,-,hsa-miR-767-5p,                                    cloned [1],hsa-miR-767-5p,                                    cloned [1]
+MI0003772,hsa-mir-151b,MIR151B,"ac     -aug   ca    cucuuca       -    aca   aaac 
+  cucug    ugu  gucu       gggcucc cgag   cag    a
+  |||||    |||  ||||       ||||||| ||||   |||     
+  gggac    aca  caga       CUCGAGG GCUc   guc    g
+-u     ccaa   aa    UCUGACA       A    -cc   caca",2,14,100109419,100109514,-,hsa-miR-151b,"                                    RAKE [1], Illumina [2]",,
+MI0003786,hsa-mir-1323,MIR1323,"ac   g             A  G         gugg 
+  uga guccUCAAAACUG GG GCAUUUUCU    u
+  ||| ||||||||||||| || |||||||||    u
+  acu uagggguuuugac cc cgugaaagg    u
+-a   g             -  a         aaag",7,19,53671968,53672040,+,hsa-miR-1323,"                                    RAKE [1], cloned [2]",,
+MI0003821,hsa-mir-1185-2,MIR1185-2,"u       u    -     GA A              a  uga 
+ uugguac uaaa gAGAG  U CCCUUUGUAUGUUc cu   u
+ ||||||| |||| |||||  | |||||||||||||| ||    
+ aacuaug guuU CUCUC  A GGGGGACAUAUAag gg   u
+a       c    A     AG -              c  uaa",15,14,101044198,101044283,+,hsa-miR-1185-5p,                                    cloned [2],hsa-miR-1185-5p,
+MI0003823,hsa-mir-449c,MIR449C,"   --g      gu    U   C      UU               u 
+gcu   ggaugu  cagg AGG AGUGUA  GCUAGCGGCUGUuaa g
+|||   ||||||  |||| ||| ||||||  ||||||||||||||| a
+cga   cuuacg  GUCU UCC UCACGU  UGAUCGUUgacaauu u
+   aga      uU    C   -      --               u",3,5,55172262,55172353,-,hsa-miR-449c-5p,"                                    RAKE [1], 454 [2]",hsa-miR-449c-5p,                                    454 [2]
+MI0003832,hsa-mir-1283-1,MIR1283-1,"--        a   g   AC     A           g  g c 
+  cucaagcu uga UCU  AAAGG AAGCGCUUUCU uu u a
+  |||||||| ||| |||  ||||| ||||||||||| || | g
+  gaguuugg auu gga  uuucc uucgcgaaaga aa a a
+aa        c   g   gu     c           g  g a",11,19,53688481,53688567,+,hsa-miR-1283,                                    Illumina [1],,
+MI0003844,hsa-mir-1185-1,MIR1185-1,"u       u    -     GA A              a  uga 
+ uugguac ugaa gAGAG  U CCCUUUGUAUGUUc cu   u
+ ||||||| |||| |||||  | |||||||||||||| ||    
+ aacuaug guuU UUCUC  A GGGGGACAUAUAag gg   u
+a       c    A     AG -              c  uaa",16,14,101042977,101043062,+,hsa-miR-1185-5p,                                    cloned [2],hsa-miR-1185-5p,
+MI0005523,hsa-mir-298,MIR298,"---   gg    c      --      GA      C -    g uu 
+   uca  ucuu AGCAGA  AGCAGG  GGUUCU C CAgu g  u
+   |||  |||| ||||||  ||||||  |||||| | |||| |  u
+   agu  agga ucguuu  ucgucc  ucaagg g guca u  c
+ucg   -g    c      cg      ga      a u    g uc",2,20,58818226,58818313,-,,,,
+MI0005525,hsa-mir-300,MIR300,"--    a    a      guaa     ---cacg    u  uu 
+  ugcu cuug agagag    uccuu       cauu gc  u
+  |||| |||| ||||||    |||||       |||| ||  a
+  acga gggU UCUCUC    GGGAA       guaa cg  c
+aa    g    C      AGAC     CAUAUua    -  uu",16,14,101041363,101041445,+,,,,
+MI0005528,hsa-mir-892a,MIR892A,"gcagu         -----       u  -    c  uuac 
+     gccuuacuc     agaaagg gc cagu ac    a
+     |||||||||     ||||||| || |||| ||    c
+     cggaaugaG     UCUUUCC UG GUCA ug    u
+---cu         AUGCG       -  U    C  uaca",6,X,145996669,145996743,-,hsa-miR-892a,                                    cloned [1],,
+MI0005530,hsa-mir-509-2,MIR509-2,"caugc   -         c     -      A   G       guaua 
+     ugu gugugguac cUACU GCAGAC GUG CAAUCAu     a
+     ||| ||||||||| ||||| |||||| ||| |||||||      
+     aca uacgucaug GAUGG UGUCUG CAU GUUAGUa     u
+----c   g         a     G      -   G       aaaau",4,X,147258760,147258850,-,hsa-miR-509-5p,                                    cloned [3],hsa-miR-509-5p,"                                    array-cloned [1], cloned [2-3]"
+MI0005531,hsa-mir-450b,MIR450B,"--          UUU     U   U      -    gua 
+  gcagaauuau   UGCAA AUG UCCUGA AUAu   a
+  ||||||||||   ||||| ||| |||||| ||||   u
+  uguuuugAUA   ACGUU UAC AGGGUU ugug   a
+ua          CCU     U   U      a    aau",6,X,134540185,134540262,-,hsa-miR-450b-5p,                                    cloned [1],hsa-miR-450b-5p,                                    cloned [1]
+MI0005533,hsa-mir-890,MIR890,"--   ag   c             C UC      uuag 
+  gga  ugc cUACUUGGAAAGG A  AGUUGc    a
+  |||  ||| ||||||||||||| |  ||||||    u
+  ucu  aug gaugagucuuucc u  ucaaug    u
+au   ga   a             c ua      uaca",6,X,145994275,145994351,-,hsa-miR-890,                                    cloned [1],,
+MI0005534,hsa-mir-891b,MIR891B,"c   --a     U     UU  C  A        uucag 
+ cuu   auccu GCAAC  AC UG GUCAUUGA     u
+ |||   ||||| |||||  || || ||||||||     a
+ gaa   uggga uguug  ug ac cgguaacu     a
+a   aac     u     uu  u  a        uacaa",6,X,146001053,146001131,-,hsa-miR-891b,                                    cloned [1],,
+MI0005537,hsa-mir-888,MIR888,"--   ag g  c        A  C          uuag 
+  ggc  u cu UACUCAAA AG UGUCAGUCAc    a
+  |||  | || |||||||| || ||||||||||    u
+  ucg  a gA GUGGGUUU UC ACAGUCAGug    u
+ac   ga g  A        C  C          uaca",6,X,145994784,145994860,-,hsa-miR-888-5p,                                    cloned [1],hsa-miR-888-5p,                                    cloned [1]
+MI0005538,hsa-mir-892b,MIR892B,"--u  aa   c             u    uuu     g 
+   gc  ugc cuacucagaaagg gcca   augua a
+   ||  ||| ||||||||||||| ||||   ||||| u
+   cg  acg GAUGGGUCUUUCC CGGU   uguau u
+acu  ga   A             U    CAC     u",6,X,145997198,145997274,-,hsa-miR-892b,                                    cloned [1],,
+MI0005539,hsa-mir-541,MIR541,"-   -u     AAA        C    G UC      caaa    a 
+ acg  caggg   GGAUUCUG UGUC G  CCACUc    guuc  
+ |||  |||||   |||||||| |||| |  ||||||    |||| c
+ ugu  gucUC   UCUAAGAC ACGG U  GGUggg    uaag  
+g   uc     AGG        -    G --      ----    a",13,14,101064495,101064578,+,hsa-miR-541-5p,                                    cloned [1],hsa-miR-541-5p,
+MI0005540,hsa-mir-889,MIR889,"--     u   g     C      UA  A     -  uau 
+  gugcu aaa AAUGG UGUCCG  GU UGGUC uc   a
+  ||||| ||| ||||| ||||||  || ||||| ||   u
+  uauga uuU UUACC ACAGGC  UA AUUag ag   u
+cc     u   G     A      UA  -     u  uau",20,14,101047901,101047979,+,hsa-miR-889-3p,"                                    cloned [1], Illumina [2]",hsa-miR-889-3p,                                    Illumina [2]
+MI0005541,hsa-mir-875,MIR875,"--       u  UAU        U  A       uucu 
+  uuagugg ac   ACCUCAGU UU UCAGGUG    u
+  ||||||| ||   |||||||| || |||||||     
+  agucacu uG   UGGAGUCA AA GGUCCac    a
+ca       c  UGU        C  A       uaaa",2,8,99536786,99536861,-,hsa-miR-875-5p,                                    cloned [1],hsa-miR-875-5p,                                    cloned [1]
+MI0005563,hsa-mir-665,MIR665,"-u u   -c          u      -acc  -   c 
+  c ccu  gaggggucuc gccucu    ca gga u
+  | |||  |||||||||| ||||||    || |||  
+  g gga  cUCCCCGGAG CGGAGG    gu cuu c
+cg c   ca          U      ACCA  a   u",8,14,100875033,100875104,+,hsa-miR-665,                                    cloned [2],,
+MI0005565,hsa-mir-543,MIR543,"--    u  u       u  -     uu u     - uuu 
+  uacu aa gagaagu gc ccgug  u uuucg c   a
+  |||| || ||||||| || |||||  | ||||| |   u
+  auga uu UUCUUCA CG GGCGC  A AAAgc g   u
+cu    c  u       -  U     UU C     a ugu",19,14,101031987,101032064,+,hsa-miR-543,                                    RAKE [1],,
+MI0005566,hsa-mir-374b,MIR374B,"--  u       AU                     c 
+  ac cggaugg  AUAAUACAACCUGCUAAGUGu c
+  || |||||||  |||||||||||||||||||||  
+  ug gccugUU  UAUUAUGUUGGACGAUUCacg u
+uc  u       AC                     a",3,X,74218547,74218618,-,hsa-miR-374b-5p,                                    cloned [2-3],hsa-miR-374b-5p,                                    cloned [2]
+MI0005568,hsa-mir-301b,MIR301B,"---g  g        C      ---G        A  gugc 
+    cc cagguGCU UGACGA    GUUGCACU CU    u
+    || |||||||| ||||||    |||||||| ||    c
+    gg gucuaCGA ACUGUU    UAACGUGA ga    u
+acca  -        A      AUAG        C  agag",2,22,21652981,21653058,+,hsa-miR-301b-3p,                                    cloned [2],hsa-miR-301b-3p,
+MI0005717,hsa-mir-509-3,MIR509-3,"--       c     -         G       Guaua 
+  gugguac cUACU GCAGACGUG CAAUCAU     a
+  ||||||| ||||| ||||||||| |||||||      
+  cgucaug GAUGG UGUCUGCAU GUUAGUa     u
+ua       a     G         G       aaaau",4,X,147259652,147259726,-,hsa-miR-509-3p,"                                    array-cloned [1], cloned [2-3]",hsa-miR-509-3p,                                    cloned [3]
+MI0005761,hsa-mir-939,MIR939,"u    gca    c         U     U      GU   c 
+ gugg   gggc cUGGGGAGC GAGGC CUGGGG  Ggc g
+ ||||   |||| ||||||||| ||||| ||||||  |||  
+ cgcc   ucug GACCCCUCG CUCCG GGUCCC  ucg g
+g    -ag    u         U     -      ag   g",3,8,144394149,144394230,-,hsa-miR-939-5p,                                    cloned [1],hsa-miR-939-5p,
+MI0005762,hsa-mir-940,MIR940,"   a   gu        cccca         -   g g ag  --  gug 
+gug ggu  gggcccgg     ggagcgggg ccu g c  cc  cc   u
+||| |||  ||||||||     ||||||||| ||| | |  ||  ||   g
+cac cca  uccgggCC     CCUCGCCCC GGG C G  gg  gg   u
+   c   -g        -----         C   A G AA  aa  agu",3,16,2271747,2271840,+,hsa-miR-940,                                    cloned [1],,
+MI0005763,hsa-mir-941-1,MIR941-1,"  u  -        c  g    c   aca   -  acg 
+ug gg acaugugc ca ggcc ggg   gcg cc   g
+|| || |||||||| || |||| |||   ||| ||    
+ac cC UGUACACG GU UCGG CCC   Cgc gg   a
+  -  G        U  G    -   --A   a  aga",5,20,63919449,63919520,+,hsa-miR-941,"                                    cloned [1], SOLiD [2]",,
+MI0005764,hsa-mir-941-2,MIR941-2,"  u          c  g    c   aca   -  acg 
+ug gcacaugugc ca ggcc ggg   gcg cc   g
+|| |||||||||| || |||| |||   ||| ||    
+ac CGUGUACACG GU UCGG CCC   Cgc gg   a
+  c          U  G    -   --A   a  aga",5,20,63919505,63919576,+,hsa-miR-941,"                                    cloned [1], SOLiD [2]",,
+MI0005765,hsa-mir-941-3,MIR941-3,"  u          c  g    c   aca   -  acg 
+ug gcacaugugc ca ggcc ggg   gcg cc   g
+|| |||||||||| || |||| |||   ||| ||    
+ac CGUGUACACG GU UCGG CCC   Cgc gg   a
+  c          U  G    -   --A   a  aga",5,20,63919561,63919632,+,hsa-miR-941,"                                    cloned [1], SOLiD [2]",,
+MI0005766,hsa-mir-941-4,MIR941-4,"  u          c  g    c   aca   -  acg 
+ug gcacaugugc ca ggcc ggg   gcg cc   g
+|| |||||||||| || |||| |||   ||| ||    
+ac CGUGUACACG GU UCGG CCC   Cgc gg   a
+  c          U  G    -   --A   a  aga",5,20,63919756,63919827,+,hsa-miR-941,"                                    cloned [1], SOLiD [2]",,
+MI0006272,hsa-mir-1179,MIR1179,"      -----      a   --         C         ugu ua 
+ggcugg     aaagga gAA  GCAUUCUUU AUUGGUUGG   g  u
+||||||     |||||| |||  ||||||||| |||||||||   |   
+ucgauc     uuuccu uuu  cguaggaga uaaccaacu   c  u
+      agucu      a   ac         a         guu cg",3,15,88608107,88608197,+,hsa-miR-1179,                                    cloned [1],,
+MI0006316,hsa-mir-1227,MIR1227,"G     CC   C      gggcacugcuggggugggcacagcagccaugcaga     cau 
+ UGGGG  AGG GGUGGu                                   gcggg   u
+ |||||  ||| ||||||                                   |||||    
+ ACCCC  UUC CCACCG                                   UGCcc   u
+G     UU   -      -----------------------------------     cag",2,19,2234062,2234149,-,hsa-miR-1227-3p,                                    cloned [1],hsa-miR-1227-3p,
+MI0006324,hsa-mir-1234,MIR1234,"gugag          c   ---   g ----  g         g 
+     uguggggugg ugg   ggc g    gg gggcccggg a
+     |||||||||| |||   ||| |    || ||||||||| c
+     aCACCCCACC ACC   CCG C    cc uccggguuc g
+----g          C   AGU   G Ugau  g         g",3,8,144400086,144400165,-,hsa-miR-1234-3p,                                    cloned [1],,
+MI0006357,hsa-mir-1295a,MIR1295A,"--                   c        u   g aau 
+  aggacauuuugcccagauc guggccua uca a   g
+  ||||||||||||||||||| |||||||| ||| |   u
+  uccuguaaAGUGGGUCUAG CGCCGGAU agu u   g
+cc                   A        U   g ccg",2,1,171101728,171101806,-,hsa-miR-1295a,                                    Illumina [1],,
+MI0006380,hsa-mir-1245a,MIR1245A,"a       a                c   uguug 
+ uuuaugu uaggccuuuagaucau uga     a
+ ||||||| |||||||||||||||| |||     a
+ aaauaUA AUCCGGAAAUCUAGUG Auu     u
+-       C                A   ucuca",2,2,188978092,188978161,+,hsa-miR-1245a,                                    Illumina [1],,
+MI0006385,hsa-mir-1250,MIR1250,"--    -c     ------   -    c    -  -C  U      ---          uugc 
+  cugu  ccgcu      ggc cugg aggu gA  GG GCUGGA   UGUGGCCUUU    c
+  ||||  |||||      ||| |||| |||| ||  || ||||||   ||||||||||    u
+  gaca  gguga      ccg gacc ucca CU  CC CGACCU   ACAccggaaa    u
+cg    cc     agucuc   a    u    A  UA  -      UUU          ucuu",4,17,81133196,81133308,-,hsa-miR-1250-5p,                                    Illumina [1-2],hsa-miR-1250-5p,                                    Illumina [2]
+MI0006430,hsa-mir-1283-2,MIR1283-2,"--            gU  A      A     C     guug   g 
+  cucaagcuguga  CU CAAAGG AAGCG UUUCU    ucu  
+  ||||||||||||  || |||||| ||||| |||||    ||| a
+  gaguuuggcauu  ga guuucc uucgc aaaga    aga  
+aa            gu  g      c     u     --aa   a",8,19,53758232,53758318,+,hsa-miR-1283,                                    Illumina [1],,
+MI0006443,hsa-mir-1306,MIR1306,"g  a  a    -c       UCCCCU  A        g  g g 
+ ug gc gucu  caCCACC      GC AACGUCCA ug u c
+ || || ||||  |||||||      || |||||||| || | a
+ gc ug cagg  GUGGUGG      CG UUGCAggu au g g
+a  c  a    ua       ---UCU  G        a  g a",2,22,20086058,20086142,+,hsa-miR-1306-3p,                                    Illumina [1],hsa-miR-1306-3p,
+MI0006648,hsa-mir-513b,MIR513B,"--g      g   c    A          U         gaa 
+   uguaca ugc uUUC CAAGGAGGUG CAUUUAUgu   c
+   |||||| ||| |||| |||||||||| |||||||||    
+   acaugu aug GGAG GUUUUUCCAC GUAAAuaua   u
+acg      a   A    A          U         aaa",2,X,147199044,147199127,-,hsa-miR-513b-5p,                                    Illumina [2],hsa-miR-513b-5p,                                    Illumina [2]
+MI0006649,hsa-mir-513c,MIR513C,"-  -     g   c       A       UC        gaa 
+ gc guaca ugc uUUCUCA GGAGGUG  GUUUAUgu   c
+ || ||||| ||| ||||||| |||||||  ||||||||    
+ cg caugu aug GAAGAGU UUUCCAC  UAAAUaua   u
+a  a     a   A       C       UU        aaa",2,X,147189704,147189787,-,,,,
+MI0006656,hsa-mir-1197,MIR1197,"acuucc       -u     ugc   u       g   -g    - uuu 
+      ugguauu  gaaga   ggu gaccaug ugu  uacg c   a
+      |||||||  |||||   ||| ||||||| |||  |||| |   u
+      acuauaa  cuUCU   UCA CUGGUAC ACA  AUgc g   u
+------       cu     ---   U       -   GG    a ugu",13,14,101025564,101025651,+,hsa-miR-1197,                                    cloned [1],,
+MI0007261,hsa-mir-103b-1,MIR103B1,"UCAUA  -C  G    A        gaucca 
+     GC  CU UACA UGCUGCUu      u
+     ||  || |||| ||||||||      a
+     cg  ga augu acgacgga      u
+--agc  aa  a    c        acaacg",2,5,168560904,168560965,+,hsa-miR-103b,                                    ChIP-seq [1],,
+MI0007262,hsa-mir-103b-2,MIR103B2,"UCA    -C  G    A        gaccug 
+   UAGC  CU UACA UGCUGCUu      a
+   ||||  || |||| ||||||||      a
+   gucg  ga augu acgacgga      u
+--a    aa  a    c        acaucg",2,20,3917502,3917563,-,hsa-miR-103b,                                    ChIP-seq [1],,
+MI0008333,hsa-mir-1912,MIR1912,"---     gg    g U         GG   U    A ua 
+   cucua  augu C CAUUGCAUG  CUG GUAU g  u
+   |||||  |||| | |||||||||  ||| |||| |  u
+   gagau  uacA G GUGACGUAC  GAC CAUa c  a
+uua     aa    A U         GA   C    a uu",2,X,114651544,114651623,+,hsa-miR-1912-3p,"                                    454 [1], SOLiD [2]",hsa-miR-1912-3p,                                    Illumina [3]
+MI0008335,hsa-mir-1914,MIR1914,"c   u a    -g   U    CC     A       uucc 
+ gug g gccc  CCC GUGC  GGCCC CUUCUGc    u
+ ||| | ||||  ||| ||||  ||||| |||||||    c
+ cac c cggG  GGG CACG  CUGGG GAGGacg    u
+-   u c    GA   U    CC     -       cgau",2,20,63941465,63941544,-,hsa-miR-1914-5p,                                    454 [1],hsa-miR-1914-5p,                                    454 [1]
+MI0012063,hsa-mir-2682,MIR2682,"-------ac u       ---      u    C        A   UUC  A     aauc 
+         c uccugaa   agaggu gggg AGGCAGUG CUG   AG CGUCc    u
+         | |||||||   |||||| |||| |||||||| |||   || |||||     
+         g aggauuu   ucuccg cCCU UCUGUCGC GAC   UC GCagg    c
+aaacucuga c       ccg      u    -        -   UUC  C     guuu",2,1,98045242,98045351,-,hsa-miR-2682-5p,                                    Illumina [1-2],hsa-miR-2682-5p,                                    Illumina [2]
+MI0013006,hsa-mir-2861,MIR2861,"-gg       gca    - g    -  -  u       c    acu 
+   cgccucu   gcuc c gcuc cc cc ggccucu ggga   a
+   |||||||   |||| | |||| || || ||||||| ||||    
+   gcggaga   cggg G CGGG GG GG CCGGGGg cccu   c
+ggg       agg    c G    U  C  U       a    gaa",2,9,127785918,127786007,+,,,,
+MI0014128,hsa-mir-3116-1,MIR3116-1,"                                gggu 
+cuuuauugagucccuacuauguuccaggcacu    a
+||||||||||||||||||||||||||||||||     
+gaaauaacUCAGGGAUGAUACAAGGUCCGUgg    u
+                                augc",2,1,62078786,62078859,+,hsa-miR-3116,                                    Illumina [1-2],,
+MI0014129,hsa-mir-3116-2,MIR3116-2,"                            cuacg 
+uauugagucccuacuauguuccaggcac     a
+||||||||||||||||||||||||||||      
+auaacUCAGGGAUGAUACAAGGUCCGUg     u
+                            accca",2,1,62078789,62078856,-,hsa-miR-3116,                                    Illumina [1-2],,
+MI0014134,hsa-mir-3119-1,MIR3119-1,"       c                         g    cua 
+auuaacu UGGCUUUUAACUUUGAUGGCaaagg guag   a
+||||||| ||||||||||||||||||||||||| ||||   a
+uaauuga accgaaaauugaaacuaccguuucu uauc   c
+       u                         g    uaa",2,1,170151378,170151462,-,hsa-miR-3119,                                    Illumina [1],,
+MI0014135,hsa-mir-3119-2,MIR3119-2,"       a                        aca   auu 
+auuaacu UGGCUUUUAACUUUGAUGGCaaag   uag   g
+||||||| ||||||||||||||||||||||||   |||   u
+uaauuga accgaaaauugaaacuaccguuuc   auc   u
+       g                        ccc   gau",2,1,170151378,170151462,+,hsa-miR-3119,                                    Illumina [1],,
+MI0014136,hsa-mir-3120,MIR3120,"        a              C      A    ugag 
+gucaugug cugCCUGUCUGUGC UGCUGU CAgg    c
+|||||||| |||||||||||||| |||||| ||||    g
+caguacac gACGGACAGAUGUG ACGACA gucu    g
+        a              A      C    ugua",3,1,172138808,172138888,+,hsa-miR-3120-3p,                                    Illumina [1-2],hsa-miR-3120-3p,                                    Illumina [2]
+MI0014147,hsa-mir-3130-1,MIR3130-1,"                                  gu 
+cuugucaugucuUACCCAGUCUCCGGUGCAGCCu  u
+||||||||||||||||||||||||||||||||||  g
+gaacaguacagAAUGGGUCAGAGGCCACGUCGga  u
+                                  ac",2,2,206783234,206783308,-,hsa-miR-3130-3p,                                    Illumina [1-3],hsa-miR-3130-3p,
+MI0014148,hsa-mir-3130-2,MIR3130-2,"                                  ug 
+cuugucaugucuUACCCAGUCUCCGGUGCAGCCu  a
+||||||||||||||||||||||||||||||||||  c
+gaacaguacagAAUGGGUCAGAGGCCACGUCGga  a
+                                  ca",2,2,206783234,206783308,+,hsa-miR-3130-3p,                                    Illumina [1-3],hsa-miR-3130-3p,
+MI0014177,hsa-mir-3150a,MIR3150A,"                    C            a c  a 
+gggaagcaggcCAACCUCGA GAUCUCCUCAGC c ug a
+|||||||||||||||||||| |||||||||||| | || c
+ccuuucguccGGUUGGAGCU CUAGAGGGGUCg g ac g
+                    C            - a  c",2,8,95072914,95072993,+,hsa-miR-3150a-3p,                                    Illumina [1-2],hsa-miR-3150a-3p,                                    Illumina [2]
+MI0014181,hsa-mir-3074,MIR3074,"     -a    u  U        A    -GC    gugua 
+gcucg  cucc GU CCUGCUGA CUGA   CAGu     a
+|||||  |||| || |||||||| ||||   ||||     a
+ugggc  gagG CA GGAUGACU GACU   Guca     a
+     gg    C  C        C    AUA    agagu",4,9,95086014,95086094,-,hsa-miR-3074-3p,                                    Illumina [1-2],hsa-miR-3074-3p,                                    Illumina [2]
+MI0014182,hsa-mir-3154,MIR3154,"  -      cu   ca  -          g  caccc     -a gu 
+gg ccccuc  ucu  gc cccagcuccc cu     cugcc  c  c
+|| ||||||  |||  || |||||||||| ||     |||||  |   
+cc ggggag  AGA  CG GGGUUGAGGG GA     GACgg  g  a
+  a      --   --  A          -  ----A     ag aa",2,9,128244947,128245030,-,hsa-miR-3154,"                                    SOLiD [2], Illumina [3-5]",,
+MI0014183,hsa-mir-3155a,MIR3155A,"           cc                      cc   c 
+uccgggcauca  ucccacugcagagccuggggag  gga a
+|||||||||||  ||||||||||||||||||||||  |||  
+agguccguagU  AGGGUGACGUCUCGGACCcuuc  ccu g
+           CA                      --   c",2,10,6152196,6152277,+,hsa-miR-3155a,                                    Illumina [1],,
+MI0014186,hsa-mir-3158-1,MIR3158-1,"                                  ---   u 
+auucaggccgguCCUGCAGAGAGGAAGCCCUUCu   gcu a
+||||||||||||||||||||||||||||||||||   |||  
+uaaguccggcCAGGACGUCUCUCCUUCGGGAAgg   ugg c
+                                  uua   a",2,10,101601417,101601497,+,hsa-miR-3158-3p,                                    Illumina [1-2],hsa-miR-3158-3p,
+MI0014187,hsa-mir-3158-2,MIR3158-2,"                                 caauac 
+auucaggccgguCCUGCAGAGAGGAAGCCCUUC      c
+|||||||||||||||||||||||||||||||||      u
+uaaguccggcCAGGACGUCUCUCCUUCGGGAAg      g
+                                 acgaau",2,10,101601417,101601497,-,hsa-miR-3158-3p,                                    Illumina [1-2],hsa-miR-3158-3p,
+MI0014189,hsa-mir-3160-1,MIR3160-1,"                                   --     u 
+ggaccugcccugGGCUUUCUAGUCUCAGCUCUCCu  ccagc  
+|||||||||||||||||||||||||||||||||||  ||||| c
+cuuggacgggACCCGAAAGAUCAGAGUCGAGAgga  ggucg  
+                                   cu     a",2,11,46451805,46451889,-,hsa-miR-3160-3p,                                    Illumina [1-2],hsa-miR-3160-3p,                                    Illumina [2]
+MI0014190,hsa-mir-3160-2,MIR3160-2,"                                 ga     u 
+accugcccugGGCUUUCUAGUCUCAGCUCUCCu  ccagc  
+|||||||||||||||||||||||||||||||||  ||||| g
+uggacgggACCCGAAAGAUCAGAGUCGAGAgga  ggucg  
+                                 --     a",2,11,46451807,46451887,+,hsa-miR-3160-3p,                                    Illumina [1-2],hsa-miR-3160-3p,                                    Illumina [2]
+MI0014205,hsa-mir-1193,MIR1193,"gua    a G       -    C      G    cu  au 
+   gcug g GGAUGGU AGAC GGUGAC UGCa  uc  u
+   |||| | ||||||| |||| |||||| ||||  ||   
+   cgac c ccuauca uuug ccacug augu  ag  u
+ccg    - a       g    c      g    --  ca",14,14,101030052,101030129,+,hsa-miR-1193,                                    Illumina [1],,
+MI0014206,hsa-mir-323b,MIR323B,"      u             U     GUGAGUUC       u 
+ugguac cggagggAGGUUG CCGUG        GCAuuau  
+|||||| ||||||||||||| |||||        ||||||| u
+acuaug gcuuUUCUCCAGC GGCAC        Cguagua  
+      -             U     --AUAACC       a",19,14,101056219,101056300,+,hsa-miR-323b-5p,                                    cloned [1-2],hsa-miR-323b-5p,                                    Illumina [3]
+MI0014210,hsa-mir-3176,MIR3176,"u    ucuccagucu  a        c  c         cac    -   a 
+ ggcc          gc gcucccgg ag cucgggcca   uccc ggg  
+ ||||          || |||||||| || |||||||||   |||| ||| u
+ ccgg          cg ugggGGCC UC GGGUCCGGU   Aggg ccc  
+g    ----------  g        A  A         --C    a   c",2,16,543277,543366,+,hsa-miR-3176,                                    Illumina [1-2],,
+MI0014213,hsa-mir-3179-1,MIR3179-1,"                      a               gcc 
+caggaucacagacguuuaaauu cacuccuucugcugu   u
+|||||||||||||||||||||| |||||||||||||||    
+guccuagugucUGCAAAUUUAA GUGGGGAAGAugacg   u
+                      A               aca",3,16,14901508,14901591,+,hsa-miR-3179,                                    Illumina [1-2],,
+MI0014214,hsa-mir-3180-1,MIR3180-1,"cagu   ac      a      A  C              CGca g  c 
+    gcg  gggcgg gCUUCC GA GCUCCGCCCCACGU    u cg  
+    |||  |||||| |||||| || ||||||||||||||    | || c
+    cgu  cccgcc CGGAGG CU CGAGGCGGGGUgcg    g gc  
+--gu   --      C      C  U              -aaa g  c",3,16,14911220,14911313,+,hsa-miR-3180-5p,                                    Illumina [1],hsa-miR-3180-5p,                                    Illumina [1]
+MI0014215,hsa-mir-3180-2,MIR3180-2,"   ac      a      A  C              CGca g  c 
+gcg  gggcgg gCUUCC GA GCUCCGCCCCACGU    u cg  
+|||  |||||| |||||| || ||||||||||||||    | || c
+cgu  cccgcc CGGAGG CU CGAGGCGGGGUgcg    g gc  
+   --      C      C  U              -aaa g  c",3,16,16309879,16309966,+,hsa-miR-3180-5p,                                    Illumina [1],hsa-miR-3180-5p,                                    Illumina [1]
+MI0014216,hsa-mir-3179-2,MIR3179-2,"                      a               gcc 
+caggaucacagacguuuaaauu cacuccuucugcugu   u
+|||||||||||||||||||||| |||||||||||||||    
+guccuagugucUGCAAAUUUAA GUGGGGAAGAugacg   u
+                      A               aca",3,16,16300159,16300242,+,hsa-miR-3179,                                    Illumina [1-2],,
+MI0014217,hsa-mir-3180-3,MIR3180-3,"cagu   ac      a      A  C              CGca g  c 
+    gcg  gggcgg gCUUCC GA GCUCCGCCCCACGU    u cg  
+    |||  |||||| |||||| || ||||||||||||||    | || c
+    cgu  cccgcc CGGAGG CU CGAGGCGGGGUgcg    g gc  
+--gu   --      C      C  U              -aaa g  c",3,16,18402178,18402271,-,hsa-miR-3180-5p,                                    Illumina [1],hsa-miR-3180-5p,                                    Illumina [1]
+MI0014221,hsa-mir-3179-3,MIR3179-3,"                      a               gcc 
+caggaucacagacguuuaaauu cacuccuucugcugu   u
+|||||||||||||||||||||| |||||||||||||||    
+guccuagugucUGCAAAUUUAA GUGGGGAAGAugacg   u
+                      A               aca",3,16,18411894,18411977,-,hsa-miR-3179,                                    Illumina [1-2],,
+MI0014226,hsa-mir-3184,MIR3184,"   ca  a         CUC   C    -     gga 
+aag  ag cUGAGGGGC   AGA CGAG CUUUU   a
+|||  || |||||||||   ||| |||| |||||   a
+uuc  uc gACUCCCCG   UCU GCUC GAAAa   a
+   aa  c         -UC   C    U     gau",2,17,30117086,30117160,-,hsa-miR-3184-5p,                                    Illumina [1],hsa-miR-3184-5p,
+MI0014228,hsa-mir-3065,MIR3065,"   c            A   A   A     ------  g  g 
+cug ccucuUCAACAA AUC CUG UGCUG      GA uc c
+||| |||||||||||| ||| ||| |||||      || ||  
+gac ggaGAGGUUGUU UAG GAC ACGAC      cu ag c
+   a            A   -   C     Ucacua  g  u",4,17,81125877,81125955,+,hsa-miR-3065-5p,"                                    Illumina [1,3], 454 [2]",hsa-miR-3065-5p,"                                    Illumina [1,3], 454 [2]"
+MI0014231,hsa-mir-3187,MIR3187,"          G     -G       G    ucacc 
+gcuggcCCUG GCAGC  UGUGGCU AAGG     a
+|||||||||| |||||  ||||||| ||||      
+cgaccggGGC CGUCG  GUACCGG UUcc     u
+          G     GG       -    ucuug",2,19,813584,813653,+,hsa-miR-3187-3p,                                    Illumina [1-2],hsa-miR-3187-3p,                                    Illumina [2]
+MI0014235,hsa-mir-3190,MIR3190,"            g       AG    -G   C   -   c 
+cuggggucaccu UCUGGCC  CUAC  UCC CAc ggc c
+|||||||||||| |||||||  ||||  ||| ||| |||  
+ggccccaguggA AGACCGG  GAUG  AGG GUg cug u
+            G       CA    GA   U   a   u",2,19,47226942,47227021,+,hsa-miR-3190-5p,                                    Illumina [2],hsa-miR-3190-5p,                                    Illumina [1-2]
+MI0014236,hsa-mir-3191,MIR3191,"          C        U    C    A   u a a 
+ggggucacCU UCUGGCCG CUAC UUCC cac g c a
+|||||||||| |||||||| |||| |||| ||| | |  
+ccccagugGA AGACCGGU GAUG AGGG GUg c g g
+          C        C    C    -   c - g",2,19,47226944,47227019,-,hsa-miR-3191-3p,                                    Illumina [1],hsa-miR-3191-3p,
+MI0014247,hsa-mir-3199-1,MIR3199-1,"         -                              -  u 
+ggugacucc AGGGACUGCCUUAGGAGAAAGUUucuggaa gu c
+||||||||| |||||||||||||||||||||||||||||| ||  
+ucacugagg ucccugacggaauccucuuucaaagaccuu ca u
+         g                              a  g",2,22,27920525,27920612,-,hsa-miR-3199,                                    Illumina [1],,
+MI0014248,hsa-mir-3199-2,MIR3199-2,"        c                              u  c 
+gugacucc AGGGACUGCCUUAGGAGAAAGUUucuggaa gu a
+|||||||| |||||||||||||||||||||||||||||| ||  
+cacugagg ucccugacggaauccucuuucaaagaccuu ca g
+        -                              -  a",2,22,27920526,27920611,+,hsa-miR-3199,                                    Illumina [1],,
+MI0014251,hsa-mir-514b,MIR514B,"      g      U    -     GAGG         gua 
+caugug uacucU CUCA AGAGG    CAAUCAUgu   a
+|||||| |||||| |||| |||||    |||||||||    
+guacac augAGG GAGU UCUCC    GUUAguaua   u
+      a      U    G     -ACA         gau",3,X,147250151,147250230,-,hsa-miR-514b-5p,                                    Illumina [1-4],hsa-miR-514b-5p,"                                    Illumina [1,3-4]"
+MI0014252,hsa-mir-3202-1,MIR3202-1,"                               -a      u 
+uauuaauaUGGAAGGGAGAAGAGCUUUAAUg  uuggag c
+|||||||||||||||||||||||||||||||  ||||||  
+guaauuauaccuucccucuucucgaaauuac  gacuuu a
+                               ga      u",2,X,153981097,153981177,+,hsa-miR-3202,                                    Illumina [1],,
+MI0014253,hsa-mir-3202-2,MIR3202-2,"                              cucu  aa 
+auuaauaUGGAAGGGAGAAGAGCUUUAAUg    ga  a
+||||||||||||||||||||||||||||||    ||  u
+uaauuauaccuucccucuucucgaaauuac    cu  g
+                              uaac  ca",2,X,153981098,153981176,-,hsa-miR-3202,                                    Illumina [1],,
+MI0015903,hsa-mir-500b,MIR500B,"-      cu -u         UAC       ag g   uuu 
+ cccccu  c  AAUCCUUGC   CUGGGUg  a ugc   c
+ ||||||  |  |||||||||   |||||||  | |||   u
+ ggggga  G  UUAGGAACG   GACCCAC  u acg   g
+a      ac UC         ---       -G g   uaa",8,X,50010672,50010750,+,hsa-miR-500b-5p,"                                    SOLiD [1], Illumina [2]",hsa-miR-500b-5p,                                    Illumina [2]
+MI0016008,hsa-mir-3618,MIR3618,"       ag        ga   c  a    ug       gguu 
+uaagcug  ugcauugu  uuu ca uaau  aggcagu    c
+|||||||  ||||||||  ||| || ||||  |||||||     
+guucgac  guguaaCG  AAA GU AUUA  UCUGUcg    u
+       cg        AG   A  A    CA       aaaa",2,22,20085746,20085833,+,hsa-miR-3618,                                    Illumina [1],,
+MI0016013,hsa-mir-3622a,MIR3622A,"                   C     C         -g   g 
+aauagagggugcaCAGGCA GGGAG UCAGGUGAG  cag g
+||||||||||||||||||| ||||| |||||||||  |||  
+uuaucucccacgUGUCCGU CCCUC AGUCCACUc  guc a
+                   A     C         ga   g",2,8,27701677,27701759,+,hsa-miR-3622a-5p,                                    Illumina [1-2],hsa-miR-3622a-5p,                                    Illumina [1-2]
+MI0016014,hsa-mir-3622b,MIR3622B,"agugaua                          G         cu   c 
+       uaauagagggugcacAGGCAUGGGAG UCAGGUGAg  cag u
+       |||||||||||||||||||||||||| |||||||||  |||  
+       guuaucucccacguGUCCGUGCCCUC AGUCCACUc  guc c
+----ucg                          G         -c   c",2,8,27701673,27701767,-,hsa-miR-3622b-5p,                                    Illumina [1],hsa-miR-3622b-5p,                                    Illumina [1]
+MI0016048,hsa-mir-3648-1,MIR3648-1,"     ---cu     -     u  u      A            G -    G  c          -c     -   -       u   --    g 
+cgcga     gcggc ggcgg gg gggggg GCCGCGGGGAUC C CGAG Gc ggucggccgc  ccggg ugc cgcgcgg gcc  gccg c
+|||||     ||||| ||||| || |||||| |||||||||||| | |||| || ||||||||||  ||||| ||| ||||||| |||  ||||  
+gcgcu     cgccg ccgcc cc uccccu cggugccccugg g gcuc cg ccggcuggcg  ggccc gug gcgcgcc cgg  uggc g
+     cuuuc     g     -  u      g            g a    g  -          uc     u   u       c   ag    g",3,21,8208473,8208652,+,hsa-miR-3648,                                    454 [1],,
+MI0016071,hsa-mir-3670-1,MIR3670-1,"      -cu  u       cuuuug    -    c 
+ucuaga   gg auagcug      gagc cuca c
+||||||   || |||||||      |||| |||| u
+agAUCU   CC UGUCGAC      CUCG GAgu g
+      CUU  -       -----A    A    c",3,16,14907717,14907781,+,hsa-miR-3670,                                    Illumina [1],,
+MI0016072,hsa-mir-3671,MIR3671,"augu         -u   -   acauuuac   a          u 
+    uauugcugc  gcu guc        aug aaauaaaaug a
+    |||||||||  ||| |||        ||| |||||||||| a
+    auagugACG  UGA CAG        UAu uuuauuuuau a
+---u         UC   U   GAAUAAAC   c          u",2,1,65057755,65057842,-,hsa-miR-3671,                                    Illumina [1],,
+MI0016078,hsa-mir-3677,MIR3677,"   A             U  -  -U   gg 
+ggC GUGGCCAGAGCCC GC AG  Gcu  g
+||| ||||||||||||| || ||  |||  c
+CCG CACCGGUCUCGGG UG UC  cgg  a
+   G             -  C  uu   gu",3,16,2270713,2270772,+,hsa-miR-3677-3p,                                    Illumina [1-2],hsa-miR-3677-3p,                                    Illumina [2]
+MI0016086,hsa-mir-3685,MIR3685,"    a   -    -   UA          uga 
+guac UUU CCUA CCC  CCUGAAGACU   g
+|||| ||| |||| |||  ||||||||||   a
+caug aaa gggu ggg  ggguuucuga   u
+    -   c    a   --          uau",2,12,95309923,95309984,+,hsa-miR-3685,                                    Illumina [1],,
+MI0016089,hsa-mir-3688-1,MIR3688-1,"          c                          au   ugua 
+ucuucacuuu aagAGUGGCAAAGUCUUUCCAUAUgu  gua    u
+|||||||||| ||||||||||||||||||||||||||  |||    g
+agaagugaaa uUCUCACCGUUUCAGAAAGGUAUaca  cau    u
+          u                          --   uguc",2,4,159128802,159128894,-,hsa-miR-3688-3p,                                    Illumina [1],hsa-miR-3688-3p,                                    Illumina [1]
+MI0016090,hsa-mir-3689a,MIR3689A,"        g            G             uga 
+ccugggag UGUGAUAUCAUG UUCCUGGGAggug   u
+|||||||| |||||||||||| |||||||||||||    
+ggguccuU GUGCUAUAGUGU GAGGGUCcuucgu   c
+        G            G             guc",7,9,134849487,134849564,-,hsa-miR-3689a-5p,                                    Illumina [1-2],hsa-miR-3689a-5p,                                    Illumina [1-2]
+MI0016409,hsa-mir-3180-5,MIR3180-5,"          --a       u    -c     aac   ---U     G A  U         cc      g    - g  c 
+gcuccgcccc   cgucgca gcgc  ccggg   gcg    GGGGC G GC UCCGGAGgc  cgcccu cugc c ac  
+||||||||||   ||||||| ||||  |||||   |||    ||||| | || |||||||||  |||||| |||| | || c
+cgaggcgggg   gcggugu cgcg  ggccc   cgc    cccug c cg aggccuccg  guggga ggcg g ug  
+          gaa       -    cu     ggu   uacu     a -  u         aa      -    a g  u",2,16,2135977,2136129,-,hsa-miR-3180,                                    Illumina [1],,
+MI0016411,hsa-mir-3689b,MIR3689B,"    cugug     u       --cu    cug             g            G               a 
+gauc     cuccc ggggggu    gauc   ugcuuccugggag UGUGAUAUCAUG UUCCUGGGAggugug u
+||||     ||||| |||||||    ||||   ||||||||||||| |||||||||||| |||||||||||||||  
+cuag     gaggg ucccucg    cuag   guggaggguccuU GUGUUAUAGUGU GAGGGUCcuucgugc c
+    -ugug     -       ugcc    --u             G            G               c",7,9,134850125,134850272,-,hsa-miR-3689b-5p,                                    Illumina [1],hsa-miR-3689b-5p,                                    Illumina [1]
+MI0016413,hsa-mir-3909,MIR3909,"   aug   u    c    -  -    c     -a        c          gaaaagc 
+ggu   cug ugcg uguc cu uccu ugggg  gcaggcuc gggggacagg       a
+|||   ||| |||| |||| || |||| |||||  |||||||| ||||||||||       c
+cca   gac acgu acag ga aggg acUCU  CGUCCGGG UCUCCUGUuc       a
+   --g   c    -    u  g    u     GA        A          aaggaac",2,22,35335640,35335758,+,hsa-miR-3909,                                    Illumina [1-2],,
+MI0016414,hsa-mir-3910-1,MIR3910-1,"      cu          ---c                              auca 
+cuuuug  gucaguuuuu    uguugcuugucuugguuuuaugccuuuuau    a
+||||||  ||||||||||    ||||||||||||||||||||||||||||||     
+gaagac  uaguuaggaa    acaacgaACAGAACCAAAAUACGGAAAaua    g
+      ac          aaaa                              cacg",2,9,91636251,91636361,+,hsa-miR-3910,                                    Illumina [1],,
+MI0016417,hsa-mir-3913-1,MIR3913-1,"u                                                a 
+ uguuuauaauaaacugaaauaUUUGGGACUGAUCUUGAUGUCUgccaa a
+ ||||||||||||||||||||||||||||||||||||||||||||||||  
+ acagauauuauuugacuuuauAAACCCUGACUAGAACUACAGAcgguu c
+g                                                c",2,12,69584722,69584823,-,hsa-miR-3913-5p,                                    Illumina [1],hsa-miR-3913-5p,
+MI0016418,hsa-mir-3913-2,MIR3913-2,"   c                                            g 
+ugu uauaauaaacugaaauaUUUGGGACUGAUCUUGAUGUCUgccaa g
+||| ||||||||||||||||||||||||||||||||||||||||||||  
+aca auauuauuugacuuuauAAACCCUGACUAGAACUACAGAcgguu u
+   a                                            u",2,12,69584723,69584822,+,hsa-miR-3913-5p,                                    Illumina [1],hsa-miR-3913-5p,
+MI0016419,hsa-mir-3914-1,MIR3914-1,"    c   ag                              a     au 
+ugga uuc  auuuaacuucucauuuucugguuccuucua ugagu  g
+|||| |||  |||||||||||||||||||||||||||||| |||||  c
+aucu aag  ugaguUGAAGAGUAAAAGACCAAGGAAgau guuca  u
+    c   ga                              g     au",2,7,71307672,71307770,-,hsa-miR-3914,                                    Illumina [1-2],,
+MI0016421,hsa-mir-3914-2,MIR3914-2,"gaguuccuacuc                          cca   ua 
+            aacuucucauuuucugguuccuucua   agu  a
+            ||||||||||||||||||||||||||   |||  g
+            uUGAAGAGUAAAAGACCAAGGAAgau   uca  c
+cugaagucuaaa                          uac   ua",2,7,71307674,71307768,+,hsa-miR-3914,                                    Illumina [1-2],,
+MI0016426,hsa-mir-3150b,MIR3150B,"     a                 G       C    -    g 
+gaggg aagcaggcCAACCUCGA GAUCUCC CAGC cuug c
+||||| ||||||||||||||||| ||||||| |||| |||| g
+cuccc uucguccGGUUGGAGCU CUAGAGG GUcg ggac u
+     c                 G       A    u    u",2,8,95072911,95072996,-,hsa-miR-3150b-3p,                                    Illumina [1-3],hsa-miR-3150b-3p,                                    Illumina [2-3]
+MI0016431,hsa-mir-3910-2,MIR3910-2,"u                                     gc 
+ uuuuuuguugcuugucuugguuuuaugccuuuuaugu  c
+ |||||||||||||||||||||||||||||||||||||   
+ aaaagacaacgaACAGAACCAAAAUACGGAAAauaua  u
+a                                     gu",2,9,91636264,91636345,-,hsa-miR-3910,                                    Illumina [1],,
+MI0016434,hsa-mir-3926-1,MIR3926-1,"                                uuu 
+aaaauggagcUGGCCAAAAAGCAGGCAGAGAc   a
+||||||||||||||||||||||||||||||||   a
+uuuugccucgaccgguuuuucguccgucucug   a
+                                cga",3,8,12727232,12727304,-,hsa-miR-3926,                                    Illumina [1-2],,
+MI0016437,hsa-mir-3926-2,MIR3926-2,"                           gcu 
+ggagcUGGCCAAAAAGCAGGCAGAGAc   u
+|||||||||||||||||||||||||||   u
+ccucgaccgguuuuucguccgucucug   u
+                           aaa",3,8,12727237,12727299,+,hsa-miR-3926,                                    Illumina [1-2],,
+MI0016684,hsa-mir-374c,MIR374C,"aca    caaug                    CU 
+   cgga     AUAAUACAACCUGCUAAGUG  a
+   ||||     ||||||||||||||||||||   
+   gccu     UAUUAUGUUGGACGAUUCAC  g
+uga    accUA                    ag",3,X,74218549,74218618,+,hsa-miR-374c-5p,                                    Illumina [1],hsa-miR-374c-5p,
+MI0016685,hsa-mir-642b,MIR642B,"           U                     aucc 
+gaguugggaGG UCCCUCUCCAAAUGUGUCUug    c
+||||||||||| |||||||||||||||||||||    c
+cucaacccuCC AGGGAGAGGUUUACACAGAac    c
+           C                     ccca",2,19,45674932,45675008,-,hsa-miR-642b-3p,                                    Illumina [1],hsa-miR-642b-3p,
+MI0016686,hsa-mir-550b-1,MIR550B1,"a  - ac       ----agAU                  CA  aucuua 
+ ga g  uuguugg        GUGCCUGAGGGAGUAAGA  cu      c
+ || |  |||||||        ||||||||||||||||||  ||       
+ cu c  aacgacc        CACGGACUCCCUCAUUCU  gg      a
+a  a ga       gaccacGU                  cg  acaaca",2,7,30289794,30289890,-,hsa-miR-550b-3p,                                    Illumina [1],hsa-miR-550b-3p,
+MI0016687,hsa-mir-550b-2,MIR550B2,"-----agaga  c     agAU                  CAcua    ac 
+          cu gcugg    GUGCCUGAGGGAGUAAGA     ucug  a
+          || |||||    ||||||||||||||||||     ||||  a
+          ga cgacc    CACGGACUCCCUCAUUCU     ggac  c
+acuacgaaac  c     acGU                  ---cg    aa",2,7,32732981,32733077,-,hsa-miR-550b-3p,                                    Illumina [1],hsa-miR-550b-3p,
+MI0016688,hsa-mir-548z,MIR548Z,"-------aag     a                   a a         c  a 
+          uauua guuggugcaaaaguaauug g uuuuugcua ug a
+          ||||| ||||||||||||||||||| | ||||||||| ||  
+          auaau caaccACGUUUUCAUUAAC C AAAAACggu au a
+guaaccguag     c                   G C         a  g",2,12,64622509,64622605,-,hsa-miR-548z,                                    Illumina [1],,
+MI0016689,hsa-mir-548aa-1,MIR548AA1,"-------cuu      uc           a  c             auuac 
+          uauuag  uggugcaaaag aa ugugguuuuugcc     u
+          ||||||  ||||||||||| || |||||||||||||      
+          auaauc  ACCACGUUUUC UU ACACCAAAAAcgg     u
+uuuguucaau      ca           A  A             acauu",2,8,123348034,123348130,+,hsa-miR-548aa,                                    Illumina [1],,
+MI0016690,hsa-mir-548aa-2,MIR548AA2,"-------uuuua                 a  c                ac 
+            uuagguuggugcaaaag aa ugugguuuuugccauu  u
+            ||||||||||||||||| || ||||||||||||||||   
+            aauccaACCACGUUUUC UU ACACCAAAAAcgguaa  u
+cucucccuucua                 A  A                cu",2,17,67471489,67471585,+,hsa-miR-548aa,                                    Illumina [1],,
+MI0016758,hsa-mir-4421,MIR4421,"c     --           u  g  -   aa acu 
+ ugggu  cuccuuucugc ga ag uug  c   u
+ |||||  ||||||||||| || || |||  |    
+ auccA  GAGGAAAGGUG CU UC Aac  g   g
+c     UC           U  G  C   ag guu",2,1,51059837,51059905,+,hsa-miR-4421,                                    Illumina [1],,
+MI0016773,hsa-mir-4433a,MIR4433A,"c          C           C         uc   uga 
+ auccuccuua GUCCCACCCCC ACUCCUGUu  ugg   a
+ |||||||||| ||||||||||| |||||||||  |||    
+ uaggaggaaU CAGGGUGGGGG UGAGGACAa  acu   a
+a          A           -         --   uau",2,2,64340759,64340839,+,hsa-miR-4433a-3p,                                    Illumina [1],hsa-miR-4433a-3p,
+MI0016795,hsa-mir-4450,MIR4450,"u   U       U  A  A     GA  g   g 
+ guc GGGGAUU GG GA GUGGU  gc cag u
+ ||| ||||||| || || |||||  || |||  
+ cgg ucccugg cc cu uacca  cg guu c
+u   u       u  c  c     --  -   u",2,4,76573568,76573632,+,hsa-miR-4450,                                    Illumina [1],,
+MI0016796,hsa-mir-548ah,MIR548AH,"a                        G    c  a  a 
+ gguuggugcAAAAGUGAUUGCAGU UUUG ca ua a
+ |||||||||||||||||||||||| |||| || ||  
+ ccgaccaCGUUUUCAUUGACGUCA AAAC gu au a
+c                        A    a  a  g",2,4,76575551,76575626,+,hsa-miR-548ah-5p,                                    Illumina [1],hsa-miR-548ah-5p,
+MI0016818,hsa-mir-4467,MIR4467,"-u  U         AG   U     U  cuuu 
+  gg GGCGGCGGU  UUA GGGCU cu    c
+  || |||||||||  ||| ||||| ||     
+  cc ccgccgccg  ggu cccga ga    u
+uc  u         --   c     c  ccac",2,7,102471469,102471531,+,hsa-miR-4467,                                    Illumina [1-2],,
+MI0016829,hsa-mir-4477a,MIR4477A,"u         auc                       uuu 
+ ccuccuccc   aaucacaaauguccuuaauggca   a
+ |||||||||   |||||||||||||||||||||||   a
+ ggaggaggg   UUAGUGUUUACAGGAAUUAUCgu   g
+u         caC                       uag",2,9,41233755,41233835,+,hsa-miR-4477a,                                    Illumina [1],,
+MI0016830,hsa-mir-4477b,MIR4477B,"a           g                   a   auc 
+ ccuccucccgu aaucacaaauguccuuaau gca   c
+ ||||||||||| ||||||||||||||||||| |||   u
+ ggaggagggUA UUAGUGUUUACAGGAAUUA cgu   u
+a           G                   c   aaa",2,9,41233755,41233835,-,hsa-miR-4477b,                                    Illumina [1],,
+MI0016832,hsa-mir-3689c,MIR3689C,"     g            g          g    a 
+gggag ugugauaucgug uuccugggag ugug u
+||||| |||||||||||| |||||||||| ||||  
+uccuU GUGUUAUAGUGU GAGGGUCcuu gugc a
+     G            G          g    u",7,9,134849298,134849369,-,hsa-miR-3689c,                                    Illumina [1],,
+MI0016834,hsa-mir-3689d-1,MIR3689D1,"-u      -UGU    U   A   G u      -  ug 
+  GGGAGG    GAUC CAC CUC c gggagg ug  c
+  ||||||    |||| ||| ||| | |||||| ||   
+  ccuucu    cuag gug gag g cccuuc gc  u
+gu      uguc    u   -   g c      u  ua",7,9,134849609,134849682,-,hsa-miR-3689d,                                    Illumina [1],,
+MI0016835,hsa-mir-3689d-2,MIR3689D2,"---acu      -UGU    U   A   G u      -  ug 
+      GGGAGG    GAUC CAC CUC c gggagg ug  c
+      ||||||    |||| ||| ||| | |||||| ||   
+      ccuucu    cuag gug gag g cccuuc gc  u
+gcgagu      uguc    u   -   g u      u  ua",7,9,134850277,134850356,-,hsa-miR-3689d,                                    Illumina [1],,
+MI0016836,hsa-mir-3689e,MIR3689E,"-     gUG  AU      G          g    a 
+ gggag   UG  AUCAUG UUCCUGGGAg uaug u
+ |||||   ||  |||||| |||||||||| ||||  
+ cccuc   gc  uagugu gaggguccuu gugc a
+u     -gu  cc      g          g    u",7,9,134850570,134850641,-,hsa-miR-3689e,                                    Illumina [1],,
+MI0016837,hsa-mir-3689f,MIR3689F,"a      AU                c   uga 
+ ggUGUG  AUCGUGCUUCCUGGGA gug   u
+ ||||||  |||||||||||||||| |||    
+ ucacac  uaguguggaggguccu cgu   g
+c      cc                u   guc",7,9,134850742,134850807,-,hsa-miR-3689f,                                    Illumina [1],,
+MI0016839,hsa-mir-3155b,MIR3155B,"----                 aagg     g 
+    ccacugcagagccuggg    gagcu u
+    |||||||||||||||||    |||||  
+    GGUGACGUCUCGGACCc    cucgg c
+ggAG                 ----     c",2,10,6152207,6152262,-,hsa-miR-3155b,                                    Illumina [1],,
+MI0016871,hsa-mir-4507,MIR4507,"-----u  g    g    g    g   u 
+      cu ggcu agcc agcu ggu  
+      || |||| |||| |||| ||| a
+      GG UCGG UUGG UCga ccg  
+uGGGUC  G    G    G    g   a",4,14,105858124,105858175,-,hsa-miR-4507,                                    Illumina [1],,
+MI0016882,hsa-mir-4516,MIR4516,"a      --A   U      a -  ag   agg         gg 
+ GGGAGA   GGG CGGGGC g gg  ggc   gcaggcucu  g
+ ||||||   ||| |||||| | ||  |||   |||||||||  g
+ cccucu   ccc gucucg c cc  cug   ugucugggg  u
+c      gca   -      g a  ga   -ag         gg",2,16,2133119,2133204,+,hsa-miR-4516,                                    Illumina [1],,
+MI0016886,hsa-mir-4520-1,MIR4520-1,"-gugugcca                       ag 
+         CCUGCGUGUUUUCUGUCCAAauc  a
+         |||||||||||||||||||||||  a
+         GGACGCACAAAAGACAGGUUuag  a
+aaggaagAA                       ga",2,17,6655440,6655509,-,hsa-miR-4520-5p,                                    Illumina [1],hsa-miR-4520-5p,                                    Illumina [1-3]
+MI0016891,hsa-mir-4524a,MIR4524A,"-   c             A         cugcag 
+ gaa gAUAGCAGCAUGA CCUGUCUCA      a
+ ||| ||||||||||||| |||||||||       
+ cuu cUAUCGUCGUAUU GGACAGAGU      a
+a   c             C         uuuauu",2,17,69099564,69099632,-,hsa-miR-4524a-5p,"                                    Illumina [1-2,4]",hsa-miR-4524a-5p,"                                    Illumina [1-2,4]"
+MI0016906,hsa-mir-4536-1,MIR4536-1,"                         uauacugcccugcuuuua 
+aUGUGGUAGAUAUAUGCACGAUaua                  u
+|||||||||||||||||||||||||                   
+UACACCAUCUAUAUACGUGCUauau                  a
+                         ccauacauacauacauac",2,X,55451495,55451582,-,,,,
+MI0016908,hsa-mir-4537,MIR4537,"-- G   CG    G         G    g    aa 
+  U AGC  AGCU AGCUUAGCU ggcu agcu  c
+  | |||  |||| ||||||||| |||| ||||   
+  a ucg  ucga ucgggucga ucgg ucgg  c
+cg g   ag    g         g    g    ga",4,14,105859484,105859553,-,hsa-miR-4537,                                    Illumina [1],,
+MI0016909,hsa-mir-4538,MIR4538,"--G         G  -    G  G    g    g    ga 
+   AGCUUGGAU AG CUGG CU Aacu ggcu gguu  g
+   ||||||||| || |||| || |||| |||| ||||   
+   ucgggucua uc gacc ga uuga ucgg ucgg  c
+gag         g  a    -  g    g    g    gu",4,14,105858165,105858242,-,hsa-miR-4538,                                    Illumina [1],,
+MI0016910,hsa-mir-4539,MIR4539,"uga   g     u   gugcugu   g   a 
+   gcu agcuc gcu       gcu agc  
+   ||| ||||| |||       ||| ||| g
+   CGG UCGAG CGG       CGa ucg  
+---   G     U   GUCAAGU   g   g",4,14,105857513,105857572,-,hsa-miR-4539,                                    Illumina [1],,
+MI0016964,hsa-mir-3960,MIR3960,"      -   --   -  -    -       a  ggg          g 
+ggcgcc ccg  gcu cc ccgc gcccccg uc   gccgccgcua u
+|||||| |||  ||| || |||| ||||||| ||   ||||||||||  
+ccgcgg ggc  cgg gg ggcg cGGGGGC GG   CGGCGGCGGu a
+      a   gg   c  c    a       -  AGG          g",2,9,127785833,127785923,+,,,,
+MI0017287,hsa-mir-4659a,MIR4659A,"       c   a C                    C   g 
+gaaacug uga g UGCCAUGUCUAAGAAGAAAA uuu g
+||||||| ||| | |||||||||||||||||||| ||| a
+cuuugac acu C ACGGUACAGAUUCUUCUUUu aaa g
+       a   G A                    a   a",2,8,6745164,6745244,+,hsa-miR-4659a-5p,                                    Illumina [1],hsa-miR-4659a-5p,                                    Illumina [1]
+MI0017290,hsa-mir-4662a,MIR4662A,"                  C        c    c 
+ucuauUUAGCCAAUUGUC AUCUUUAG uauu  
+|||||||||||||||||| |||||||| |||| u
+agaUAAAUCGGUUAACAG UAGAAAuc guaa  
+                  A        c    g",2,8,124821985,124822051,+,hsa-miR-4662a-5p,"                                    Illumina [1,3]",hsa-miR-4662a-5p,"                                    Illumina [1,3]"
+MI0017291,hsa-mir-4659b,MIR4659B,"       c                          u 
+cuguuga gUUGCCAUGUCUAAGAAGAAaauuuu c
+||||||| |||||||||||||||||||||||||| u
+gacgacu CGACGGUACAGAUUCUUCUUUugaaa c
+       U                          c",2,8,6745168,6745240,-,hsa-miR-4659b-5p,                                    Illumina [1],hsa-miR-4659b-5p,                                    Illumina [1]
+MI0017293,hsa-mir-4662b,MIR4662B,"    auu                           gc   c 
+caca   ucuauuuagccaauugucuaucuuuag  auu  
+||||   |||||||||||||||||||||||||||  ||| a
+gugu   agaUAAAUCGGUUAACAGGUAGAAAuc  uaa  
+    cac                           ga   g",2,8,124821978,124822058,-,hsa-miR-4662b,                                    Illumina [1],,
+MI0017299,hsa-mir-219b,MIR219B,"  a   ca     A   -      C A       ----  -   gg 
+gg gcu  gccac GAU GUCCAG C CAAUUCU    CG guu  c
+|| |||  ||||| ||| |||||| | |||||||    || |||  c
+cc cga  cggUG CUA CAGGUU G GUUAAGA    gc cag  g
+  -   ag     A   A      U C       acau  u   ac",2,9,128392621,128392708,+,hsa-miR-219b-5p,                                    Illumina [1],hsa-miR-219b-5p,                                    Illumina [1]
+MI0017310,hsa-mir-4679-1,MIR4679-1,"                                guua 
+gucuuuuuUCUGUGAUAGAGAUUCUUUGCUuu    g
+||||||||||||||||||||||||||||||||    a
+uagaaaaaagacacuaucucuaagaaacgaaa    a
+                                aaca",2,10,89063336,89063410,+,hsa-miR-4679,                                    Illumina [1],,
+MI0017311,hsa-mir-4679-2,MIR4679-2,"ua                              uu    u 
+  ucuuuuuUCUGUGAUAGAGAUUCUUUGCUu  uguu  
+  ||||||||||||||||||||||||||||||  |||| c
+  agaaaaaagacacuaucucuaagaaacgaa  acaa  
+gc                              --    u",2,10,89063335,89063411,-,hsa-miR-4679,                                    Illumina [1],,
+MI0017324,hsa-mir-4691,MIR4691,"   g      cag  C   -   G  A  A    C  cccu  u 
+gga cacucc   GU CUC CAG CC UG GCUG GG    ga g
+||| ||||||   || ||| ||| || || |||| ||    ||  
+ccu gugagg   CG GAG GUC GG AC CGAC uc    cu u
+   -      aUA  U   A   A  C  -    C  --au  c",2,11,68033897,68033981,+,hsa-miR-4691-5p,                                    Illumina [1],hsa-miR-4691-5p,                                    Illumina [1]
+MI0017343,hsa-mir-203b,MIR203B,"    cc  c            C  A    U    -  a  g gc 
+gcgc  gc gggucUAGUGGU CU AACA UUCA CA uu c  u
+||||  || |||||||||||| || |||| |||| || || |   
+cgcg  cg cccAGGUCACCA GA UUGU AAGU gu aa g  a
+    --  a            A  A    C    U  c  - ac",2,14,104117418,104117503,-,hsa-miR-203b-5p,                                    Illumina [1-2],hsa-miR-203b-5p,                                    Illumina [1-2]
+MI0017351,hsa-mir-3529,MIR3529,"   a     A  U       -     -       agcgc 
+ggc ccauu GG AGACUGG GAUUU GUUGUUg     a
+||| ||||| || ||||||| ||||| |||||||      
+ccg gguag CC UCUGAUC CUAAA CAACAAc     g
+   g     A  U       A     A       agaau",3,15,88611847,88611924,-,hsa-miR-3529-5p,                                    Illumina [1],hsa-miR-3529-5p,
+MI0017352,hsa-mir-4717,MIR4717,"                                 gg 
+ggcaguguuUAGGCCACAGCCACCCAUGUGUag  g
+|||||||||||||||||||||||||||||||||   
+ccgucacaaaUCCGGUGUCGGUGGGUACACAuc  u
+                                 gg",3,16,2274620,2274691,+,hsa-miR-4717-5p,                                    Illumina [1],hsa-miR-4717-5p,                                    Illumina [1]
+MI0017358,hsa-mir-4520-2,MIR4520-2,"-                       cu 
+ CCUGCGUGUUUUCUGUCCAAauc  u
+ |||||||||||||||||||||||  u
+ GGACGCACAAAAGACAGGUUUag  u
+U                       uc",2,17,6655449,6655502,+,hsa-miR-4520-5p,                                    Illumina [1],hsa-miR-4520-5p,                                    Illumina [1]
+MI0017360,hsa-mir-451b,MIR451B,"    u  A     A     A           aa 
+uggg aU GCAAG GAACC UUACCAUUacu  a
+|||| || ||||| ||||| |||||||||||   
+accc ua cguuc uuugg aaugguaauga  c
+    u  c     c     c           cu",4,17,28861371,28861438,+,hsa-miR-451b,                                    Illumina [1],,
+MI0017362,hsa-mir-4725,MIR4725,"    -     uggA   C   CA        -  Cca   g   g 
+gugu cucuc    GAC CUG  GCCUUCCC AC   cca gga c
+|||| |||||    ||| |||  |||||||| ||   ||| |||  
+caca gggag    CUG GAC  CGGAAGGG Ug   ggu ccu u
+    a     uGGG   U   UG        G  ucg   a   u",2,17,31575269,31575358,+,hsa-miR-4725-5p,                                    Illumina [1],hsa-miR-4725-5p,                                    Illumina [1]
+MI0017369,hsa-mir-4732,MIR4732,"     a   ----           ---AG    AA    ugu 
+gaggg gcU    GUAGAGCAGGG     CAGG  GCUg   g
+||||| |||    |||||||||||     ||||  ||||    
+cuccc cga    cGUCUUGUCCU     GUCC  CGac   u
+     -   cccc           GUCCA    --    cug",4,17,28861655,28861730,-,hsa-miR-4732-5p,                                    Illumina [1],hsa-miR-4732-5p,                                    Illumina [1]
+MI0017373,hsa-mir-4736,MIR4736,"        UAUCU    U    ucu 
+AGGCAGGU     GGGC Gcca   c
+||||||||     |||| ||||    
+uccguccg     uucg cggu   c
+        -----    u    cac",2,17,58335976,58336022,-,hsa-miR-4736,                                    Illumina [1],,
+MI0017375,hsa-mir-3064,MIR3064,"-g  CU  C            -     cuc  u 
+  gU  GG UGUUGUGGUGUG CAAaa   cg a
+  ||  || |||||||||||| |||||   || c
+  CA  CC ACAACGUCACAC GUUuu   gu a
+gA  UU  -            C     auc  u",2,17,64500774,64500839,-,hsa-miR-3064-5p,                                    Illumina [1],hsa-miR-3064-5p,                                    Illumina [1]
+MI0017383,hsa-mir-122b,MIR3591,"   u    aUUU             C     Aua  u 
+cag agcu    AGUGUGAUAAUGG GUUUG   gu u
+||| ||||    ||||||||||||| |||||   ||  
+guc ucga    UCACACUGUUACC CAAAc   ca a
+   -    CACC             A     --a  g",2,18,58451080,58451152,-,hsa-miR-122b-5p,                                    Illumina [1],hsa-miR-122b-5p,                                    Illumina [1]
+MI0017384,hsa-mir-4745,MIR4745,"--gUGA       -  -     A   C   cg 
+      GUGGGGC UC CCGGG CGG Gcc  c
+      ||||||| || ||||| ||| |||   
+      CACUCUG AG GGCCC GUc cgg  c
+ccCUGG       C  C     G   c   uc",2,19,804940,805001,+,hsa-miR-4745-5p,                                    Illumina [1],hsa-miR-4745-5p,                                    Illumina [1]
+MI0017393,hsa-mir-371b,MIR371B,"gguaa        AGA   C         acca 
+     cACUCAAA   UGG GGCACUUUc    g
+     ||||||||   ||| |||||||||    a
+     GUGAGUUU   ACC CCGUGAAag    g
+---cC        GAC   C         acga",4,19,53787677,53787742,-,hsa-miR-371b-5p,                                    Illumina [1],hsa-miR-371b-5p,                                    Illumina [1]
+MI0017394,hsa-mir-4754,MIR4754,"------ac    cugAU    --       UUA      Uga   cca    u 
+        gcgc     GCGG  ACCUGGG   GCGGAG   ggc   gugg  
+        ||||     ||||  |||||||   ||||||   |||   |||| c
+        cgcg     ugcc  uggaccu   cgccuc   ccg   cgcc  
+uccgugua    -----    gu       gga      ---   --c    a",2,19,58386770,58386858,-,hsa-miR-4754,                                    Illumina [1],,
+MI0017396,hsa-mir-499b,MIR499B,"  aa  agcAC        U        -C  g gg 
+gg  gc     AGACUUGC GUGAUGUU  Ac u  a
+||  ||     |||||||| ||||||||  || |   
+cc  cg     UCUGAACG CACUACAA  ug g  g
+  gc  ACAAU        U        au  a ga",2,20,34990400,34990472,-,hsa-miR-499b-5p,                                    Illumina [1],hsa-miR-499b-5p,                                    Illumina [1]
+MI0017404,hsa-mir-4763,MIR4763,"      -          u     U    AGCCCUC    U      acu 
+ccuguc ccuccugccc gCGCC GCCC       CUGC cuggug   g
+|||||| |||||||||| ||||| ||||       |||| ||||||   a
+gggcgg gggGGGCGGG CGUGG CGGG       GACG GAccgc   g
+      c          U     U    -------    -      cag",3,22,46113566,46113657,+,hsa-miR-4763-5p,                                    Illumina [1],hsa-miR-4763-5p,                                    Illumina [1]
+MI0017415,hsa-mir-4773-1,MIR4773-1,"                                   auu 
+ugcuccccagccuuucuaugcuccuguucugcuuu   u
+|||||||||||||||||||||||||||||||||||    
+acgagggguCGGAAAGAUACGAGGACAAGACgaaa   c
+                                   cua",2,2,151368334,151368411,+,hsa-miR-4773,                                    Illumina [1],,
+MI0017416,hsa-mir-4773-2,MIR4773-2,"                                    au 
+ugcuccccagccuuucuaugcuccuguucugcuuug  g
+||||||||||||||||||||||||||||||||||||   
+acgagggguCGGAAAGAUACGAGGACAAGACgaaau  a
+                                    aa",2,2,151368334,151368411,-,hsa-miR-4773,                                    Illumina [1],,
+MI0017419,hsa-mir-4776-1,MIR4776-1,"                                 c   aa 
+cuauaugcaGUGGACCAGGAUGGCAAGGGCUcu cug  a
+||||||||||||||||||||||||||||||||| |||   
+gauaUACGUCACCUGGUCCUACCGUUCccgaga gac  g
+                                 u   ag",2,2,212926257,212926336,+,hsa-miR-4776-5p,                                    Illumina [1],hsa-miR-4776-5p,                                    Illumina [1]
+MI0017420,hsa-mir-4776-2,MIR4776-2,"                                 a   uc 
+cuauaugcaGUGGACCAGGAUGGCAAGGGCUcu cug  c
+||||||||||||||||||||||||||||||||| |||   
+gauaUACGUCACCUGGUCCUACCGUUCccgaga gac  u
+                                 g   uu",2,2,212926257,212926336,-,hsa-miR-4776-5p,                                    Illumina [1],hsa-miR-4776-5p,                                    Illumina [1]
+MI0017431,hsa-mir-1245b,MIR1245B,"u    a                 -  UAAA  -  a 
+ uuau ugUAGGCCUUUAGAUCA CU    ga gu u
+ |||| ||||||||||||||||| ||    || || u
+ aaua AUAUCCGGAAAUCUAGU GA    CU ca c
+a    c                 A  ----  a  a",2,2,188978093,188978161,-,hsa-miR-1245b-5p,                                    Illumina [1],hsa-miR-1245b-5p,                                    Illumina [1]
+MI0017447,hsa-mir-3688-2,MIR3688-2,"       a                            aacaga 
+ucacuuu aagAGUGGCAAAGUCUUUCCAUAUgugu      c
+||||||| ||||||||||||||||||||||||||||      a
+agugaaa uUCUCACCGUUUCAGAAAGGUAUacaua      u
+       g                            cauaca",2,4,159128805,159128891,+,hsa-miR-3688-3p,                                    Illumina [1],hsa-miR-3688-3p,                                    Illumina [1]
+MI0017932,hsa-mir-5047,MIR5047,"gaa  -- -      u    ---ga   -a   -    ua      -   uu  g 
+   gc  g cuugcc agac     gac  cag ugca  aaaaca acu  ug g
+   ||  | |||||| ||||     |||  ||| ||||  |||||| |||  || g
+   cg  c gaacgg ucUG     UUG  GUC ACGU  uuuugu ugg  ac g
+--a  aa a      u    GAAUG   GC   G    Uc      a   --  a",2,17,64501214,64501313,-,hsa-miR-5047,"                                    Northern [1], RTPCR [1]",,
+MI0017979,hsa-mir-5090,MIR5090,"-     --   ----acCC        UU   G     U  aaag 
+ ucuga  ggu        GGGGCAGA  GGU UAGGG Gc    c
+ |||||  |||        ||||||||  ||| ||||| ||    c
+ ggacu  ccg        ccccgucu  ccg auccc cg    u
+a     gu   accucaac        -u   a     c  cccg",2,7,102465742,102465826,+,hsa-miR-5090,"                                    Illumina [1], qPCR [1]",,
+MI0019112,hsa-mir-3670-2,MIR3670-2,"      -cu  u       cuuuug    -    c 
+ucuaga   gg auagcug      gagc cuca c
+||||||   || |||||||      |||| |||| u
+agAUCU   CC UGUCGAC      CUCG GAgu g
+      CUU  -       -----A    A    c",3,16,16306370,16306434,+,hsa-miR-3670,                                    Illumina [1],,
+MI0019114,hsa-mir-4524b,MIR4524B,"uagcug     -aug g       ---   g           A           aaauaa 
+      ggugg    u uucuuuu   gaa gAUAGCAGCAU AGCCUGUCUCa      u
+      |||||    | |||||||   ||| ||||||||||| |||||||||||       
+      ucacu    g aaggaga   cuu cuAUCGUCGUA UUGGACAGAGu      u
+---cug     aaug g       aac   g           C           gacguc",2,17,69099542,69099656,+,hsa-miR-4524b-5p,                                    SOLiD [1],hsa-miR-4524b-5p,                                    SOLiD [1]
+MI0019139,hsa-mir-5583-1,MIR5583-1,"--                       cuag 
+  AAACUAAUAUACCCAUAUUCUGg    g
+  |||||||||||||||||||||||    u
+  UUUGAUUAUAUGGGUAUAAGacu    g
+GG                       acua",2,18,39676721,39676779,+,,,,
+MI0019140,hsa-mir-5583-2,MIR5583-2,"--                      augau 
+  AAACUAAUAUACCCAUAUUCUG     c
+  ||||||||||||||||||||||     a
+  UUUGAUUAUAUGGGUAUAAGac     c
+GG                      cgauc",2,18,39676719,39676777,-,,,,
+MI0019144,hsa-mir-5587,MIR5587,"-        -  --     A      c 
+ AUGGUCAC CU  CCGGG CUcagc c
+ |||||||| ||  ||||| |||||| u
+ UACUAGUG GA  GGCCC Gagucg g
+C        U  CG     C      u",2,16,535316,535368,+,,,,
+MI0019146,hsa-mir-1295b,MIR1295B,"-CA          C      A   c   c 
+   CCCAGAUCUG GGCCUA Uca agg c
+   |||||||||| |||||| ||| ||| a
+   GGGUCUAGGC CCGGAU Agu uuu c
+AAC          A      A   c   a",2,1,171101739,171101798,+,,,,
+MI0019149,hsa-mir-4536-2,MIR4536-2,"                         g    gua   -a   a gu 
+aUGUGGUAGAUAUAUGCACGAUaua guau   ugu  ugu u  a
+||||||||||||||||||||||||| ||||   |||  ||| |   
+UACACCAUCUAUAUACGUGCUauau uaug   acg  acg a  u
+                         a    ---   gg   a aa",2,X,55451495,55451582,+,,,,
+MI0019284,hsa-mir-5683,MIR5683,"  ag      A           U U        uu    c 
+gg  cuuguU CAGAUGCAGAU C CUGACUUC  acug  
+||  |||||| ||||||||||| | ||||||||  |||| a
+cc  gaauaa guuuacgucua g gacugaag  ugac  
+  ca      -           - -        --    c",2,6,6169334,6169409,+,hsa-miR-5683,                                    Illumina [1],,
+MI0019289,hsa-mir-5692c-2,MIR5692C2,"          a            -----gga      uuu 
+uguguacacc acugugauauua        guccua   a
+|||||||||| ||||||||||||        ||||||    
+acaCAUGUGG UGACACUAUAAU        uaggau   u
+          A            AAggauua      uuu",2,7,97964405,97964481,-,hsa-miR-5692c,                                    Illumina [1],,
+MI0019293,hsa-mir-5681b,MIR5681B,"      G                     a 
+gaagAG UAUUGCCACCCUUUCUAGUcu a
+|||||| ||||||||||||||||||||| u
+cuucuc auaacggugggaaagaucagg a
+      -                     g",2,8,74548550,74548609,-,hsa-miR-5681b,                                    Illumina [1],,
+MI0019297,hsa-mir-5692a-1,MIR5692A1,"gacag           C    GU        - uc 
+     uaCAAAUAAUA CACA  GGGUGUac c  a
+     ||||||||||| ||||  |||||||| |   
+     auguuuauuau gugu  cccacaug g  u
+cuaua           a    --        u ug",2,7,97963658,97963726,+,hsa-miR-5692a,                                    Illumina [1],,
+MI0019298,hsa-mir-5692a-2,MIR5692A2,"           C    GU        - uc 
+uaCAAAUAAUA CACA  GGGUGUac c  a
+||||||||||| ||||  |||||||| |   
+auguuuauuau gugu  cccacaug g  u
+           a    --        u ug",3,8,12719132,12719190,+,hsa-miR-5692a,                                    Illumina [1],,
+MI0019307,hsa-mir-5700,MIR5700,"     U                       cu    c 
+uuaau AAUGCAUUAAAUUAUUGAAGGcc  uggg  
+||||| |||||||||||||||||||||||  |||| a
+aguua uuacguaauuuaauaacuuccgg  accc  
+     u                       --    c",2,12,94561789,94561859,+,hsa-miR-5700,                                    Illumina [1],,
+MI0020346,hsa-mir-6069,MIR6069,"---   u    -      CU  -     G      -     c 
+   ugg gacc ccuGGG  AG GGCCU CUGCCC CCugc c
+   ||| |||| ||||||  || ||||| |||||| ||||| a
+   acc cugg ggauuc  uc cuggg gguggg ggacg g
+gug   -    u      -c  a     a      a     u",2,22,35336721,35336799,-,hsa-miR-6069,                                    SOLiD [1],,
+MI0022211,hsa-mir-6500,MIR6500,"           aa   AGC     A UC         -u    u 
+ccugccugcag  AGG   UAUCC C  CAGGUGUCC  uucu c
+|||||||||||  |||   ||||| |  |||||||||  ||||  
+ggauggacguc  UCC   GUAGG G  GUUCACAgg  gaga u
+           CG   --A     - UU         uc    g",2,1,51060018,51060103,+,hsa-miR-6500-5p,                                    Illumina [1],hsa-miR-6500-5p,                                    Illumina [1]
+MI0022223,hsa-mir-6511a-1,MIR6511A1,"c             U  --  C   CA    agag 
+ cugCAGGCAGAAG GG  GG UGA  GGgc    g
+ ||||||||||||| ||  || |||  ||||     
+ gaCGUCCGUCUUC CC  CC ACU  cccg    g
+-             -  UA  -   CC    cguu",2,16,14925937,14926003,+,hsa-miR-6511a-5p,                                    Illumina [1-2],hsa-miR-6511a-5p,                                    Illumina [1-2]
+MI0022226,hsa-mir-6514,MIR6514,"UA         CUUU   -----------------     auu 
+  UGGAGUGGA    CAG                 CUGGC   u
+  |||||||||    |||                 |||||    
+  ACCUCACCU    GUC                 gacug   a
+-G         UCUU   CGUCgagacauucuuga     agc",2,11,62792702,62792771,-,hsa-miR-6514-5p,                                    Illumina [1],hsa-miR-6514-5p,                                    Illumina [1]
+MI0022548,hsa-mir-6715a,MIR6715A,"u   c  c            a  c      a   u   u 
+ ggg ug guccacaggcac gc gguuug gca uuu a
+ ||| || |||||||||||| || |||||| ||| |||  
+ ucc ac cgGGUGUCCGUG UG CCAAAC Cgu aag c
+u   a  a            C  A      -   u   u",2,10,112299612,112299690,+,hsa-miR-6715a-3p,                                    Illumina [1],,
+MI0022549,hsa-mir-6715b,MIR6715B,"--       c           A        -   a  ca 
+  gguugug ccACAGGCACG CUGGUUUG GCA uu  g
+  ||||||| ||||||||||| |||||||| ||| ||   
+  ccgacgc GGUGUCCGUGU GGCCAAAC Cgu aa  u
+ac       a           C        U   a  aa",2,10,112299612,112299688,-,hsa-miR-6715b-5p,                                    Illumina [1],hsa-miR-6715b-5p,                                    Illumina [1]
+MI0022556,hsa-mir-6721,MIR6721,"cccucauc      C     C   UU     --     cuga  a 
+        ucUGGG AGGGG UUA  GUAGG  AGucu    ag g
+        |||||| ||||| |||  |||||  |||||    ||  
+        ggaccc uuccc aau  cgucc  ucagg    uc a
+uuacccuu      c     -   uu     ag     --ug  g",2,6,32170030,32170116,-,hsa-miR-6721-5p,                                    Illumina [1],,
+MI0022559,hsa-mir-6724-1,MIR6724-1,"cgcug   uuCU   CC      --    G -   -     -c  g  c  u 
+     cgc    GGG  CGCGGC  GGGC U GGG Gcugc  cg gc gg c
+     |||    |||  ||||||  |||| | ||| |||||  || || ||  
+     gcg    ccc  gcgccg  cccg a ccc cgaug  gc cg cc g
+----g   ----   -a      ag    g g   u     cc  g  a  a",3,21,8205315,8205406,+,hsa-miR-6724-5p,                                    Illumina [1],,
+MI0022560,hsa-mir-892c,MIR892C,"--   ag   c             UGC    C  uuag 
+  ggc  ugc cUAUUCAGAAAGG   CAGU Ac    a
+  |||  ||| |||||||||||||   |||| ||    u
+  ucg  aug GGUGAGUCUUUCC   GUCA ug    u
+au   gg   A             UUU    C  uaca",6,X,145992750,145992826,-,hsa-miR-892c-5p,                                    Illumina [1],hsa-miR-892c-5p,                                    Illumina [1]
+MI0022593,hsa-mir-6748,MIR6748,"uggug      U  G A    U     ugaaau  uc 
+     UGUGGG GG A GGAC GGAUU      gg  c
+     |||||| || | |||| |||||      ||  c
+     ACAUCC CU U CCUG CCUag      cc  a
+----G      U  G C    U     --cagu  uc",2,11,62789815,62789885,+,hsa-miR-6748-5p,                                    meta-analysis [1],hsa-miR-6748-5p,                                    meta-analysis [1]
+MI0022594,hsa-mir-6749,MIR6749,"ggcccUC     U  G UU        uc  uccug 
+       GGGCC GG G  GGGGGAGC  ug     u
+       ||||| || |  ||||||||  ||      
+       CCCGG CC U  CCUCCUCg  ac     c
+-----GA     U  G CC        uu  ucacu",2,11,64902387,64902455,-,hsa-miR-6749-5p,                                    meta-analysis [1],hsa-miR-6749-5p,                                    meta-analysis [1]
+MI0022595,hsa-mir-6750,MIR6750,"gcuguCA    A   CU       ----------      cc  a 
+       GGGA CAG  GGGUGAG          CUGCUg  cc  
+       |||| |||  |||||||          ||||||  || g
+       CCCU GUC  CCCACUC          gacgac  gg  
+-----GA    C   -U       AAGaccugug      cc  a",4,11,64898363,64898437,-,hsa-miR-6750-5p,                                    meta-analysis [1],hsa-miR-6750-5p,                                    meta-analysis [1]
+MI0022603,hsa-mir-6758,MIR6758,"-     UAG         G  U    UGU    a 
+ ugggc   AGAGGGGAA GA GUGA   gagc g
+ |||||   ||||||||| || ||||   |||| a
+ ACCUG   UCUCCUCUU CU CAcu   cuug u
+G     ---         A  -    ---    g",2,12,57512688,57512750,+,hsa-miR-6758-5p,                                    meta-analysis [1],hsa-miR-6758-5p,                                    meta-analysis [1]
+MI0022615,hsa-mir-6770-1,MIR6770-1,"uauc   A            U  A  U A  u 
+    cUG GAAGGCACAGCU GC CG G cc c
+    ||| |||||||||||| || || | ||  
+    GAC CUUCUGUGUCGG CG GU c gg c
+----   A            -  -  C g  u",2,16,14930820,14930879,+,hsa-miR-6770-5p,                                    meta-analysis [1],hsa-miR-6770-5p,                                    meta-analysis [1]
+MI0022622,hsa-mir-6777,MIR6777,"ucaagAC    A      C  U       augg  a 
+       GGGG GUCAGG AG GGUGGAg    ag g
+       |||| |||||| || |||||||    ||  
+       CCCC CGGUCC UC UCACCUc    uc c
+-----GA    -      -  -       cgag  c",2,17,17813480,17813545,-,hsa-miR-6777-5p,                                    meta-analysis [1],hsa-miR-6777-5p,                                    meta-analysis [1]
+MI0022634,hsa-mir-6789,MIR6789,"-----c      G     UC     C   C      gucccag   g    - c 
+      gagGUA GGGCG  CCGGG GCG GGGcgg       gcu ggcc c u
+      |||||| |||||  ||||| ||| ||||||       ||| |||| |  
+      CUCUGU CCCGC  GGCcc ugc cccguc       ugg ccgg g c
+GACCUC      G     --     -   -      --acucg   g    a g",2,19,2235829,2235926,-,hsa-miR-6789-5p,                                    meta-analysis [1],hsa-miR-6789-5p,                                    meta-analysis [1]
+MI0022635,hsa-mir-6790,MIR6790,"-       U  AU   G      -----    g 
+ GUGAGUG GG  UUG CGGGGU     Ucgg g
+ ||||||| ||  ||| ||||||     |||| g
+ cacUCAC CC  AGC GCUCCA     agcc u
+c       U  CC   G      GCggc    u",2,19,6392921,6392983,-,hsa-miR-6790-5p,                                    meta-analysis [1],hsa-miR-6790-5p,                                    meta-analysis [1]
+MI0022647,hsa-mir-6802,MIR6802,"gagg   -          CU     C cc   a 
+    gCU AGGUGGGGGG  UGAAG c  gag u
+    ||| ||||||||||  ||||| |  |||  
+    CGA UCCACUCUCC  ACUUc g  cuc g
+--GA   A          CC     u ca   c",3,19,55239912,55239976,-,hsa-miR-6802-5p,                                    meta-analysis [1],hsa-miR-6802-5p,                                    meta-analysis [1]
+MI0022648,hsa-mir-6803,MIR6803,"cuccu         -      -U  ---    g  g 
+     CUGGGGGUG GGGGGC  GG   GCGU gu g
+     ||||||||| ||||||  ||   |||| || a
+     GACUCCCAC CUUCCG  CC   cgua cg c
+-----         U      CU  CUa    g  a",2,19,55245186,55245250,-,hsa-miR-6803-5p,                                    meta-analysis [1],hsa-miR-6803-5p,                                    meta-analysis [1]
+MI0022649,hsa-mir-6804,MIR6804,"----  au       UGUCA       A    -ggg   c 
+    gg  gUGAGGG     GCAGGUG CGgu    ggc  
+    ||  |||||||     ||||||| ||||    ||| a
+    CC  CACUCUC     CGUCCAC GCcg    ucg  
+GACA  --       -----       -    acag   c",2,19,55230885,55230952,-,hsa-miR-6804-5p,                                    meta-analysis [1],hsa-miR-6804-5p,                                    meta-analysis [1]
+MI0022678,hsa-mir-6833,MIR6833,"aaacgG  U     A    A       aaucc 
+      UG GGAAG UGGG GGAGAAA     c
+      || ||||| |||| |||||||     u
+      AC CCUUC ACCU UCUCUUU     g
+-----G  U     -    C       caauu",2,6,32179816,32179876,+,hsa-miR-6833-5p,                                    meta-analysis [1],hsa-miR-6833-5p,                                    meta-analysis [1]
+MI0022679,hsa-mir-6834,MIR6834,"----- U      C      U    Gggc  gga      uguac 
+     G GAGGGA UGGGAU UGUG    ga   gggacc     u
+     | |||||| |||||| ||||    ||   ||||||      
+     C CUCCCU ACCCUG AUac    cu   ucuugg     a
+gACUA -      -      U    ---a  -ag      uaccg",2,6,33290245,33290325,+,hsa-miR-6834-5p,                                    meta-analysis [1],hsa-miR-6834-5p,                                    meta-analysis [1]
+MI0022695,hsa-mir-6849,MIR6849,"c     A       G   AG  U    Ag  a  a 
+ cuggG GUGGAUA GGG  UG GUGG  ag gc c
+ ||||| ||||||| |||  || ||||  || || u
+ GACCU CACCUGU UCC  AC CAcc  uc cg g
+-     C       G   -G  -    cg  -  a",3,8,144400277,144400345,-,hsa-miR-6849-5p,                                    meta-analysis [1],hsa-miR-6849-5p,                                    meta-analysis [1]
+MI0022711,hsa-mir-6864,MIR6864,"gaaagU        --C     AG  AU   a     u 
+      UGAAGGGA   AAGUC  AU  GCC uuaug g
+      ||||||||   |||||  ||  ||| ||||| g
+      ACUUCCCU   UUCAG  UG  ugg aguac g
+-----G        CUC     AG  -g   -     u",2,17,4969702,4969771,-,hsa-miR-6864-5p,                                    meta-analysis [1],hsa-miR-6864-5p,                                    meta-analysis [1]
+MI0022712,hsa-mir-6865,MIR6865,"aucca       C  ---       ACU   -  u 
+     UAGGUGG AG   AGGAGGG   UCA ga g
+     ||||||| ||   |||||||   ||| ||  
+     auCCGCC UC   UUCUCCC   Agu cu c
+--gac       A  CCU       -AC   a  u",2,17,4970086,4970150,-,hsa-miR-6865-5p,                                    meta-analysis [1],hsa-miR-6865-5p,                                    meta-analysis [1]
+MI0022720,hsa-mir-6873,MIR6873,"cccagC        -U        C   cag   u 
+      AGAGGGAA  ACAGAGGG AAU   gac  
+      ||||||||  |||||||| |||   ||| g
+      UCUCUCUU  UGUCUCUC UUa   cug  
+---GAC        UC        -   ---   g",2,6,33287227,33287289,-,hsa-miR-6873-5p,                                    meta-analysis [1],hsa-miR-6873-5p,                                    meta-analysis [1]
+MI0022732,hsa-mir-6885,MIR6885,"ccugg         CU C C          ----   g 
+     AGGGGGGCA  G G AAGCAAAGCC    agg  
+     |||||||||  | | ||||||||||    ||| a
+     UCCCCUCGU  C C UUCGUUUCgg    ucc  
+---GA         -- - -          agag   c",2,19,6389638,6389703,-,hsa-miR-6885-5p,                                    meta-analysis [1],hsa-miR-6885-5p,                                    meta-analysis [1]
+MI0022741,hsa-mir-6894,MIR6894,"caagaA      U    A  U    C   c 
+      GGAGGA GGAG GC GGGC AGA a
+      |||||| |||| || |||| ||| u
+      CCUCCU UCUC CG UCCG Ucu g
+----GA      -    C  -    U   c",2,X,53198889,53198945,-,hsa-miR-6894-5p,                                    meta-analysis [1],hsa-miR-6894-5p,                                    meta-analysis [1]
+MI0022742,hsa-mir-6895,MIR6895,"cagcuC       --   AC    UA   a   --a    auu 
+      AGGGCCA  GGC  AGAG  AGc uca   uagc   g
+      |||||||  |||  ||||  ||| |||   ||||    
+      UUCCGGU  CCG  UCUC  Ucg agu   guug   g
+----GA       UC   -C    UG   -   caa    aac",2,X,53195411,53195488,-,hsa-miR-6895-5p,                                    meta-analysis [1],hsa-miR-6895-5p,                                    meta-analysis [1]
+MI0022964,hsa-mir-7113,MIR7113,"  C       ACA   U  ---      ucu 
+cU CAGGGAG   GUG GU   GAGgcc   u
+|| |||||||   ||| ||   ||||||   g
+GA GUCUCUC   CGC CG   CUCCgg   c
+  C       ---   C  UCC      uac",2,11,68032864,68032922,+,hsa-miR-7113-5p,                                    meta-analysis [1],hsa-miR-7113-5p,                                    meta-analysis [1]
+MI0023564,hsa-mir-6511a-2,MIR6511A2,"c             U  --  C   CA    agag 
+ cugCAGGCAGAAG GG  GG UGA  GGgc    g
+ ||||||||||||| ||  || |||  ||||     
+ gaCGUCCGUCUUC CC  CC ACU  cccg    g
+-             -  UA  -   CC    cguu",2,16,16324588,16324654,+,hsa-miR-6511a-5p,                                    Illumina [1-2],hsa-miR-6511a-5p,                                    Illumina [1-2]
+MI0023622,hsa-mir-486-2,MIR486-2,"--                      -  ggg  g 
+  UCCUGUACUGAGCUGCCCCGAG cu   ca  
+  |||||||||||||||||||||| ||   || c
+  AGGACAUGACUCGACGGGGCuc gg   gu  
+gU                      c  gaa  a",2,8,41660444,41660507,+,hsa-miR-486-5p,                                    Illumina [1],hsa-miR-486-5p,                                    Illumina [1]
+MI0025511,hsa-mir-4433b,MIR4433B,"---ugug                            -          gaauau 
+       uucccuauccuccuuAUGUCCCACCCCC ACUCCUGUuu      u
+       |||||||||||||||||||||||||||| ||||||||||       
+       aggggguaggaggaaUGCAGGGUGGGGG UGAGGACaaa      u
+acaagaa                            G          gaccac",2,2,64340747,64340848,-,hsa-miR-4433b-5p,                                    Illumina [1],hsa-miR-4433b-5p,                                    Illumina [1]
+MI0025514,hsa-mir-7844,MIR7844,"ugauugu     c      guaa   AA  U       U  -   GUA   aa    aauucu 
+       gcgga ucgugu    gaA  AC AGGACUG GU GGU   aau  cuac      c
+       ||||| ||||||    |||  || ||||||| || |||   |||  ||||      u
+       ugucu agcaca    cuu  ug uccugac ca ccg   uug  gaug      u
+---acuu     a      auug   ca  u       u  a   ---   ac    ccucaa",2,12,94571231,94571352,-,hsa-miR-7844-5p,                                    Illumina [1],,
+MI0025523,hsa-mir-7853,MIR7853,"   -      ucaaua         ------     u   a  -  A        - -        --    g 
+ucu cacacu      ggcauuguc      ugggg cuu uU CA AUGCAGAU C CUGACUUC  acug  
+||| ||||||      |||||||||      ||||| ||| || || |||||||| | ||||||||  |||| u
+aga gugugg      ucgugguag      acccu gaa aa gu uacgucua g gacugaag  ugac  
+   c      ---ucg         uagugg     c   c  u  c        a a        aa    g",2,6,6169304,6169435,-,hsa-miR-7853-5p,                                    Illumina [1],,
+MI0025748,hsa-mir-7973-1,MIR7973-1,"--                    c  a g    u   uc 
+  UGUGACCCUAGAAUAAUUAC ca c ucuc gag  u
+  |||||||||||||||||||| || | |||| |||   
+  acacugggaucuuauuaaug gu g agag uuu  c
+ac                    a  g g    u   gg",2,15,51314034,51314109,+,hsa-miR-7973,                                    Illumina [1],,
+MI0025749,hsa-mir-7973-2,MIR7973-2,"--                       c c    aaaacc 
+  UGUGACCCUAGAAUAAUUACuca c ucuc      g
+  ||||||||||||||||||||||| | ||||       
+  acacugggaucuuauuaaugggu g agag      a
+ac                       u c    acucag",2,15,51314032,51314107,-,hsa-miR-7973,                                    Illumina [1],,
+MI0026418,hsa-mir-6770-2,MIR6770-2,"uauc   A            U  A  U A  u 
+    cUG GAAGGCACAGCU GC CG G cc c
+    ||| |||||||||||| || || | ||  
+    GAC CUUCUGUGUCGG CG GU c gg c
+----   A            -  -  C g  u",2,16,16329305,16329364,+,hsa-miR-6770-5p,                                    meta-analysis [1],hsa-miR-6770-5p,                                    meta-analysis [1]
+MI0031510,hsa-mir-3179-4,MIR3179-4,"                      a               gcc 
+caggaucacagacguuuaaauu cacuccuucugcugu   u
+|||||||||||||||||||||| |||||||||||||||    
+guccuagugucUGCAAAUUUAA GUGGGGAAGAugacg   u
+                      A               aca",2,16,18494493,18494576,-,hsa-miR-3179,                                    Illumina [1-2],,
+MI0031512,hsa-mir-3648-2,MIR3648-2,"     ---cu     -     u  u      A            G -    G  c          -c     -   -       u   --    g 
+cgcga     gcggc ggcgg gg gggggg GCCGCGGGGAUC C CGAG Gc ggucggccgc  ccggg ugc cgcgcgg gcc  gccg c
+|||||     ||||| ||||| || |||||| |||||||||||| | |||| || ||||||||||  ||||| ||| ||||||| |||  ||||  
+gcgcu     cgccg ccgcc cc uccccu cggugccccugg g gcuc cg ccggcuggcg  ggccc gug gcgcgcc cgg  uggc g
+     cuuuc     g     -  u      g            g a    g  -          uc     u   u       c   ag    g",2,21,8986999,8987178,+,hsa-miR-3648,                                    454 [1],,
+MI0031513,hsa-mir-3670-3,MIR3670-3,"      -cu  u       cuuuug    -    c 
+ucuaga   gg auagcug      gagc cuca c
+||||||   || |||||||      |||| |||| u
+agAUCU   CC UGUCGAC      CUCG GAgu g
+      CUU  -       -----A    A    c",3,16,18405698,18405762,-,hsa-miR-3670,                                    Illumina [1],,
+MI0031514,hsa-mir-3670-4,MIR3670-4,"      -cu  u       cuuuug    -    c 
+ucuaga   gg auagcug      gagc cuca c
+||||||   || |||||||      |||| |||| u
+agAUCU   CC UGUCGAC      CUCG GAgu g
+      CUU  -       -----A    A    c",2,16,18488301,18488365,-,hsa-miR-3670,                                    Illumina [1],,
+MI0031518,hsa-mir-6724-4,MIR6724-4,"cgcug   uuCU   CC      --    G -   -     -c  g  c  u 
+     cgc    GGG  CGCGGC  GGGC U GGG Gcugc  cg gc gg c
+     |||    |||  ||||||  |||| | ||| |||||  || || ||  
+     gcg    ccc  gcgccg  cccg a ccc cgaug  gc cg cc g
+----g   ----   -a      ag    g g   u     cc  g  a  a",2,21,8432530,8432621,+,hsa-miR-6724-5p,                                    Illumina [1],,
+MI0031520,hsa-mir-941-5,MIR941-5,"  u          c  g    c   aca   -  acg 
+ug gcacaugugc ca ggcc ggg   gcg cc   g
+|| |||||||||| || |||| |||   ||| ||    
+ac CGUGUACACG GU UCGG CCC   Cgc gg   a
+  c          U  G    -   --A   a  aga",5,20,63919868,63919939,+,hsa-miR-941,"                                    cloned [1], SOLiD [2]",,
+MI0033056,hsa-mir-10226,,"-      -  -   C    G   G  C    A   u 
+ gaggga ac uuC AUGU UCU GG UGGG AAC g
+ |||||| || ||| |||| ||| || |||| |||  
+ cuuccu ug gag uaca agg uc accu uug g
+u      a  u   u    g   g  -    c   a",2,17,48032882,48032951,+,hsa-miR-10226,                                    Illumina [1],,
+MI0033418,hsa-mir-10394,,"-   GCA          AA    AU  ucaaca    ucc  g 
+ UCU   GGUCCUGGUG  CGCC  ca      gugg   cc g
+ |||   ||||||||||  ||||  ||      ||||   ||  
+ AGA   UCAGGGCCGC  GCGG  GU      cacc   gg g
+C   GUG          --    --  uacgca    uca  a",2,19,58393364,58393446,+,hsa-miR-10394-5p,                                    Illumina [1],hsa-miR-10394-5p,                                    Illumina [1]
+MI0033420,hsa-mir-10396a,,"---  -  -        A   G   u 
+   GG CG GGGCUCGG GCC GGc u
+   || || |||||||| ||| |||  
+   CC GC CCCGGGCC CGG ccg c
+GGG  A  U        C   g   g",2,21,8987617,8987665,+,hsa-miR-10396a-5p,                                    Illumina [1],hsa-miR-10396a-5p,                                    Illumina [1]
+MI0033425,hsa-mir-10401,,"---  U      A   ---  G    g   a 
+   CG GUGGGA GGC   GU GGGU cgg  
+   || |||||| |||   || |||| ||| c
+   GC CGCCCU CCG   CA cccg gcc  
+GCC  C      G   CUC  g    -   c",3,21,8206563,8206618,+,hsa-miR-10401-5p,                                    Illumina [1],hsa-miR-10401-5p,                                    Illumina [1]
+MI0033426,hsa-mir-10396b,,"---   -  -        A   G   u 
+   CGG CG GGGCUCGG GCC GGc u
+   ||| || |||||||| ||| |||  
+   GCC GC CCCGGGCC CGG ccg c
+CAG   A  U        C   g   g",2,21,8436324,8436374,+,hsa-miR-10396b-5p,                                    Illumina [1],hsa-miR-10396b-5p,                                    Illumina [1]
+MI0033673,hsa-mir-10526,,"-   -              aaga  ga 
+ ucc ccuuaguuuccuuu    gu  u
+ ||| ||||||||||||||    ||  a
+ AGG GGAGUCGGGGGAAA    ua  a
+G   U              -Agg  aa",3,11,122152103,122152156,-,hsa-miR-10526-3p,                                    Illumina [1],,

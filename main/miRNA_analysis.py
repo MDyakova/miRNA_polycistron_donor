@@ -24,6 +24,10 @@ with open(os.path.join('files', 'input_data.json'), 'r') as f:
 
 compl_dict = config['compl_dict']
 file_name = config_input_data['general_information']['file_name']
+folder_name = config_input_data['general_information']['output_folder_name']
+
+output_folder =  os.path.join('files', 'outputs', folder_name)
+os.makedirs(output_folder, exist_ok=True)
 
 # Load Gene ID, transcript ID and cromosome name from config
 
@@ -60,8 +64,7 @@ mirna_data = mirna_data[['Name/gene name', 'sequence', 'sourse', 'count_sourses'
 mirna_correct = correct_sequences(mirna_data, refseq_sequence, compl_dict)
 
 # Save correct sequences to file
-mirna_correct_sequences_path = os.path.join('files', 
-                                            'outputs', 
+mirna_correct_sequences_path = os.path.join(output_folder, 
                                             f'{file_name}_correct_sequences.csv')
 mirna_correct.to_csv(mirna_correct_sequences_path, index=None)
 
@@ -103,7 +106,9 @@ mirna_with_features = pd.merge(mirna_with_features, mirnafold_data, on=['sequenc
 mirna_with_features['choice'] = 0
 
 # Save results
-mirna_with_features.to_csv(os.path.join('files', 'outputs', 'mirna_with_features.csv'), index=None)
+mirna_with_features.to_csv(os.path.join(output_folder,
+                                        f'{file_name}_mirna_with_features.csv'), 
+                                        index=None)
 
 time.sleep(100000)
 
