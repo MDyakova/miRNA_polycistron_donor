@@ -16,5 +16,14 @@
         "data" : {
             "mirna_table" : "data/TREX1 sirna.xlsx",
             "mirna_table_correct" : "data/TREX1 sirna_correct.csv"
-        }
+        },
+
+    "polycistron_data":{
+        "mirna_polycistrons_file" : "data/mirna_polycistrons.fa",
+        "mirna_in_polycistron_file" : "data/mirna_in_polycistrons.csv",
+        "rna_fold_file" : "data/RNAfold_data.fa",
+        "rna_fold_out_file" : "data/RNAfold_output.out",
+        "rna_cofold_file" : "data/data_for_RNAcofold.fasta",
+        "rna_cofold_out_file" : "data/RNAcofoldresults.txt"
+    }
 }
