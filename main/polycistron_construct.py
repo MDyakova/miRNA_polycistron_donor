@@ -12,7 +12,9 @@ from utilities_polycistron import (mirna_polycistron_data,
                                    sirna_data,
                                    mirna_sirna_pairs,
                                    get_new_scaffold,
-                                   full_scaffold_structures)
+                                   full_scaffold_structures,
+                                   hairpin_plots,
+                                   save_results)
 
 
 # Load config
@@ -110,12 +112,33 @@ with open(os.path.join(output_folder, f'{file_name}_sequence.fa'), 'w') as f:
     f.write(f'> {file_name}\n')
     f.write(left_flank + scaffold_new + right_flank + '\n')
 
+# Compute all new sequences
 full_scaffold_structures(scaffold_clean, scaffold_new, left_flank, right_flank, 
                          all_old_sequences, all_new_sequences, 
                          mirna_names, sirna_names, sequence,
                          rna_fold_file, rna_fold_out_file,
                         vienna_output_directory, output_folder)
 
+# Make hairpin pictures
+hairpin_plots(all_old_sequences, 
+              all_new_sequences, 
+              mirna_names, 
+              sirna_names, 
+              rna_fold_file, 
+              rna_fold_out_file,
+              vienna_output_directory,
+              output_folder)
+
+# Save all sequences
+save_results(output_folder, 
+            all_old_structure, 
+            all_new_structure, 
+            mirna_names, 
+            sirna_names,
+            all_sequences,
+            all_new_sequences,
+            ncbi_name,
+            refseq_sequence)
 
 time.sleep(100000)
 

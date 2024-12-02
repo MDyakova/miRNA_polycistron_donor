@@ -344,7 +344,6 @@ def get_new_sequence(mirna_structure_list,
         f.write('> new seq \n')
         f.write(new_sequence_r.replace('T', 'U')  + '\n')
 
-    # !RNAfold -p -d2 < data/RNAfold_data.fa > data/RNAfold_output.out
     # Launch RNAfold
     with open(rna_fold_file, "r") as infile, open(rna_fold_out_file, "w") as outfile:
         subprocess.run(["RNAfold", "-p", "-d2"], stdin=infile, stdout=outfile, check=True, cwd=vienna_output_directory)
@@ -419,7 +418,6 @@ def energy_sites(mature_seq_list, strand, rna_cofold_file, rna_cofold_out_file, 
         f.write('> sample right \n')
         f.write(right_seq1 + '&' + right_seq2 + '\n')
     
-    # !RNAcofold -p < $rna_cofold_file > $rna_cofold_out_file
     with open(rna_cofold_file, "r") as infile, open(rna_cofold_out_file, "w") as outfile:
         subprocess.run(["RNAcofold", "-p"], stdin=infile, stdout=outfile, check=True, cwd=vienna_output_directory)
     
@@ -607,7 +605,6 @@ def full_scaffold_structures(scaffold_clean, scaffold_new, left_flank, right_fla
         f.write('> new seq \n')
         f.write(scaffold_new.replace('T', 'U')  + '\n')
     
-    # !RNAfold -p -d2 < $rna_fold_file > $rna_fold_out_file
     with open(rna_fold_file, "r") as infile, open(rna_fold_out_file, "w") as outfile:
         subprocess.run(["RNAfold", "-p", "-d2"], stdin=infile, stdout=outfile, check=True, cwd=vienna_output_directory)
     
@@ -636,7 +633,14 @@ def full_scaffold_structures(scaffold_clean, scaffold_new, left_flank, right_fla
     structure_picture(probabilities_all, all_new_sequences, sirna_names, sequence, 'new polycistron folding', output_folder)
 
 
-def hairpin_plots(all_old_sequences, all_new_sequences, mirna_names, sirna_names):
+def hairpin_plots(all_old_sequences, 
+                  all_new_sequences, 
+                  mirna_names, 
+                  sirna_names, 
+                  rna_fold_file, 
+                  rna_fold_out_file,
+                  vienna_output_directory,
+                  output_folder):
     colors = plt.cm.jet(np.linspace(0,1,len(mirna_names)))
     fig, axs = plt.subplots(len(mirna_names)*2, 1, figsize=(5,3 * len(mirna_names)))
     pos = 0
@@ -648,6 +652,8 @@ def hairpin_plots(all_old_sequences, all_new_sequences, mirna_names, sirna_names
             f.write(seq_new.replace('T', 'U')  + '\n')
         
         # !RNAfold -p -d2 < data/RNAfold_data.fa > data/RNAfold_output.out
+        with open(rna_fold_file, "r") as infile, open(rna_fold_out_file, "w") as outfile:
+            subprocess.run(["RNAfold", "-p", "-d2"], stdin=infile, stdout=outfile, check=True, cwd=vienna_output_directory)
         
         with open(rna_fold_out_file) as f:
             RNAfold_output = f.readlines()
@@ -657,20 +663,24 @@ def hairpin_plots(all_old_sequences, all_new_sequences, mirna_names, sirna_names
         old_energy = float(RNAfold_output[2].split(' ')[1].split('(')[1].split(')')[0])
         new_energy = float(RNAfold_output[8].split(' ')[1].split('(')[1].split(')')[0])
     
-        file_name = 'old_dp.ps'
+        # file_name = 'old_dp.ps'
+        file_name = os.path.join(vienna_output_directory, 'old_dp.ps')
         structure, probabilities_all, sequence = structure_prob(file_name)
         
-        file_name = 'old_ss.ps'
+        # file_name = 'old_ss.ps'
+        file_name = os.path.join(vienna_output_directory, 'old_ss.ps')
         probabilities_all = structure_coords(file_name, probabilities_all)
 
         axs[pos].plot(probabilities_all['Y'], probabilities_all['X'], 'k', linewidth=0.5)
         axs[pos].title.set_text(mirna_name + ' energy = ' + str(old_energy))
         pos += 1
         
-        file_name = 'new_dp.ps'
+        # file_name = 'new_dp.ps'
+        file_name = os.path.join(vienna_output_directory, 'new_dp.ps')
         structure, probabilities_all, sequence = structure_prob(file_name)
         
-        file_name = 'new_ss.ps'
+        # file_name = 'new_ss.ps'
+        file_name = os.path.join(vienna_output_directory, 'new_ss.ps')
         probabilities_all = structure_coords(file_name, probabilities_all)
     
         axs[pos].plot(probabilities_all['Y'], probabilities_all['X'], c = colors[step], linewidth=1)
@@ -678,5 +688,39 @@ def hairpin_plots(all_old_sequences, all_new_sequences, mirna_names, sirna_names
         pos += 1
     
     fig.tight_layout(pad=1.0)
-    plt.savefig(output_folder + output_name + ' ' + 'pri-mirna folding' + '.jpg')
+    picture_name = 'pri-mirna folding'
+    plt.savefig(os.path.join(output_folder, f'{picture_name}.jpg'))
+
+def save_results(output_folder, 
+                 all_old_structure, 
+                 all_new_structure, 
+                 mirna_names, 
+                 sirna_names,
+                 all_sequences,
+                 all_new_sequences,
+                 ncbi_name,
+                 refseq_sequence):
+
+    with open(os.path.join(output_folder, 'pri-mirna sructures.txt'), 'w') as f:
+        for struct_old, struct_new, mirna_name, sirna_name in zip(all_old_structure, all_new_structure, mirna_names, sirna_names):
+            f.write(mirna_name + '\n')
+            f.write('\n'.join(struct_old) + '\n')
+            f.write(sirna_name + '\n')
+            f.write('\n'.join(struct_new) + '\n')
+            f.write('\n')
+
+    with open(os.path.join(output_folder, 'sirna_sequences.txt'), 'w') as f:
+        for sirna_name, sirna_seq in all_sequences:
+            if sirna_name in sirna_names:
+                f.write('> ' + sirna_name + '\n')
+                f.write(sirna_seq + '\n')
+
+    with open(os.path.join(output_folder, 'sirna_hairpin_sequences.txt'), 'w') as f:
+        for sirna_name, sirna_seq in zip(sirna_names, all_new_sequences):
+            f.write('> ' + sirna_name + '\n')
+            f.write(sirna_seq + '\n')
+
+    with open(os.path.join(output_folder, 'transcript_sequences.txt'), 'w') as f:
+        f.write('> ' + ncbi_name + '\n')
+        f.write(refseq_sequence + '\n')
 
