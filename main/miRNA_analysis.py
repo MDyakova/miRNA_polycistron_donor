@@ -66,6 +66,7 @@ mirna_data = mirna_data[['Name/gene name', 'sequence', 'sourse', 'count_sourses'
 
 # Check that in table correct strand and fix if not (miRNA should be complimentary to transcript)
 mirna_correct = correct_sequences(mirna_data, refseq_sequence, compl_dict)
+mirna_correct.drop_duplicates(subset=['sequence'], inplace=True, keep='first')
 
 # Save correct sequences to file
 mirna_correct_sequences_path = os.path.join(output_folder, 
@@ -121,7 +122,7 @@ gene_bank_file(ncbi_name,
                refseq_sequence, 
                DATE_TODAY, 
                elements_list, 
-               file_name, 
+               f'{ncbi_name}_with_new_mirna', 
                output_folder,
                oligos=oligos)
 

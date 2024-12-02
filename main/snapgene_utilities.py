@@ -181,4 +181,33 @@ def find_elements(cds_start, cds_end, exons, mirna_data):
 
     return elements_list, oligos
 
+def find_elements_polycistron(new_scaffold_seq, all_sequences, sirna_names, all_new_sequences):
+    """
+    Make lists with sirna/mirna and hairpin sequences for SnapGene file.
+    """
+    elements_list = []
+
+    for sirna_name, sirna_seq in zip(sirna_names, all_new_sequences):
+        sirna_start = len(new_scaffold_seq.split(sirna_seq)[0])
+        sirna_end = sirna_start + len(sirna_seq)
+        elements_list.append([f'{sirna_name}_hairpin', 
+                                sirna_start,
+                                sirna_end, 
+                                "None", 
+                                "#c96f0e"])
+
+    oligos = []    
+    for sirna_name, sirna_seq in all_sequences:
+        if sirna_name in sirna_names:
+            sirna_start = len(new_scaffold_seq.split(sirna_seq)[0])
+            sirna_end = sirna_start + len(sirna_seq)
+            oligos.append([sirna_name, sirna_seq, 1, len(sirna_seq)])
+            # elements_list.append([sirna_name, 
+            #         sirna_start,
+            #         sirna_end, 
+            #         "None", 
+            #         "#0b86d9"])
+
+    return elements_list, oligos
+
 
