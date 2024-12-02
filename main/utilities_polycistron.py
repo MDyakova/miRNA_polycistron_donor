@@ -6,6 +6,7 @@ from Bio.pairwise2 import format_alignment
 from Bio import Entrez
 from Bio import SeqIO
 import matplotlib.pyplot as plt
+import subprocess
 
 def mirna_polycistron_data(file_name, cluster_name, flank_size = 200):
     with open(file_name) as f:
@@ -101,9 +102,9 @@ def mirna_loading(mirna_in_polycistrons):
 
     return mirna_in_polycistrons
 
-def sirna_data(sirna_file, refseq_sequence, comp_dict):
+def sirna_data(sirna_file, refseq_sequence, comp_dict, output_folder):
 
-    with open('results/sirna_with_incorrect_energy.txt') as f:
+    with open(os.path.join(output_folder, 'sirna_with_incorrect_energy.txt')) as f:
         sirna_with_incorrect_energy = f.read()
     sirna_with_incorrect_energy = sirna_with_incorrect_energy.split('\n')
     
@@ -111,10 +112,10 @@ def sirna_data(sirna_file, refseq_sequence, comp_dict):
         sirnas = pd.read_csv(sirna_file)
     else:
         sirnas = pd.read_excel(sirna_file)
-    sirnas = sirnas[pd.notna(sirnas['choice'])]
+    sirnas = sirnas[sirnas['choice']==1]
     
     if 'name' not in sirnas.columns:
-        sirnas['name'] = 'si' + sirnas['Name/gene name'] + '_' + sirnas['start'].astype('str')
+        sirnas['name'] = 'si' + sirnas['Name/gene name'] + '_' + sirnas['start_mirna'].astype('str')
         
     sirnas = sirnas[sirnas['name'].apply(lambda p: p not in sirna_with_incorrect_energy)]
 
@@ -139,10 +140,9 @@ def sirna_data(sirna_file, refseq_sequence, comp_dict):
             all_aligh = all_aligh2[0]
     
         
-        start = all_aligh.start
-        end = all_aligh.end
+        # start = all_aligh.start
+        # end = all_aligh.end
         delta = 23 - (all_aligh.end - all_aligh.start)
-        # all_sequences.append([sirnas['name'].iloc[i], sirna_seq])
         gene_seq = all_aligh.seqA[all_aligh.start - delta:all_aligh.end]
         sirna_seq = ''.join([comp_dict[s] for s in gene_seq][::-1])
         all_sequences.append([sirnas['name'].iloc[i], sirna_seq])
@@ -164,12 +164,10 @@ def sirna_data(sirna_file, refseq_sequence, comp_dict):
         else:
             sirna_seq = seq
             all_aligh = all_aligh2[0]
-    
         
-        start = all_aligh.start
-        end = all_aligh.end
+        # start = all_aligh.start
+        # end = all_aligh.end
         delta = 23 - (all_aligh.end - all_aligh.start)
-        # all_sequences.append([sirnas['name'].iloc[i], sirna_seq])
         gene_seq = all_aligh.seqA[all_aligh.start - delta:all_aligh.end]
         sirna_seq = ''.join([comp_dict[s] for s in gene_seq][::-1])
         all_sequences.append([sirnas['name'].iloc[i], sirna_seq])
@@ -219,7 +217,7 @@ def mirna_sirna_pairs(mirna_in_polycistrons, scaffold, all_sequences, type = 'si
         pairs = pd.DataFrame(data={'sirna_names':sirna_pairs, 'mirna_names':mirna_pairs})
     return pairs, all_alignments
 
-def new_sequence_function(mirna_structure_list, sirna_seq, delta = 1):
+def new_sequence_function(mirna_structure_list, sirna_seq, compl_dict, delta = 1):
     new_sequence = []
     mirna_checked = 0
     sirna_pos = 0
@@ -248,7 +246,7 @@ def new_sequence_function(mirna_structure_list, sirna_seq, delta = 1):
                     new_sequence.append([mirna_structure_list[0][step], 
                                          sirna_seq[sirna_pos], 
                                          mirna_structure_list[2][step], 
-                                         comp_dict[sirna_seq[sirna_pos]],
+                                         compl_dict[sirna_seq[sirna_pos]],
                                          mirna_structure_list[4][step]])
                     sirna_pos += 1
                 else:
@@ -318,12 +316,21 @@ def letter_size(mirna_structure, new_sequence_list):
             new_sequence_list_split[4][step] = new_sequence_list_split[4][step].lower()
     return [''.join(i) for i in new_sequence_list_split]
 
-def get_new_sequence(mirna_structure_list, mirna_structure, sirna_seq, hairpin_seq, strand, rna_fold_file, rna_fold_out_file, delta = 1):
+def get_new_sequence(mirna_structure_list, 
+                     mirna_structure, 
+                     sirna_seq, 
+                     hairpin_seq, 
+                     strand, 
+                     rna_fold_file, 
+                     rna_fold_out_file,
+                     vienna_output_directory, 
+                     compl_dict,
+                     delta = 1):
     if strand == 0:
-            new_sequence, new_sequence_list = new_sequence_function(mirna_structure_list, sirna_seq, delta = delta)
+            new_sequence, new_sequence_list = new_sequence_function(mirna_structure_list, sirna_seq, compl_dict, delta = delta)
     if strand == 1:
         mirna_structure_list = [i[::-1] for i in mirna_structure_list][::-1]
-        new_sequence, new_sequence_list = new_sequence_function(mirna_structure_list, sirna_seq, delta = delta)
+        new_sequence, new_sequence_list = new_sequence_function(mirna_structure_list, sirna_seq, compl_dict, delta = delta)
         new_sequence_list = [i[::-1] for i in new_sequence_list][::-1]
         # break
 
@@ -337,7 +344,9 @@ def get_new_sequence(mirna_structure_list, mirna_structure, sirna_seq, hairpin_s
         f.write('> new seq \n')
         f.write(new_sequence_r.replace('T', 'U')  + '\n')
 
-    # !RNAfold -p -d2 < data/RNAfold_data.fa > data/RNAfold_output.out
+    # Launch RNAfold
+    with open(rna_fold_file, "r") as infile, open(rna_fold_out_file, "w") as outfile:
+        subprocess.run(["RNAfold", "-p", "-d2"], stdin=infile, stdout=outfile, check=True, cwd=vienna_output_directory)
 
     with open(rna_fold_out_file) as f:
         RNAfold_output = f.readlines()
@@ -389,7 +398,7 @@ def get_mature_sequence_coords(sequence):
 
     return start_nt, end_nt
 
-def energy_sites(mature_seq_list, strand, rna_cofold_file, rna_cofold_out_file, size = 7):
+def energy_sites(mature_seq_list, strand, rna_cofold_file, rna_cofold_out_file, vienna_output_directory, size = 7):
     if strand == 0:
         left_side = [i[:size] for i in mature_seq_list]
         right_side = [i[-size:] for i in mature_seq_list]
@@ -409,7 +418,8 @@ def energy_sites(mature_seq_list, strand, rna_cofold_file, rna_cofold_out_file, 
         f.write('> sample right \n')
         f.write(right_seq1 + '&' + right_seq2 + '\n')
     
-    # !RNAcofold -p < $rna_cofold_file > $rna_cofold_out_file
+    with open(rna_cofold_file, "r") as infile, open(rna_cofold_out_file, "w") as outfile:
+        subprocess.run(["RNAcofold", "-p"], stdin=infile, stdout=outfile, check=True, cwd=vienna_output_directory)
     
     with open(rna_cofold_out_file) as f:
         RNAcofoldresults = f.readlines()
@@ -419,7 +429,16 @@ def energy_sites(mature_seq_list, strand, rna_cofold_file, rna_cofold_out_file, 
 
     return left_energy, right_energy
 
-def get_new_scaffold(scaffold, mirna_in_polycistrons, all_alignments, pairs, rna_fold_file, rna_fold_out_file, rna_cofold_file, rna_cofold_out_file):
+def get_new_scaffold(scaffold, 
+                     mirna_in_polycistrons, 
+                     all_alignments, pairs, 
+                     rna_fold_file, 
+                     rna_fold_out_file, 
+                     rna_cofold_file, 
+                     rna_cofold_out_file,
+                     output_folder,
+                     vienna_output_directory,
+                     compl_dict):
     scaffold_clean = scaffold.replace('{', '').replace('}', '')
     scaffold_new = scaffold.replace('{', '').replace('}', '')
     all_old_sequences = []
@@ -429,9 +448,9 @@ def get_new_scaffold(scaffold, mirna_in_polycistrons, all_alignments, pairs, rna
     all_old_structure = []
     all_new_structure = []
 
-    with open('results/sirna_with_structure_error.txt') as f:
+    with open(os.path.join(output_folder, 'sirna_with_structure_error.txt')) as f:
         sirna_structure_e = f.read()
-    with open('results/sirna_with_incorrect_energy.txt') as f:
+    with open(os.path.join(output_folder, 'sirna_with_incorrect_energy.txt')) as f:
         sirna_incorrect_e = f.readlines()
     for mirna_name in pairs['mirna_names']:
         mirna_data = mirna_in_polycistrons[mirna_in_polycistrons['mirbase_name']==mirna_name]
@@ -448,45 +467,59 @@ def get_new_scaffold(scaffold, mirna_in_polycistrons, all_alignments, pairs, rna
         if len(mirna_structure_list[-1]) < len(mirna_structure_list[1]):
             mirna_structure_list[-1] = mirna_structure_list[-1] + ' '
     
-        new_sequence, new_sequence_list, structure_compare, delta_energy = get_new_sequence(mirna_structure_list, mirna_structure, 
-                                                                                            sirna_seq, hairpin_seq, strand, 
-                                                                                            rna_fold_file, rna_fold_out_file, delta = 1)
+        (new_sequence, 
+         new_sequence_list, 
+         structure_compare, 
+         delta_energy) = get_new_sequence(mirna_structure_list, mirna_structure, 
+                                        sirna_seq, hairpin_seq, strand, 
+                                        rna_fold_file,  
+                                        rna_fold_out_file,
+                                        vienna_output_directory, compl_dict, delta = 1)
         
         if (np.max(structure_compare) >= 5) | (len(np.where(structure_compare>0)[0])>3) | (delta_energy<-5):
             print('check another delta '  +  mirna_name)
     
-            new_sequence, new_sequence_list, structure_compare, delta_energy = get_new_sequence(mirna_structure_list, mirna_structure, 
-                                                                                                sirna_seq, hairpin_seq, strand, 
-                                                                                                rna_fold_file, rna_fold_out_file,delta = 0)
+            (new_sequence, 
+             new_sequence_list, 
+             structure_compare, 
+             delta_energy) = get_new_sequence(mirna_structure_list, mirna_structure, 
+                                                sirna_seq, hairpin_seq, strand, 
+                                                rna_fold_file, 
+                                                rna_fold_out_file, 
+                                                vienna_output_directory, compl_dict, delta = 0)
             
             if (np.max(structure_compare) >= 5) | (len(np.where(structure_compare>2)[0])>3) | (delta_energy<-5):
-                with open('results/sirna_with_structure_error.txt') as f:
+                with open(os.path.join(output_folder, 'sirna_with_structure_error.txt')) as f:
                     sirna_structure_e = f.read()
                 if (sirna_name + ' ' + mirna_name) not in sirna_incorrect_e:
-                    with open('results/sirna_with_structure_error.txt', 'a') as f:
+                    with open(os.path.join(output_folder, 'sirna_with_structure_error.txt'), 'a') as f:
                         f.write(sirna_name + ' ' + mirna_name + '\n')
-                print('Structure error: ' + sirna_name + ' ' + mirna_name)
+                # print('Structure error: ' + sirna_name + ' ' + mirna_name)
 
         sequence = new_sequence_list.copy()
         start_nt, end_nt = get_mature_sequence_coords(sequence)
         
         mature_seq_list = [i[start_nt:end_nt] for i in sequence]
         
-        left_energy, right_energy = energy_sites(mature_seq_list, strand, rna_cofold_file, rna_cofold_out_file)
+        left_energy, right_energy = energy_sites(mature_seq_list, 
+                                                 strand, 
+                                                 rna_cofold_file, 
+                                                 rna_cofold_out_file, 
+                                                 vienna_output_directory)
         
         
         if right_energy - left_energy > 0:
-            with open('results/sirna_with_incorrect_energy.txt') as f:
+            with open(os.path.join(output_folder, 'sirna_with_incorrect_energy.txt')) as f:
                 sirna_incorrect_e = f.readlines()
             if sirna_name not in sirna_incorrect_e:
-                with open('results/sirna_with_incorrect_energy.txt', 'a') as f:
+                with open(os.path.join(output_folder, 'sirna_with_incorrect_energy.txt'), 'a') as f:
                     f.write(sirna_name + '\n')
-            print(sirna_name + ' sites have incorrect energies')
+            # print(sirna_name + ' sites have incorrect energies')
     
         if len(scaffold_new.split(hairpin_seq))==2:
             scaffold_new = scaffold_new.replace(hairpin_seq, new_sequence.replace('-', ''))
-        else:
-            'Scaffold sequence error ' + mirna_name
+        # else:
+        #     'Scaffold sequence error ' + mirna_name
         # break
     
         all_old_sequences.append(hairpin_seq)
@@ -543,7 +576,7 @@ def structure_coords(file_name, probabilities_all):
 
     return probabilities_all
 
-def structure_picture(probabilities_all, all_sequences, all_names, sequence, picture_name):
+def structure_picture(probabilities_all, all_sequences, all_names, sequence, picture_name, output_folder):
     colors = plt.cm.jet(np.linspace(0,1,len(all_sequences)))
     plt.figure()
     plt.plot(probabilities_all['X'], probabilities_all['Y'], 'k', linewidth=0.5)
@@ -556,11 +589,13 @@ def structure_picture(probabilities_all, all_sequences, all_names, sequence, pic
         plt.plot(prob_seq['X'], prob_seq['Y'], c = colors[step], linewidth=1, label=name)
         plt.title(picture_name)
         plt.legend()
-        plt.savefig(output_folder + output_name + ' ' + picture_name + '.jpg')
+        plt.savefig(os.path.join(output_folder, f'{picture_name}.jpg'))
 
 def full_scaffold_structures(scaffold_clean, scaffold_new, left_flank, right_flank, 
                              all_old_sequences, all_new_sequences,  
-                             mirna_names, sirna_names, sequence):
+                             mirna_names, sirna_names, sequence,
+                             rna_fold_file, rna_fold_out_file,
+                             vienna_output_directory, output_folder):
     scaffold_clean = left_flank + scaffold_clean + right_flank
     scaffold_new = left_flank + scaffold_new + right_flank
     
@@ -570,7 +605,8 @@ def full_scaffold_structures(scaffold_clean, scaffold_new, left_flank, right_fla
         f.write('> new seq \n')
         f.write(scaffold_new.replace('T', 'U')  + '\n')
     
-    # !RNAfold -p -d2 < $rna_fold_file > $rna_fold_out_file
+    with open(rna_fold_file, "r") as infile, open(rna_fold_out_file, "w") as outfile:
+        subprocess.run(["RNAfold", "-p", "-d2"], stdin=infile, stdout=outfile, check=True, cwd=vienna_output_directory)
     
     with open(rna_fold_out_file) as f:
         RNAfold_output = f.readlines()
@@ -580,24 +616,31 @@ def full_scaffold_structures(scaffold_clean, scaffold_new, left_flank, right_fla
     old_energy = float(RNAfold_output[2].split(' ')[1].split('(')[1].split(')')[0])
     new_energy = float(RNAfold_output[8].split(' ')[1].split('(')[1].split(')')[0])
     
-    file_name = 'old_dp.ps'
+    file_name = os.path.join(vienna_output_directory, 'old_dp.ps')
     structure, probabilities_all, sequence = structure_prob(file_name)
     
-    file_name = 'old_ss.ps'
+    file_name = os.path.join(vienna_output_directory, 'old_ss.ps')
     probabilities_all = structure_coords(file_name, probabilities_all)
 
-    structure_picture(probabilities_all, all_old_sequences, mirna_names, sequence, 'mirna polycistron folding')
+    structure_picture(probabilities_all, all_old_sequences, mirna_names, sequence, 'old polycistron folding', output_folder)
 
-    file_name = 'new_dp.ps'
+    file_name = os.path.join(vienna_output_directory, 'new_dp.ps')
     structure, probabilities_all, sequence = structure_prob(file_name)
     
-    file_name = 'new_ss.ps'
+    file_name = os.path.join(vienna_output_directory, 'new_ss.ps')
     probabilities_all = structure_coords(file_name, probabilities_all)
 
-    structure_picture(probabilities_all, all_new_sequences, sirna_names, sequence, 'sirna polycistron folding')
+    structure_picture(probabilities_all, all_new_sequences, sirna_names, sequence, 'new polycistron folding', output_folder)
 
 
-def hairpin_plots(all_old_sequences, all_new_sequences, mirna_names, sirna_names):
+def hairpin_plots(all_old_sequences, 
+                  all_new_sequences, 
+                  mirna_names, 
+                  sirna_names, 
+                  rna_fold_file, 
+                  rna_fold_out_file,
+                  vienna_output_directory,
+                  output_folder):
     colors = plt.cm.jet(np.linspace(0,1,len(mirna_names)))
     fig, axs = plt.subplots(len(mirna_names)*2, 1, figsize=(5,3 * len(mirna_names)))
     pos = 0
@@ -609,6 +652,8 @@ def hairpin_plots(all_old_sequences, all_new_sequences, mirna_names, sirna_names
             f.write(seq_new.replace('T', 'U')  + '\n')
         
         # !RNAfold -p -d2 < data/RNAfold_data.fa > data/RNAfold_output.out
+        with open(rna_fold_file, "r") as infile, open(rna_fold_out_file, "w") as outfile:
+            subprocess.run(["RNAfold", "-p", "-d2"], stdin=infile, stdout=outfile, check=True, cwd=vienna_output_directory)
         
         with open(rna_fold_out_file) as f:
             RNAfold_output = f.readlines()
@@ -618,20 +663,24 @@ def hairpin_plots(all_old_sequences, all_new_sequences, mirna_names, sirna_names
         old_energy = float(RNAfold_output[2].split(' ')[1].split('(')[1].split(')')[0])
         new_energy = float(RNAfold_output[8].split(' ')[1].split('(')[1].split(')')[0])
     
-        file_name = 'old_dp.ps'
+        # file_name = 'old_dp.ps'
+        file_name = os.path.join(vienna_output_directory, 'old_dp.ps')
         structure, probabilities_all, sequence = structure_prob(file_name)
         
-        file_name = 'old_ss.ps'
+        # file_name = 'old_ss.ps'
+        file_name = os.path.join(vienna_output_directory, 'old_ss.ps')
         probabilities_all = structure_coords(file_name, probabilities_all)
 
         axs[pos].plot(probabilities_all['Y'], probabilities_all['X'], 'k', linewidth=0.5)
         axs[pos].title.set_text(mirna_name + ' energy = ' + str(old_energy))
         pos += 1
         
-        file_name = 'new_dp.ps'
+        # file_name = 'new_dp.ps'
+        file_name = os.path.join(vienna_output_directory, 'new_dp.ps')
         structure, probabilities_all, sequence = structure_prob(file_name)
         
-        file_name = 'new_ss.ps'
+        # file_name = 'new_ss.ps'
+        file_name = os.path.join(vienna_output_directory, 'new_ss.ps')
         probabilities_all = structure_coords(file_name, probabilities_all)
     
         axs[pos].plot(probabilities_all['Y'], probabilities_all['X'], c = colors[step], linewidth=1)
@@ -639,5 +688,39 @@ def hairpin_plots(all_old_sequences, all_new_sequences, mirna_names, sirna_names
         pos += 1
     
     fig.tight_layout(pad=1.0)
-    plt.savefig(output_folder + output_name + ' ' + 'pri-mirna folding' + '.jpg')
+    picture_name = 'pri-mirna folding'
+    plt.savefig(os.path.join(output_folder, f'{picture_name}.jpg'))
+
+def save_results(output_folder, 
+                 all_old_structure, 
+                 all_new_structure, 
+                 mirna_names, 
+                 sirna_names,
+                 all_sequences,
+                 all_new_sequences,
+                 ncbi_name,
+                 refseq_sequence):
+
+    with open(os.path.join(output_folder, 'pri-mirna sructures.txt'), 'w') as f:
+        for struct_old, struct_new, mirna_name, sirna_name in zip(all_old_structure, all_new_structure, mirna_names, sirna_names):
+            f.write(mirna_name + '\n')
+            f.write('\n'.join(struct_old) + '\n')
+            f.write(sirna_name + '\n')
+            f.write('\n'.join(struct_new) + '\n')
+            f.write('\n')
+
+    with open(os.path.join(output_folder, 'sirna_sequences.txt'), 'w') as f:
+        for sirna_name, sirna_seq in all_sequences:
+            if sirna_name in sirna_names:
+                f.write('> ' + sirna_name + '\n')
+                f.write(sirna_seq + '\n')
+
+    with open(os.path.join(output_folder, 'sirna_hairpin_sequences.txt'), 'w') as f:
+        for sirna_name, sirna_seq in zip(sirna_names, all_new_sequences):
+            f.write('> ' + sirna_name + '\n')
+            f.write(sirna_seq + '\n')
+
+    with open(os.path.join(output_folder, 'transcript_sequences.txt'), 'w') as f:
+        f.write('> ' + ncbi_name + '\n')
+        f.write(refseq_sequence + '\n')
 
