@@ -3,6 +3,7 @@ import pandas as pd
 import os
 import json
 import time
+from datetime import date
 
 from utilities import ncbi_data
 from utilities_polycistron import (mirna_polycistron_data, 
@@ -15,7 +16,9 @@ from utilities_polycistron import (mirna_polycistron_data,
                                    full_scaffold_structures,
                                    hairpin_plots,
                                    save_results)
+from snapgene_utilities import gene_bank_file, find_elements_polycistron
 
+DATE_TODAY = str(date.today())
 
 # Load config
 
@@ -107,10 +110,15 @@ pairs, all_alignments = mirna_sirna_pairs(mirna_in_polycistrons, scaffold, all_s
                                                         vienna_output_directory,
                                                         compl_dict)
 
+# with open(os.path.join(output_folder, 'test.txt'), 'w') as f:
+#     for i in mature_seq_list:
+#         f.write(i + '\n')
 
-with open(os.path.join(output_folder, f'{file_name}_sequence.fa'), 'w') as f:
+
+new_scaffold_seq = left_flank + scaffold_new + right_flank
+with open(os.path.join(output_folder, f'{file_name}_polycistron_sequence.fa'), 'w') as f:
     f.write(f'> {file_name}\n')
-    f.write(left_flank + scaffold_new + right_flank + '\n')
+    f.write(new_scaffold_seq + '\n')
 
 # Compute all new sequences
 full_scaffold_structures(scaffold_clean, scaffold_new, left_flank, right_flank, 
@@ -139,6 +147,20 @@ save_results(output_folder,
             all_new_sequences,
             ncbi_name,
             refseq_sequence)
+
+# # Make Gene Bank file for SnapGene tool
+elements_list, oligos = find_elements_polycistron(new_scaffold_seq, 
+                                                    all_sequences, 
+                                                    sirna_names, 
+                                                    all_new_sequences)
+
+gene_bank_file(ncbi_name, 
+               new_scaffold_seq, 
+               DATE_TODAY, 
+               elements_list, 
+               f'{file_name}_polycistron', 
+               output_folder,
+               oligos=oligos)
 
 time.sleep(100000)
 

@@ -4,6 +4,7 @@ import os
 import json 
 import subprocess
 import time
+from datetime import date
 from utilities import (ensembl_data, 
                        ncbi_data, 
                        data_for_vienna, 
@@ -13,6 +14,9 @@ from utilities import (ensembl_data,
                        correct_sequences,
                        transcript_features,
                        compute_GC_context)
+from snapgene_utilities import gene_bank_file, find_elements
+
+DATE_TODAY = str(date.today())
 
 # Load config
 
@@ -62,6 +66,7 @@ mirna_data = mirna_data[['Name/gene name', 'sequence', 'sourse', 'count_sourses'
 
 # Check that in table correct strand and fix if not (miRNA should be complimentary to transcript)
 mirna_correct = correct_sequences(mirna_data, refseq_sequence, compl_dict)
+mirna_correct.drop_duplicates(subset=['sequence'], inplace=True, keep='first')
 
 # Save correct sequences to file
 mirna_correct_sequences_path = os.path.join(output_folder, 
@@ -109,6 +114,19 @@ mirna_with_features['choice'] = 0
 mirna_with_features.to_csv(os.path.join(output_folder,
                                         f'{file_name}_mirna_with_features.csv'), 
                                         index=None)
+
+# Make Gene Bank file for SnapGene tool
+elements_list, oligos = find_elements(cds_start, cds_end, exons, mirna_data)
+
+gene_bank_file(ncbi_name, 
+               refseq_sequence, 
+               DATE_TODAY, 
+               elements_list, 
+               f'{ncbi_name}_with_new_mirna', 
+               output_folder,
+               oligos=oligos)
+
+
 
 time.sleep(100000)
 
