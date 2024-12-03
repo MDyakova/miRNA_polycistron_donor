@@ -1,0 +1,26 @@
+index,mir_id,mirbase_name,gene_symbol,structure,cluster_size,chromosome,start,end,strand,mature_mirna1,evidence1,mature_mirna2,evidence2,in_list,evidence1_n,evidence2_n,mirna_strand
+0,MI0000071,hsa-mir-17,MIR17,"    ga       -CA        A  G     G   -  au 
+guca  auaaugu   AAGUGCUU CA UGCAG UAG ug  a
+||||  |||||||   |||||||| || ||||| ||| ||  u
+cagu  uauuacG   UUCACGGA GU ACGUC Auc ac  g
+    gg       AUG        A  G     -   u  gu",6,13,91350605,91350688,+,hsa-miR-17-5p,"                                    cloned [2,5-8], Northern [4]",hsa-miR-17-5p,"                                    cloned [1,5,7-8], Northern [1]",1,6,5,0
+1,MI0000072,hsa-mir-18a,MIR18A,"    cU    U    C   U    A   -  aa u 
+uguu  AAGG GCAU UAG GCAG UAG ug  g a
+||||  |||| |||| ||| |||| ||| ||  | g
+acGG  UUCC CGUG AUC CGUC Auc ac  u a
+    UC    U    A   C    -   u  ga u",6,13,91350751,91350821,+,hsa-miR-18a-5p,"                                    cloned [1,3-6], Northern [1]",hsa-miR-18a-5p,                                    cloned [4-6],1,6,3,0
+2,MI0000073,hsa-mir-19a,MIR19A,"    u  u                 --      ---    ag 
+gcag cc cuguuAGUUUUGCAUAG  UUGCAC   UACA  a
+|||| || |||||||||||||||||  ||||||   ||||  a
+cguc gg gguAGUCAAAACGUAUC  AACGUG   augu  g
+    c  u                 UA      Uug    aa",6,13,91350891,91350972,+,hsa-miR-19a-5p,                                    cloned [4],hsa-miR-19a-5p,"                                    cloned [1-5], Northern [1]",1,1,6,1
+3,MI0000076,hsa-mir-20a,MIR20A,"    c   -A                 G   uguu 
+guag acU  AAGUGCUUAUAGUGCAG UAG    u
+|||| |||  ||||||||||||||||| |||    a
+cguc uGA  UUCACGAGUAUUACGUC Auc    g
+    a   AA                 -   uauu",6,13,91351065,91351135,+,hsa-miR-20a-5p,"                                    cloned [1,4-7], Northern [1]",hsa-miR-20a-5p,                                    cloned [6],1,6,1,0
+4,MI0000074,hsa-mir-19b-1,MIR19B1,"     uu                 -  -      UC    ugugu 
+cacug  cuaugguuAGUUUUGCA GG UUUGCA  CAGC     g
+|||||  ||||||||||||||||| || ||||||  ||||     a
+gugau  ggugucAGUCAAAACGU CC AAACGU  GUcg     u
+     --                 A  U      --    ucuua",6,13,91351192,91351278,+,hsa-miR-19b-1-5p,                                    cloned [8],hsa-miR-19b-1-5p,"                                    cloned [1-3,6-9], Northern [1,5]",1,1,9,1

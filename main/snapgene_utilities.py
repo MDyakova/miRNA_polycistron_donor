@@ -172,9 +172,9 @@ def find_elements(cds_start, cds_end, exons, mirna_data):
     oligos = []
     for ind in mirna_data.index:
         start_mirna = mirna_data.loc[ind]['start_mirna']
-        mirna_seq = mirna_data.loc[ind]['sequence']
+        mirna_seq = mirna_data.loc[ind]['Sequence']
         name_mirna = '_'.join([
-                                mirna_data.loc[ind]['Name/gene name'],
+                                mirna_data.loc[ind]['Name'],
                                 str(start_mirna)
                                 ])
         oligos.append([name_mirna, mirna_seq, 1, len(mirna_seq)])

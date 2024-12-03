@@ -59,7 +59,7 @@ def check_motif(scaffold, sequence, all_members):
                is_correct = True 
         loops_motifs_check.append([loop_seq, is_correct])
     
-    loops_motifs_check = pd.DataFrame(loops_motifs_check, columns=('sequence', 'with_motif'))
+    loops_motifs_check = pd.DataFrame(loops_motifs_check, columns=('Sequence', 'with_motif'))
     loops_motifs_check['mirna'] = all_members
     loops_motifs_check['type'] = 'loop motif'
     # mirna without loop motifs
@@ -74,7 +74,7 @@ def check_motif(scaffold, sequence, all_members):
         spacer_motifs_check.append([spacer, is_correct])
         # break
     
-    spacer_motifs_check = pd.DataFrame(spacer_motifs_check, columns=('sequence', 'with_motif'))
+    spacer_motifs_check = pd.DataFrame(spacer_motifs_check, columns=('Sequence', 'with_motif'))
     spacer_motifs_check['mirna'] = all_members
     spacer_motifs_check['type'] = 'spacer motif'
     # mirna without spacer motifs
@@ -115,7 +115,7 @@ def sirna_data(sirna_file, refseq_sequence, comp_dict, output_folder):
     sirnas = sirnas[sirnas['choice']==1]
     
     if 'name' not in sirnas.columns:
-        sirnas['name'] = 'si' + sirnas['Name/gene name'] + '_' + sirnas['start_mirna'].astype('str')
+        sirnas['name'] = 'si' + sirnas['Name'] + '_' + sirnas['start_mirna'].astype('str')
         
     sirnas = sirnas[sirnas['name'].apply(lambda p: p not in sirna_with_incorrect_energy)]
 
@@ -123,7 +123,7 @@ def sirna_data(sirna_file, refseq_sequence, comp_dict, output_folder):
     
     all_sequences = []
     for i in range(len(sirnas)):
-        seq = sirnas.iloc[i]['sequence']
+        seq = sirnas.iloc[i]['Sequence']
         rev_seq = ''.join([comp_dict[s] for s in seq][::-1])
     
         all_aligh1 = pairwise2.align.localms(refseq_sequence, seq, 2, -3, -5, -2)
@@ -149,7 +149,7 @@ def sirna_data(sirna_file, refseq_sequence, comp_dict, output_folder):
     
     all_sequences = []
     for i in range(len(sirnas)):
-        seq = sirnas.iloc[i]['sequence']
+        seq = sirnas.iloc[i]['Sequence']
         rev_seq = ''.join([comp_dict[s] for s in seq][::-1])
     
         all_aligh1 = pairwise2.align.localms(refseq_sequence, seq, 2, -3, -5, -2)

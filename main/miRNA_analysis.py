@@ -49,24 +49,27 @@ refseq_sequence, features_list, cds_start, cds_end, exons = ncbi_data(ncbi_name)
 
 # Load possible miRNA (excel table)
 mirna_sequences_path = config_input_data['data']['mirna_table']
-mirna_data = pd.read_excel(mirna_sequences_path)
-mirna_data = mirna_data[pd.notna(mirna_data['sequence'])]
+if mirna_sequences_path.endswith('.csv'):
+    mirna_data = pd.read_csv(mirna_sequences_path)
+elif mirna_sequences_path.endswith(('.xls', '.xlsx')):  # Check for Excel formats
+    mirna_data = pd.read_excel(mirna_sequences_path)
+mirna_data = mirna_data[pd.notna(mirna_data['Sequence'])]
 
 # miRNA sequences preparation (compute number of relevant sources for each miRNA)
-mirna_data['sequence'] = mirna_data['sequence'].apply(lambda p: p.upper().replace('U', 'T'))
+mirna_data['Sequence'] = mirna_data['Sequence'].apply(lambda p: p.upper().replace('U', 'T'))
 mirna_data = mirna_data.fillna('')
-mirna_data['count_sourses'] = mirna_data['sourse']
+mirna_data['count_sourses'] = mirna_data['Sourse']
 
 def sourse_agg(sourse_data):
     return ' '.join(sourse_data)
 
-mirna_data = mirna_data.groupby(by=['sequence'], as_index=False).agg({'Name/gene name':max, 'sourse': sourse_agg, 
-                                                        'count_sourses':len, 'type':max, 'Note':max})
-mirna_data = mirna_data[['Name/gene name', 'sequence', 'sourse', 'count_sourses', 'type', 'Note']]
+mirna_data = mirna_data.groupby(by=['Sequence'], as_index=False).agg({'Name':max, 'Sourse': sourse_agg, 
+                                                        'count_sourses':len})
+mirna_data = mirna_data[['Name', 'Sequence', 'Sourse', 'count_sourses']]
 
 # Check that in table correct strand and fix if not (miRNA should be complimentary to transcript)
 mirna_correct = correct_sequences(mirna_data, refseq_sequence, compl_dict)
-mirna_correct.drop_duplicates(subset=['sequence'], inplace=True, keep='first')
+mirna_correct.drop_duplicates(subset=['Sequence'], inplace=True, keep='first')
 
 # Save correct sequences to file
 mirna_correct_sequences_path = os.path.join(output_folder, 
@@ -104,10 +107,10 @@ mirnafold_data = rnafold_mirna_results(mirna_seq_path, vienna_output_directory)
 mirna_with_features = transcript_features(mirna_correct, cds_start, cds_end, exons)
 
 # Join all results together
-mirna_with_features['GC_content'] = mirna_with_features['sequence'].apply(lambda p:compute_GC_context(p))
-mirna_with_features = pd.merge(mirna_with_features, rnacofold_data, on=['sequence'], how='left')
-mirna_with_features = pd.merge(mirna_with_features, rnafold_data, on=['sequence'], how='left')
-mirna_with_features = pd.merge(mirna_with_features, mirnafold_data, on=['sequence'], how='left')
+mirna_with_features['GC_content'] = mirna_with_features['Sequence'].apply(lambda p:compute_GC_context(p))
+mirna_with_features = pd.merge(mirna_with_features, rnacofold_data, on=['Sequence'], how='left')
+mirna_with_features = pd.merge(mirna_with_features, rnafold_data, on=['Sequence'], how='left')
+mirna_with_features = pd.merge(mirna_with_features, mirnafold_data, on=['Sequence'], how='left')
 mirna_with_features['choice'] = 0
 
 # Save results
