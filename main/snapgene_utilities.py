@@ -1,3 +1,5 @@
+"""Functions to prepare Gene Bank file for SnapGene tool"""
+
 import numpy as np
 import pandas as pd
 import os
@@ -7,8 +9,6 @@ from Bio import Entrez
 from Bio import SeqIO
 import matplotlib.pyplot as plt
 import subprocess
-
-
 
 
 """
@@ -150,14 +150,14 @@ def find_elements(cds_start, cds_end, exons, mirna_data):
     """
     elements_list = []
 
-    # Add CDS
+    """Add CDS"""
     elements_list.append(['CDS', 
                           cds_start,
                           cds_end, 
                           "None", 
                           "#40139c"])
     
-    # Add exons
+    """Add exons"""
     for exon in exons:
         name_exon = exon[0]
         start_exon = exon[1]
@@ -168,7 +168,7 @@ def find_elements(cds_start, cds_end, exons, mirna_data):
                             "None", 
                             "#e3d914"])
 
-    # Add mirna/sirna
+    """Add mirna/sirna"""
     oligos = []
     for ind in mirna_data.index:
         start_mirna = mirna_data.loc[ind]['start_mirna']
@@ -202,12 +202,4 @@ def find_elements_polycistron(new_scaffold_seq, all_sequences, sirna_names, all_
             sirna_start = len(new_scaffold_seq.split(sirna_seq)[0])
             sirna_end = sirna_start + len(sirna_seq)
             oligos.append([sirna_name, sirna_seq, 1, len(sirna_seq)])
-            # elements_list.append([sirna_name, 
-            #         sirna_start,
-            #         sirna_end, 
-            #         "None", 
-            #         "#0b86d9"])
-
     return elements_list, oligos
-
-

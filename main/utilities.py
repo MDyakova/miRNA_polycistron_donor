@@ -12,7 +12,7 @@ from Bio import Entrez
 from Bio import SeqIO
 import subprocess
 
-# Load config
+"""Load config"""
 
 with open(os.path.join('config.json'), 'r') as f:
     config = json.load(f)
@@ -20,6 +20,10 @@ with open(os.path.join('config.json'), 'r') as f:
 compl_dict = config['compl_dict']
 
 def ensembl_data(gene_name):
+    """
+    Get data about gene position in genome 
+    from Ensemble databases
+    """
     data = EnsemblRelease(109)
     gene = data.genes_by_name(gene_name)[0]
     start_gene = gene.start - 200
@@ -27,6 +31,9 @@ def ensembl_data(gene_name):
     return start_gene, end_gene
 
 def ncbi_data(ncbi_name):
+    """
+    Get data from NCBI databases about transcript
+    """
     Entrez.email = "Your.Name.Here@example.org"
     handle = Entrez.efetch(db="nucleotide", id=ncbi_name, rettype="gb", retmode="text")
     seq_record = [seq_record for seq_record in SeqIO.parse(handle, "gb")][0]
@@ -48,7 +55,10 @@ def ncbi_data(ncbi_name):
     return refseq_sequence, features_list, cds_start, cds_end, exons
 
 def correct_sequences(mirna_data, refseq_sequence, compl_dict):
-# Check that in table correct strand and fix if not (miRNA should be complimentary to transcript)
+    """
+    Check that in table correct strand and fix if not 
+    (miRNA should be complimentary to transcript)
+    """
     mirna_data['start_mirna'] = 0
     mirna_data['end_mirna'] = 0
     for ind in mirna_data.index:
@@ -73,6 +83,9 @@ def correct_sequences(mirna_data, refseq_sequence, compl_dict):
     return mirna_data
 
 def data_for_vienna(mirna_data, refseq_sequence, file_name, ncbi_name):
+    """
+    Prepare all neccesary data for Vienna RNA tool
+    """
     all_alignments = []
     for step, sirna_i in enumerate(mirna_data['Sequence']):
         sirna_i = sirna_i.upper().replace('U', 'T')
@@ -129,7 +142,7 @@ def data_for_vienna(mirna_data, refseq_sequence, file_name, ncbi_name):
 
 
 def rnacofold_results(rnacofold_input, vienna_output_directory):
-    # Launch RNAcofold tool
+    """Launch RNAcofold tool"""
     rnacofold_output = rnacofold_input.replace('.fasta', '.txt')
     with open(rnacofold_input, "r") as infile, open(rnacofold_output, "w") as outfile:
         subprocess.run(["RNAcofold", "-p"], stdin=infile, stdout=outfile, check=True, cwd=vienna_output_directory)
@@ -148,7 +161,7 @@ def rnacofold_results(rnacofold_input, vienna_output_directory):
     return rnacofold_data
 
 def rnafold_results(mirna_data, all_alignments_results, transcript_path, vienna_output_directory, ncbi_name):
-    # Launch RNAfold
+    """Launch RNAfold"""
     rnafold_output = transcript_path.replace('.fasta', '.out')
     with open(transcript_path, "r") as infile, open(rnafold_output, "w") as outfile:
         subprocess.run(["RNAfold", "-p", "-d2"], stdin=infile, stdout=outfile, check=True, cwd=vienna_output_directory)
@@ -181,7 +194,7 @@ def rnafold_results(mirna_data, all_alignments_results, transcript_path, vienna_
     return rnafold_data
 
 def rnafold_mirna_results(mirna_seq_path, vienna_output_directory):
-    # Launch RNAcofold tool
+    """Launch RNAcofold tool for mirna"""
     rnafold_output = mirna_seq_path.replace('.fasta', '.out')
     with open(mirna_seq_path, "r") as infile, open(rnafold_output, "w") as outfile:
         subprocess.run(["RNAfold", "-p", "-d2"], stdin=infile, stdout=outfile, check=True, cwd=vienna_output_directory)
@@ -200,6 +213,7 @@ def rnafold_mirna_results(mirna_seq_path, vienna_output_directory):
     return mirnafold_data
 
 def mrna_region(start, end, cds_start, cds_end):
+    """Get transcript region"""
     if (start>=cds_start) & (end<=cds_end):
         return 'CDS'
     elif start<cds_start:
@@ -208,10 +222,11 @@ def mrna_region(start, end, cds_start, cds_end):
         return '3-UTR'
 
 def exon_name(start, exons):
+    """Get exon name"""
     return list(filter(lambda p: (start>=p[1]) & (start<=p[2]), exons))[0][0]
 
 def transcript_features(mirna_data, cds_start, cds_end, exons):
-# Check that in table correct strand and fix if not (miRNA should be complimentary to transcript)
+    """Collect information about mirna/sirna"""
     mirna_data['region'] = 0
     mirna_data['exon'] = 0
     for ind in mirna_data.index:
@@ -224,6 +239,7 @@ def transcript_features(mirna_data, cds_start, cds_end, exons):
     return mirna_data
 
 def compute_GC_context(sequence):
+    """GC context for mirna/sirna"""
     return (list(sequence).count('G') 
             + list(sequence).count('C'))/len(sequence)
 

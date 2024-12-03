@@ -20,7 +20,7 @@ from utilities import (ensembl_data,
 from utilities_polycistron import (mirna_polycistron_data, 
                                    mirna_sirna_pairs)
 
-# Load config
+"""Load config"""
 
 with open(os.path.join('config.json'), 'r') as f:
     config = json.load(f)
@@ -48,6 +48,7 @@ def test_ncbi_data():
     ), "NCBI data isn't correct"
 
 def test_rnacofold_results():
+    """Check results from Vienna RNAcofold"""
     vienna_output_directory = os.path.join('test_data', 'vienna')
     rnacofold_input = os.path.join('test_data', 'data_for_rnacofold.fasta')
     rnacofold_data = rnacofold_results(rnacofold_input, vienna_output_directory)
@@ -57,6 +58,7 @@ def test_rnacofold_results():
     ), "RNAcofold isn't correct"
 
 def test_rnafold_mirna_results():
+    """Check results from Vienna RNAfold"""
     vienna_output_directory = os.path.join('test_data', 'vienna')
     rnafold_input = os.path.join('test_data', 'data_for_rnafold.fasta')
     mirnafold_data = rnafold_mirna_results(rnafold_input, vienna_output_directory)
@@ -66,6 +68,7 @@ def test_rnafold_mirna_results():
     ), "RNAfold isn't correct"   
     
 def test_mirna_polycistron_data():
+    """Check results for natural polycistron data"""
 
     file_name = os.path.join('databases', 'mirna_polycistrons.fa')
     cluster_name = 'MIR23AHG'
@@ -76,7 +79,7 @@ def test_mirna_polycistron_data():
     ), "mirna polycistron data isn't correct"  
 
 def test_mirna_sirna_pairs():
-
+    """Check results for sirna pairs"""
     mirna_in_polycistrons_path = os.path.join('test_data', 'mirna_in_polycistrons_test.csv')
     mirna_in_polycistrons = pd.read_csv(mirna_in_polycistrons_path)
     scaffold_path = os.path.join('test_data', 'scaffold.txt')
