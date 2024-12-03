@@ -17,7 +17,9 @@ COPY main /main
 RUN chmod -R 777 /main
 WORKDIR /main
 
+# Run unit-tests
+RUN python3 -m pytest unit_tests.py
+
 # Launch code
-#CMD python miRNA_analysis.py
 ENTRYPOINT ["python"]
 CMD ["miRNA_analysis.py"]

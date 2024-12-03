@@ -52,7 +52,7 @@ def correct_sequences(mirna_data, refseq_sequence, compl_dict):
     mirna_data['start_mirna'] = 0
     mirna_data['end_mirna'] = 0
     for ind in mirna_data.index:
-        mirna_i = mirna_data.loc[ind]['sequence']
+        mirna_i = mirna_data.loc[ind]['Sequence']
         mirna_i = mirna_i.upper().replace('U', 'T')
         mirna_r_i = ''.join([compl_dict[s] for s in mirna_i][::-1]) 
         if mirna_i[:-2] in refseq_sequence:
@@ -62,19 +62,19 @@ def correct_sequences(mirna_data, refseq_sequence, compl_dict):
             mirna_correct = mirna_i
             mirna_rev = mirna_r_i
 
-        mirna_data.loc[ind, 'sequence'] = mirna_correct
+        mirna_data.loc[ind, 'Sequence'] = mirna_correct
 
         start_pos = len(refseq_sequence.split(mirna_rev)[0])
         end_pos = start_pos + len(mirna_i)
         mirna_data.loc[ind, 'start_mirna'] = start_pos
         mirna_data.loc[ind, 'end_mirna'] = end_pos
 
-    mirna_data = mirna_data[pd.notna(mirna_data['sequence'])]
+    mirna_data = mirna_data[pd.notna(mirna_data['Sequence'])]
     return mirna_data
 
 def data_for_vienna(mirna_data, refseq_sequence, file_name, ncbi_name):
     all_alignments = []
-    for step, sirna_i in enumerate(mirna_data['sequence']):
+    for step, sirna_i in enumerate(mirna_data['Sequence']):
         sirna_i = sirna_i.upper().replace('U', 'T')
         sirna_r_i = ''.join([compl_dict[s] for s in sirna_i][::-1])
         if (sirna_i[:-2] in refseq_sequence):
@@ -142,8 +142,8 @@ def rnacofold_results(rnacofold_input, vienna_output_directory):
         rnacofold_data.append([rnacofoldresults[i].split(' ')[1].split('\n')[0], 
                             rnacofoldresults[i+4].split('delta G binding=')[1].split('\n')[0]])
 
-    rnacofold_data = pd.DataFrame(rnacofold_data, columns=('sequence', 'delta_G_cofold'))
-    rnacofold_data.drop_duplicates(subset='sequence', inplace=True)
+    rnacofold_data = pd.DataFrame(rnacofold_data, columns=('Sequence', 'delta_G_cofold'))
+    rnacofold_data.drop_duplicates(subset='Sequence', inplace=True)
 
     return rnacofold_data
 
@@ -167,7 +167,7 @@ def rnafold_results(mirna_data, all_alignments_results, transcript_path, vienna_
     bbp['p2'] = bbp['p2'].astype('int') - 1
 
     rnafold_data = []
-    for sirna_i in mirna_data['sequence']:
+    for sirna_i in mirna_data['Sequence']:
         gene_s = all_alignments_results[all_alignments_results['sirna']==sirna_i]['gene_seq'].max()
         start_sirna = len(mrna_seq.split(gene_s)[0])
         end_sirna = start_sirna + len(sirna_i)
@@ -176,8 +176,8 @@ def rnafold_results(mirna_data, all_alignments_results, transcript_path, vienna_
         pair_prob = pd.concat([p1, p2])['prob'].mean()
         rnafold_data.append([sirna_i, pair_prob])
 
-    rnafold_data = pd.DataFrame(rnafold_data, columns=('sequence', 'pair_probability'))
-    rnafold_data.drop_duplicates(subset='sequence', inplace=True)
+    rnafold_data = pd.DataFrame(rnafold_data, columns=('Sequence', 'pair_probability'))
+    rnafold_data.drop_duplicates(subset='Sequence', inplace=True)
     return rnafold_data
 
 def rnafold_mirna_results(mirna_seq_path, vienna_output_directory):
@@ -194,8 +194,8 @@ def rnafold_mirna_results(mirna_seq_path, vienna_output_directory):
         mirnafold_data.append([mirnafold[i].split(' ')[1].replace('U', 'T').split('\n')[0], 
                             float(mirnafold[i+2].split(' ')[-1].split(')')[0].replace('(', ''))])
         
-    mirnafold_data = pd.DataFrame(mirnafold_data, columns=('sequence', 'delta_G_fold'))
-    mirnafold_data.drop_duplicates(subset='sequence', inplace=True)
+    mirnafold_data = pd.DataFrame(mirnafold_data, columns=('Sequence', 'delta_G_fold'))
+    mirnafold_data.drop_duplicates(subset='Sequence', inplace=True)
 
     return mirnafold_data
 
