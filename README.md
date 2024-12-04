@@ -51,13 +51,13 @@ miRNA and siRNA play a pivotal role in post-transcriptional gene regulation. Des
    **Step 1: miRNA Analysis**
    Provide information about your mirna/sirna.
    ```bash
-   docker run -v ${PWD}/miRNA_polycistron_design_launch/files:/main/files -d mirna_polycistron_multy:latest /main/miRNA_analysis.py
+   docker run -v ${PWD}/miRNA_polycistron_design_launch/files:/main/files -d mirna_polycistron_donor_design:latest /main/miRNA_analysis.py
    ```
 
    **Step 2: Polycistron Construction**
    Make polycistron construct with your mirna/sirna
    ```bash
-   docker run -v ${PWD}/miRNA_polycistron_design_launch/files:/main/files -d mirna_polycistron_multy:latest /main/polycistron_construct.py
+   docker run -v ${PWD}/miRNA_polycistron_design_launch/files:/main/files -d mirna_polycistron_donor_design:latest /main/polycistron_construct.py
    ```
 ---
 
