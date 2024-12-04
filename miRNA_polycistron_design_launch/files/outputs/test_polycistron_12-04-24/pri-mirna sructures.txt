@@ -1,0 +1,65 @@
+hsa-mir-19a
+    u  u                 --      ---    ag 
+gcag cc cuguuAGUUUUGCAUAG  UUGCAC   UACA  a
+|||| || |||||||||||||||||  ||||||   ||||  a
+cguc gg gguAGUCAAAACGUAUC  AACGUG   augu  g
+    c  u                 UA      Uug    aa
+sisirna7_1196
+    u  u                 --      ---    ag 
+gcag cc cugccCACTGGGTCTGC  GCCATC   UACA  a
+|||| || |||||||||||||||||  ||||||   ||||  a
+cguc gg gguGGGTGACCCAGACG  CGGTAG   augu  g
+    c  u                 AC      Uug    aa 
+
+hsa-mir-19b-1
+     uu                 -  -      UC    ugugu 
+cacug  cuaugguuAGUUUUGCA GG UUUGCA  CAGC     g
+|||||  ||||||||||||||||| || ||||||  ||||     a
+gugau  ggugucAGUCAAAACGU CC AAACGU  GUcg     u
+     --                 A  U      --    ucuua
+sisirna8_1277
+     uu                 -  -      UC    ugugu 
+cacug  cuaugggaAGGAAAATC GA GAATAA  AAGC     g
+|||||  ||||||||||||||||| || ||||||  ||||     a
+gugau  ggugucCTTCCTTTTAG CT CTTATT  TUcg     u
+     --                 A  G      --    ucuua 
+
+hsa-mir-17
+    ga       -CA        A  G     G   -  au 
+guca  auaaugu   AAGUGCUU CA UGCAG UAG ug  a
+||||  |||||||   |||||||| || ||||| ||| ||  u
+cagu  uauuacG   UUCACGGA GU ACGUC Auc ac  g
+    gg       AUG        A  G     -   u  gu
+sisirna4_638
+    ga       -CG        C  G     C   -  au 
+guca  auaaugu   GCTAGGAG AG TTGGC AGG ug  a
+||||  |||||||   |||||||| || ||||| ||| ||  u
+cagu  uauuacG   CGATCCTC TC AACCG Tcc ac  g
+    gg       AUG        C  G     -   u  gu 
+
+hsa-mir-18a
+    cU    U    C   U    A   -  aa u 
+uguu  AAGG GCAU UAG GCAG UAG ug  g a
+||||  |||| |||| ||| |||| ||| ||  | g
+acGG  UUCC CGUG AUC CGUC Auc ac  u a
+    UC    U    A   C    -   u  ga u
+sisirna5_766
+    cU    C    G   C    C   -  aa u 
+uguu  CACA AGAA GCA CATC AGA ug  g a
+||||  |||| |||| ||| |||| ||| ||  | g
+acGG  GTGT TCTT CGT GTAG Tct ac  u a
+    UC    C    G   C    -   u  ga u 
+
+hsa-mir-20a
+    c   -A                 G   uguu 
+guag acU  AAGUGCUUAUAGUGCAG UAG    u
+|||| |||  ||||||||||||||||| |||    a
+cguc uGA  UUCACGAGUAUUACGUC Auc    g
+    a   AA                 -   uauu
+sisirna6_1014
+    c   -G                 C   uguu 
+guag acU  TGACCCCATACATGGGC TGA    u
+|||| |||  ||||||||||||||||| |||    a
+cguc uGA  ACTGGGGTATGTACCCG Act    g
+    a   AG                 -   uauu 
+

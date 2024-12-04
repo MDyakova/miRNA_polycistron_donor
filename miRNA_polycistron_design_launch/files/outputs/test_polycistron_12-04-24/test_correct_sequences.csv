@@ -1,8 +1,8 @@
-Name,Sequence,Sourse,count_sourses,start_mirna,end_mirna
-sirna5,CACACAGAAGGCACCATCCAG,experimental,1,766,787
-sirna7,GATGGCCAGCAGACCCAGTG,experimental,1,1196,1216
-sirna2,TCCAAGATCCACAGCTGTGG,mirbase,1,242,262
-sirna1,GCCCCTGCTGCGGCCCTTTC,mirbase,1,117,137
-sirna4,GGCTAGGAGCAGGTTGGCCA,article,1,638,658
-sirna6,GTGACCCCATACATGGGCCTG,experimental,1,1014,1035
-sirna8,TTTATTCGTCAGATTTTCCTTCT,experimental,1,1277,1300
+Sequence,Name,Sourse,count_sourses,start_mirna,end_mirna
+CACACAGAAGGCACCATCCAG,sirna5,experimental,1,766,787
+GATGGCCAGCAGACCCAGTG,sirna7,experimental,1,1196,1216
+GCCCCTGCTGCGGCCCTTTC,sirna1,mirbase,1,117,137
+GGCTAGGAGCAGGTTGGCCA,sirna4,article article,2,638,658
+GTGACCCCATACATGGGCCTG,sirna6,experimental,1,1014,1035
+TCCAAGATCCACAGCTGTGG,sirna2,mirbase,1,242,262
+TTTATTCGTCAGATTTTCCTTCT,sirna8,experimental,1,1277,1300
