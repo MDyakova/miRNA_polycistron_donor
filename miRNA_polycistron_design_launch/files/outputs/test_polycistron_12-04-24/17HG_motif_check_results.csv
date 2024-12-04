@@ -1,0 +1,4 @@
+Sequence,with_motif,mirna,type
+TGAAGTAGATTAGCATCT,False,hsa-mir-18a,loop motif
+AAAAGTCTGTAGAAAAGTAAGGGAAACTCAAACCC,False,hsa-mir-19b-1,spacer motif
+TGGGGATTGTGACCAGAAGATTTTGAAAATTAAATATTAC,False,hsa-mir-92a-1,spacer motif

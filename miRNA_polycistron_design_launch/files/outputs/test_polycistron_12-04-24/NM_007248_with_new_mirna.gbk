@@ -35,11 +35,6 @@ FEATURES             Location/Qualifiers
                      GATGGCCAGCAGACCCAGTG; added:
                      2024-12-04"
      primer_bind     complement(1..20)
-                     /label=sirna2_242
-                     /note="color: black; sequence:
-                     TCCAAGATCCACAGCTGTGG; added:
-                     2024-12-04"
-     primer_bind     complement(1..20)
                      /label=sirna1_117
                      /note="color: black; sequence:
                      GCCCCTGCTGCGGCCCTTTC; added:
@@ -55,9 +50,9 @@ FEATURES             Location/Qualifiers
                      GTGACCCCATACATGGGCCTG; added:
                      2024-12-04"
      primer_bind     complement(1..20)
-                     /label=sirna3_638
+                     /label=sirna2_242
                      /note="color: black; sequence:
-                     GGCTAGGAGCAGGTTGGCCA; added:
+                     TCCAAGATCCACAGCTGTGG; added:
                      2024-12-04"
      primer_bind     complement(1..23)
                      /label=sirna8_1277

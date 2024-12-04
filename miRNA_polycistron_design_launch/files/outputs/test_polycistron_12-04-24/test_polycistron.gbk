@@ -1,0 +1,78 @@
+LOCUS       NM_007248        1109 bp DNA     linear   UNA 2024-12-04
+DEFINITION  NM_007248.
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      synthetic DNA construct
+  ORGANISM  synthetic DNA construct
+REFERENCE   1  (bases 1 to 1109)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   For SnapGene Viewer
+            https://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..1109
+                     /mol_type="other DNA"
+                     /note="color: #ffffff"
+                     /organism="synthetic DNA construct"
+     misc_feature    486..568
+                        /label=sisirna7_1196_hairpin
+                        /note="color: #c96f0e"
+     misc_feature    787..874
+                        /label=sisirna8_1277_hairpin
+                        /note="color: #c96f0e"
+     misc_feature    200..284
+                        /label=sisirna4_638_hairpin
+                        /note="color: #c96f0e"
+     misc_feature    346..417
+                        /label=sisirna5_766_hairpin
+                        /note="color: #c96f0e"
+     misc_feature    660..731
+                        /label=sisirna6_1014_hairpin
+                        /note="color: #c96f0e"
+     primer_bind     complement(1..23)
+                     /label=sisirna5_766
+                     /note="color: black; sequence:
+                     CACACAGAAGGCACCATCCAGAG; added:
+                     2024-12-04"
+     primer_bind     complement(1..23)
+                     /label=sisirna7_1196
+                     /note="color: black; sequence:
+                     GATGGCCAGCAGACCCAGTGGGG; added:
+                     2024-12-04"
+     primer_bind     complement(1..23)
+                     /label=sisirna4_638
+                     /note="color: black; sequence:
+                     GGCTAGGAGCAGGTTGGCCAGGT; added:
+                     2024-12-04"
+     primer_bind     complement(1..23)
+                     /label=sisirna6_1014
+                     /note="color: black; sequence:
+                     GTGACCCCATACATGGGCCTGAT; added:
+                     2024-12-04"
+     primer_bind     complement(1..23)
+                     /label=sisirna8_1277
+                     /note="color: black; sequence:
+                     TTTATTCGTCAGATTTTCCTTCT; added:
+                     2024-12-04"
+ORIGIN
+        1 attcttaagg cataaatacg tgtctaaatg gacctcatat ctttgagata attaaactaa
+       61 ttttttcttc cccattaggg attatgctga atttgtatgg tttatagttg ttagagtttg
+      121 aggtgttaat tctaattatc tatttcaaat ttagcaggaa aaaagagaac atcaccttgt
+      181 aaaactgaag attgtgacca gtcagaataa tgtcggctag gagcaggttg gccaggtgat
+      241 atgtgcatcc tgccaagctc ctcctagcgt agcattatgg tgacagctgc ctcgggaagc
+      301 caagttgggc tttaaagtgc agggcctgct gatgttgagt gctttttgtt ctcacacaga
+      361 aggcaccatc cagatgaagt agattagcat tctgatgctg cgttctctgt gctggcataa
+      421 gaagttatgt attcatccaa taattcaagc caagcaagta tataggtgtt ttaatagttt
+      481 ttgtttgcag tcctctgccc actgggtctg cgccatctac aagaagaatg tagttgatgg
+      541 ccagcagacc cagtgggtgg tggcctgcta tttccttcaa atgaatgatt tttactaatt
+      601 ttgtgtactt ttattgtgtc gatgtagaat ctgcctggtc tatctgatgt gacagcttct
+      661 gtagcactgt gaccccatac atgggcctga tgtttagtta ttcagcccat gtatggggtc
+      721 agaagtactg ctagctgtag aactccagct tcggcctgtc gcccaatcaa actgtcctgt
+      781 tactgaacac tgttctatgg gaaggaaaat cgagaataat caagctgtgt gatattctgc
+      841 ttttattcgt cagattttcc ttcctgtggt agtgaaaagt ctgtagaaaa gtaagggaaa
+      901 ctcaaaccct ggggattgtg accagaagat tttgaaaatt aaatattact gaagatttcg
+      961 acttccactg ttaaatgtac aagatacatg aaatattaaa gaaaatgtgt aactttttgt
+     1021 gtaaatacat cttgtcttgt tttcattcaa aaacatttca cttttggggt tgcgtgtcag
+     1081 atttggcagt ataaattctg gctatattt
+//
