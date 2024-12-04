@@ -1,11 +1,13 @@
-"""Functions to prepare Gene Bank file for SnapGene tool"""
+"""
+Functions to prepare Gene Bank file for SnapGene tool
+"""
 
 import os
 
 """
 Next templates for gene bank file.
 This file allow to automatically make SnapGene file with all features and primers
-and open it in SnapGene Viewer without pair SnapGene program. 
+and open it in SnapGene Viewer without pair SnapGene program.
 """
 
 TITLE = """LOCUS       {gene_name}        {len_full_sequence} bp DNA     linear   UNA {date_today}
@@ -33,7 +35,9 @@ ORIGIN = """ORIGIN
 
 
 def misc_feature_template(start, end, label, color, direction):
-    """Make a template for snapgene features"""
+    """
+    Make a template for snapgene features
+    """
 
     if direction == "None":
         misc_f = f'''     misc_feature    {start}..{end}
@@ -47,11 +51,13 @@ def misc_feature_template(start, end, label, color, direction):
 
 
 def primer_template(name, seq, date_today, start, end):
-    """Make a template for snapgene primers"""
+    """
+    Make a template for snapgene primers
+    """
     primer_f = f'''     primer_bind     complement({start}..{end})
                      /label={name}
-                     /note="color: black; sequence: 
-                     {seq}; added: 
+                     /note="color: black; sequence:
+                     {seq}; added:
                      {date_today}"'''
     return primer_f
 
@@ -68,7 +74,9 @@ def gene_bank_file(
     feature_sourse=FEATURE_SOURCE,
     origin=ORIGIN,
 ):
-    """Make gene bank file for snapgene tool"""
+    """
+    Make gene bank file for snapgene tool
+    """
 
     if oligos is None:
         oligos = []
@@ -108,9 +116,7 @@ def gene_bank_file(
         primer_feature = primer_template(name, seq, date_today, start, end)
         all_primers += primer_feature + "\n"
 
-    """
-    This part make a sequence in Gene Bank format.
-    """
+    # This part make a sequence in Gene Bank format.
     origin_seq = ""
     for i in range(len(full_sequence)):
         if i % 60 == 0:
@@ -138,17 +144,17 @@ def find_elements(cds_start, cds_end, exons, mirna_data):
     """
     elements_list = []
 
-    """Add CDS"""
+    # Add CDS
     elements_list.append(["CDS", cds_start, cds_end, "None", "#40139c"])
 
-    """Add exons"""
+    # Add exons
     for exon in exons:
         name_exon = exon[0]
         start_exon = exon[1]
         end_exon = exon[2]
         elements_list.append([name_exon, start_exon, end_exon, "None", "#e3d914"])
 
-    """Add mirna/sirna"""
+    # Add mirna/sirna
     oligos = []
     for ind in mirna_data.index:
         start_mirna = mirna_data.loc[ind]["start_mirna"]

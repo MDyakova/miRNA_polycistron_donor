@@ -1,23 +1,29 @@
-"""Functions for main scripts"""
+"""
+Functions for main scripts
+"""
 
-import pandas as pd
 import os
 import json
+import pandas as pd
+from utilities import (ensembl_data,
+                       ncbi_data,
+                       rnacofold_results,
+                       rnafold_mirna_results)
+from utilities_polycistron import (mirna_polycistron_data,
+                                   mirna_sirna_pairs)
 
-from utilities import ensembl_data, ncbi_data, rnacofold_results, rnafold_mirna_results
+# Load config
 
-from utilities_polycistron import mirna_polycistron_data, mirna_sirna_pairs
-
-"""Load config"""
-
-with open(os.path.join("config.json"), "r") as f:
+with open(os.path.join("config.json"), "r", encoding="utf-8") as f:
     config = json.load(f)
 
 compl_dict = config["compl_dict"]
 
 
 def test_ensembl_data():
-    """Check information from ensemble database"""
+    """
+    Check information from ensemble database
+    """
 
     gene_name = "PDCD1"
     start_gene, end_gene = ensembl_data(gene_name)
@@ -28,7 +34,9 @@ def test_ensembl_data():
 
 
 def test_ncbi_data():
-    """Check information from ncbi database"""
+    """
+    Check information from ncbi database
+    """
 
     ncbi_name = "NM_005018"
     _, _, cds_start, cds_end, _ = ncbi_data(ncbi_name)
@@ -37,7 +45,9 @@ def test_ncbi_data():
 
 
 def test_rnacofold_results():
-    """Check results from Vienna RNAcofold"""
+    """
+    Check results from Vienna RNAcofold
+    """
     vienna_output_directory = os.path.join("test_data", "vienna")
     rnacofold_input = os.path.join("test_data", "data_for_rnacofold.fasta")
     rnacofold_data = rnacofold_results(rnacofold_input, vienna_output_directory)
@@ -48,7 +58,9 @@ def test_rnacofold_results():
 
 
 def test_rnafold_mirna_results():
-    """Check results from Vienna RNAfold"""
+    """
+    Check results from Vienna RNAfold
+    """
     vienna_output_directory = os.path.join("test_data", "vienna")
     rnafold_input = os.path.join("test_data", "data_for_rnafold.fasta")
     mirnafold_data = rnafold_mirna_results(rnafold_input, vienna_output_directory)
@@ -57,7 +69,9 @@ def test_rnafold_mirna_results():
 
 
 def test_mirna_polycistron_data():
-    """Check results for natural polycistron data"""
+    """
+    Check results for natural polycistron data
+    """
 
     file_name = os.path.join("databases", "mirna_polycistrons.fa")
     cluster_name = "MIR23AHG"
@@ -73,14 +87,16 @@ def test_mirna_polycistron_data():
 
 
 def test_mirna_sirna_pairs():
-    """Check results for sirna pairs"""
+    """
+    Check results for sirna pairs
+    """
     mirna_in_polycistrons_path = os.path.join(
         "test_data", "mirna_in_polycistrons_test.csv"
     )
     mirna_in_polycistrons = pd.read_csv(mirna_in_polycistrons_path)
     scaffold_path = os.path.join("test_data", "scaffold.txt")
-    with open(scaffold_path) as f:
-        scaffold = f.read()
+    with open(scaffold_path, encoding="utf-8") as file:
+        scaffold = file.read()
     all_sequences_path = os.path.join("test_data", "all_sequences_test.csv")
     all_sequences_csv = pd.read_csv(all_sequences_path)
     all_sequences = []

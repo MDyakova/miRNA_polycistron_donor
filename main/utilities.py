@@ -1,22 +1,21 @@
-"""Functions for main scripts"""
+"""
+Functions for main scripts
+"""
 
-import numpy as np
-import pandas as pd
 import os
 import json
-from Bio import pairwise2
-from pyensembl import EnsemblRelease
-from Bio import Entrez
-from Bio import SeqIO
 import subprocess
+import numpy as np
+import pandas as pd
+from pyensembl import EnsemblRelease
+from Bio import Entrez, SeqIO, pairwise2
 
-"""Load config"""
+# Load config
 
-with open(os.path.join("config.json"), "r") as f:
-    config = json.load(f)
+with open(os.path.join("config.json"), "r", encoding="utf-8") as file:
+    config = json.load(file)
 
 compl_dict = config["compl_dict"]
-
 
 def ensembl_data(gene_name):
     """
@@ -165,33 +164,37 @@ def data_for_vienna(mirna_data, refseq_sequence, file_name, ncbi_name):
     sequences_path = os.path.join(
         "files", "outputs", "vienna", f"{file_name}_for_rnacofold.fasta"
     )
-    with open(sequences_path, "w") as f:
+    with open(sequences_path, "w", encoding="utf-8") as file:
         for _, pair in enumerate(all_alignments):
-            f.write("> " + pair[0] + "\n")
-            f.write(pair[1] + "&" + pair[2] + "\n")
+            file.write("> " + pair[0] + "\n")
+            file.write(pair[1] + "&" + pair[2] + "\n")
 
     transcript_path = os.path.join(
         "files", "outputs", "vienna", f"{file_name}_transcript.fasta"
     )
-    with open(transcript_path, "w") as f:
-        f.write("> " + ncbi_name + "\n")
-        f.write(refseq_sequence + "\n")
+    with open(transcript_path, "w", encoding="utf-8") as file:
+        file.write("> " + ncbi_name + "\n")
+        file.write(refseq_sequence + "\n")
 
     mirna_seq_path = os.path.join(
         "files", "outputs", "vienna", f"{file_name}_for_rnafold_mirna.fasta"
     )
-    with open(mirna_seq_path, "w") as f:
-        for step, pair in enumerate(all_alignments):
-            f.write("> " + pair[0] + "\n")
-            f.write(pair[1] + "\n")
+    with open(mirna_seq_path, "w", encoding="utf-8") as file:
+        for _, pair in enumerate(all_alignments):
+            file.write("> " + pair[0] + "\n")
+            file.write(pair[1] + "\n")
 
     return sequences_path, alignments_path, transcript_path, mirna_seq_path
 
 
 def rnacofold_results(rnacofold_input, vienna_output_directory):
-    """Launch RNAcofold tool"""
+    """
+    Launch RNAcofold tool
+    """
     rnacofold_output = rnacofold_input.replace(".fasta", ".txt")
-    with open(rnacofold_input, "r") as infile, open(rnacofold_output, "w") as outfile:
+    with open(rnacofold_input, "r", encoding="utf-8") as infile, open(
+        rnacofold_output, "w", encoding="utf-8"
+    ) as outfile:
         subprocess.run(
             ["RNAcofold", "-p"],
             stdin=infile,
@@ -200,8 +203,8 @@ def rnacofold_results(rnacofold_input, vienna_output_directory):
             cwd=vienna_output_directory,
         )
 
-    with open(rnacofold_output) as f:
-        rnacofoldresults = f.readlines()
+    with open(rnacofold_output, encoding="utf-8") as file:
+        rnacofoldresults = file.readlines()
 
     rnacofold_data = []
     for i in range(0, len(rnacofoldresults), 5):
@@ -227,9 +230,13 @@ def rnafold_results(
     vienna_output_directory,
     ncbi_name,
 ):
-    """Launch RNAfold"""
+    """
+    Launch RNAfold
+    """
     rnafold_output = transcript_path.replace(".fasta", ".out")
-    with open(transcript_path, "r") as infile, open(rnafold_output, "w") as outfile:
+    with open(transcript_path, "r", encoding="utf-8") as infile, open(
+        rnafold_output, "w", encoding="utf-8"
+    ) as outfile:
         subprocess.run(
             ["RNAfold", "-p", "-d2"],
             stdin=infile,
@@ -238,8 +245,10 @@ def rnafold_results(
             cwd=vienna_output_directory,
         )
 
-    with open(os.path.join(vienna_output_directory, f"{ncbi_name}_dp.ps")) as f:
-        rnafold_mrna = "".join(f.readlines())
+    with open(
+        os.path.join(vienna_output_directory, f"{ncbi_name}_dp.ps"), encoding="utf-8"
+    ) as file:
+        rnafold_mrna = "".join(file.readlines())
 
     mrna_seq = (
         rnafold_mrna.split("sequence { (\\\n")[1]
@@ -267,9 +276,9 @@ def rnafold_results(
         ].max()
         start_sirna = len(mrna_seq.split(gene_s)[0])
         end_sirna = start_sirna + len(sirna_i)
-        p1 = bbp[((bbp["p1"] >= start_sirna) & (bbp["p1"] <= end_sirna))]
-        p2 = bbp[((bbp["p2"] >= start_sirna) & (bbp["p2"] <= end_sirna))]
-        pair_prob = pd.concat([p1, p2])["prob"].mean()
+        prob_1 = bbp[((bbp["p1"] >= start_sirna) & (bbp["p1"] <= end_sirna))]
+        prob_2 = bbp[((bbp["p2"] >= start_sirna) & (bbp["p2"] <= end_sirna))]
+        pair_prob = pd.concat([prob_1, prob_2])["prob"].mean()
         rnafold_data.append([sirna_i, pair_prob])
 
     rnafold_data = pd.DataFrame(rnafold_data, columns=("Sequence", "pair_probability"))
@@ -278,9 +287,13 @@ def rnafold_results(
 
 
 def rnafold_mirna_results(mirna_seq_path, vienna_output_directory):
-    """Launch RNAcofold tool for mirna"""
+    """
+    Launch RNAcofold tool for mirna
+    """
     rnafold_output = mirna_seq_path.replace(".fasta", ".out")
-    with open(mirna_seq_path, "r") as infile, open(rnafold_output, "w") as outfile:
+    with open(mirna_seq_path, "r", encoding="utf-8") as infile, open(
+        rnafold_output, "w", encoding="utf-8"
+    ) as outfile:
         subprocess.run(
             ["RNAfold", "-p", "-d2"],
             stdin=infile,
@@ -289,8 +302,8 @@ def rnafold_mirna_results(mirna_seq_path, vienna_output_directory):
             cwd=vienna_output_directory,
         )
 
-    with open(rnafold_output) as f:
-        mirnafold = f.readlines()
+    with open(rnafold_output, encoding="utf-8") as file:
+        mirnafold = file.readlines()
 
     mirnafold_data = []
     for i in range(0, len(mirnafold), 6):
@@ -308,34 +321,40 @@ def rnafold_mirna_results(mirna_seq_path, vienna_output_directory):
 
 
 def mrna_region(start, end, cds_start, cds_end):
-    """Get transcript region"""
+    """
+    Get transcript region
+    """
     if (start >= cds_start) & (end <= cds_end):
         return "CDS"
-    elif start < cds_start:
+    if start < cds_start:
         return "5-UTR"
-    else:
-        return "3-UTR"
+    return "3-UTR"
 
-
-def exon_name(start, exons):
-    """Get exon name"""
+def exon_name_func(start, exons):
+    """
+    Get exon name
+    """
     return list(filter(lambda p: (start >= p[1]) & (start <= p[2]), exons))[0][0]
 
 
 def transcript_features(mirna_data, cds_start, cds_end, exons):
-    """Collect information about mirna/sirna"""
+    """
+    Collect information about mirna/sirna
+    """
     mirna_data["region"] = 0
     mirna_data["exon"] = 0
     for ind in mirna_data.index:
         start_mirna = mirna_data.loc[ind]["start_mirna"]
         end_mirna = mirna_data.loc[ind]["end_mirna"]
         region = mrna_region(start_mirna, end_mirna, cds_start, cds_end)
-        exon = exon_name(start_mirna, exons)
+        exon = exon_name_func(start_mirna, exons)
         mirna_data.loc[ind, "region"] = region
         mirna_data.loc[ind, "exon"] = exon
     return mirna_data
 
 
-def compute_GC_context(sequence):
-    """GC context for mirna/sirna"""
+def compute_gc_context(sequence):
+    """
+    GC context for mirna/sirna
+    """
     return (list(sequence).count("G") + list(sequence).count("C")) / len(sequence)
