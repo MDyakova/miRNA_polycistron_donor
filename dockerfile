@@ -22,4 +22,4 @@ RUN python3 -m pytest unit_tests.py
 
 # Launch code
 ENTRYPOINT ["python"]
-CMD ["miRNA_analysis.py"]
+CMD ["mirna_analysis.py"]

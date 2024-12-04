@@ -1,20 +1,13 @@
-import numpy as np
-import pandas as pd
+"""
+Functions to prepare Gene Bank file for SnapGene tool
+"""
+
 import os
-from Bio import pairwise2
-from Bio.pairwise2 import format_alignment
-from Bio import Entrez
-from Bio import SeqIO
-import matplotlib.pyplot as plt
-import subprocess
-
-
-
 
 """
 Next templates for gene bank file.
 This file allow to automatically make SnapGene file with all features and primers
-and open it in SnapGene Viewer without pair SnapGene program. 
+and open it in SnapGene Viewer without pair SnapGene program.
 """
 
 TITLE = """LOCUS       {gene_name}        {len_full_sequence} bp DNA     linear   UNA {date_today}
@@ -42,7 +35,9 @@ ORIGIN = """ORIGIN
 
 
 def misc_feature_template(start, end, label, color, direction):
-    """Make a template for snapgene features"""
+    """
+    Make a template for snapgene features
+    """
 
     if direction == "None":
         misc_f = f'''     misc_feature    {start}..{end}
@@ -56,11 +51,13 @@ def misc_feature_template(start, end, label, color, direction):
 
 
 def primer_template(name, seq, date_today, start, end):
-    """Make a template for snapgene primers"""
+    """
+    Make a template for snapgene primers
+    """
     primer_f = f'''     primer_bind     complement({start}..{end})
                      /label={name}
-                     /note="color: black; sequence: 
-                     {seq}; added: 
+                     /note="color: black; sequence:
+                     {seq}; added:
                      {date_today}"'''
     return primer_f
 
@@ -77,7 +74,9 @@ def gene_bank_file(
     feature_sourse=FEATURE_SOURCE,
     origin=ORIGIN,
 ):
-    """Make gene bank file for snapgene tool"""
+    """
+    Make gene bank file for snapgene tool
+    """
 
     if oligos is None:
         oligos = []
@@ -117,10 +116,7 @@ def gene_bank_file(
         primer_feature = primer_template(name, seq, date_today, start, end)
         all_primers += primer_feature + "\n"
 
-    
-    """
-    This part make a sequence in Gene Bank format.
-    """
+    # This part make a sequence in Gene Bank format.
     origin_seq = ""
     for i in range(len(full_sequence)):
         if i % 60 == 0:
@@ -132,9 +128,7 @@ def gene_bank_file(
 
     origin = origin.format(origin_seq=origin_seq)
 
-    gbk_file_name = os.path.join(
-        output_folder, files_name + ".gbk"
-    )
+    gbk_file_name = os.path.join(output_folder, files_name + ".gbk")
 
     with open(gbk_file_name, "w", encoding="utf-8") as file:
         file.write(title + "\n")
@@ -151,37 +145,29 @@ def find_elements(cds_start, cds_end, exons, mirna_data):
     elements_list = []
 
     # Add CDS
-    elements_list.append(['CDS', 
-                          cds_start,
-                          cds_end, 
-                          "None", 
-                          "#40139c"])
-    
+    elements_list.append(["CDS", cds_start, cds_end, "None", "#40139c"])
+
     # Add exons
     for exon in exons:
         name_exon = exon[0]
         start_exon = exon[1]
         end_exon = exon[2]
-        elements_list.append([name_exon, 
-                            start_exon,
-                            end_exon, 
-                            "None", 
-                            "#e3d914"])
+        elements_list.append([name_exon, start_exon, end_exon, "None", "#e3d914"])
 
     # Add mirna/sirna
     oligos = []
     for ind in mirna_data.index:
-        start_mirna = mirna_data.loc[ind]['start_mirna']
-        mirna_seq = mirna_data.loc[ind]['Sequence']
-        name_mirna = '_'.join([
-                                mirna_data.loc[ind]['Name'],
-                                str(start_mirna)
-                                ])
+        start_mirna = mirna_data.loc[ind]["start_mirna"]
+        mirna_seq = mirna_data.loc[ind]["Sequence"]
+        name_mirna = "_".join([mirna_data.loc[ind]["Name"], str(start_mirna)])
         oligos.append([name_mirna, mirna_seq, 1, len(mirna_seq)])
 
     return elements_list, oligos
 
-def find_elements_polycistron(new_scaffold_seq, all_sequences, sirna_names, all_new_sequences):
+
+def find_elements_polycistron(
+    new_scaffold_seq, all_sequences, sirna_names, all_new_sequences
+):
     """
     Make lists with sirna/mirna and hairpin sequences for SnapGene file.
     """
@@ -190,24 +176,14 @@ def find_elements_polycistron(new_scaffold_seq, all_sequences, sirna_names, all_
     for sirna_name, sirna_seq in zip(sirna_names, all_new_sequences):
         sirna_start = len(new_scaffold_seq.split(sirna_seq)[0])
         sirna_end = sirna_start + len(sirna_seq)
-        elements_list.append([f'{sirna_name}_hairpin', 
-                                sirna_start,
-                                sirna_end, 
-                                "None", 
-                                "#c96f0e"])
+        elements_list.append(
+            [f"{sirna_name}_hairpin", sirna_start, sirna_end, "None", "#c96f0e"]
+        )
 
-    oligos = []    
+    oligos = []
     for sirna_name, sirna_seq in all_sequences:
         if sirna_name in sirna_names:
             sirna_start = len(new_scaffold_seq.split(sirna_seq)[0])
             sirna_end = sirna_start + len(sirna_seq)
             oligos.append([sirna_name, sirna_seq, 1, len(sirna_seq)])
-            # elements_list.append([sirna_name, 
-            #         sirna_start,
-            #         sirna_end, 
-            #         "None", 
-            #         "#0b86d9"])
-
     return elements_list, oligos
-
-
