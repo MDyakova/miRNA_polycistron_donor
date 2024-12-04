@@ -81,6 +81,10 @@ mirna_data = mirna_data[["Name", "Sequence", "Sourse", "count_sourses"]]
 # Check that in table correct strand and fix if
 # not (miRNA should be complimentary to transcript)
 mirna_correct = correct_sequences(mirna_data, refseq_sequence, compl_dict)
+mirna_correct = mirna_correct.groupby(by=["Sequence"], as_index=False).agg(
+    {"Name": max, "Sourse": sourse_agg, "count_sourses": sum,
+     'start_mirna': max, 'end_mirna': max}
+)
 mirna_correct.drop_duplicates(subset=["Sequence"], inplace=True, keep="first")
 
 # Save correct sequences to file
@@ -138,7 +142,7 @@ mirna_with_features.to_csv(
 )
 
 #Make Gene Bank file for SnapGene tool
-elements_list, oligos = find_elements(cds_start, cds_end, exons, mirna_data)
+elements_list, oligos = find_elements(cds_start, cds_end, exons, mirna_correct)
 
 gene_bank_file(
     ncbi_name,
