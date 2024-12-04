@@ -1,0 +1,90 @@
+LOCUS       NM_007248        1318 bp DNA     linear   UNA 2024-12-04
+DEFINITION  NM_007248.
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      synthetic DNA construct
+  ORGANISM  synthetic DNA construct
+REFERENCE   1  (bases 1 to 1318)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   For SnapGene Viewer
+            https://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..1318
+                     /mol_type="other DNA"
+                     /note="color: #ffffff"
+                     /organism="synthetic DNA construct"
+     misc_feature    359..1273
+                        /label=CDS
+                        /note="color: #40139c"
+     misc_feature    1..340
+                        /label=exon1
+                        /note="color: #e3d914"
+     misc_feature    341..1318
+                        /label=exon2
+                        /note="color: #e3d914"
+     primer_bind     complement(1..21)
+                     /label=sirna5_766
+                     /note="color: black; sequence:
+                     CACACAGAAGGCACCATCCAG; added:
+                     2024-12-04"
+     primer_bind     complement(1..20)
+                     /label=sirna7_1196
+                     /note="color: black; sequence:
+                     GATGGCCAGCAGACCCAGTG; added:
+                     2024-12-04"
+     primer_bind     complement(1..20)
+                     /label=sirna2_242
+                     /note="color: black; sequence:
+                     TCCAAGATCCACAGCTGTGG; added:
+                     2024-12-04"
+     primer_bind     complement(1..20)
+                     /label=sirna1_117
+                     /note="color: black; sequence:
+                     GCCCCTGCTGCGGCCCTTTC; added:
+                     2024-12-04"
+     primer_bind     complement(1..20)
+                     /label=sirna4_638
+                     /note="color: black; sequence:
+                     GGCTAGGAGCAGGTTGGCCA; added:
+                     2024-12-04"
+     primer_bind     complement(1..21)
+                     /label=sirna6_1014
+                     /note="color: black; sequence:
+                     GTGACCCCATACATGGGCCTG; added:
+                     2024-12-04"
+     primer_bind     complement(1..20)
+                     /label=sirna3_638
+                     /note="color: black; sequence:
+                     GGCTAGGAGCAGGTTGGCCA; added:
+                     2024-12-04"
+     primer_bind     complement(1..23)
+                     /label=sirna8_1277
+                     /note="color: black; sequence:
+                     TTTATTCGTCAGATTTTCCTTCT; added:
+                     2024-12-04"
+ORIGIN
+        1 gtcattgctt tgggctgggg ccatgggaag aaaccattgt gtggcaggga aggaggtggc
+       61 tcttggccca ggcctaaacc aggaaagcct gggaaactgg gacccacagg tgggcatgaa
+      121 agggccgcag caggggctcc cagcagtgtg taagaccggg agctggtctg gcaccactgc
+      181 cctggtcctt ccagctgcct gtcactggta tgatggcccc ggtgcattgt gccaccagca
+      241 ggccacagct gtggatcttg gaaggcctct ggggtccccc gggagcaggg gagtgggtgt
+      301 gggggggaac ggatggtggt gagagggaca gaccaggcag gccctgcccc cggggcccat
+      361 gcagaccctc atctttttcg acatggaggc cactggcttg cccttctccc agcccaaggt
+      421 cacggagctg tgcctgctgg ctgtccacag atgtgccctg gagagccccc ccacctctca
+      481 ggggccacct cccacagttc ctccaccacc gcgtgtggta gacaagctct ccctgtgtgt
+      541 ggctccgggg aaggcctgca gccctgcagc cagcgagatc acaggtctga gcacagctgt
+      601 gctggcagcg catgggcgtc aatgttttga tgacaacctg gccaacctgc tcctagcctt
+      661 cctgcggcgc cagccacagc cctggtgcct ggtggcacac aatggtgacc gctacgactt
+      721 ccccctgctc caagcagagc tggctatgct gggcctcacc agtgctctgg atggtgcctt
+      781 ctgtgtggat agcatcactg cgctgaaggc cctggagcga gcaagcagcc cctcagaaca
+      841 cggcccaagg aagagctata gcctaggcag catctacact cgcctgtatg ggcagtcccc
+      901 tccagactcg cacacggctg agggtgatgt cctggccctg ctcagcatct gtcagtggag
+      961 accacaggcc ctgctgcggt gggtggatgc tcacgccagg cctttcggca ccatcaggcc
+     1021 catgtatggg gtcacagcct ctgctaggac caagccaaga ccatctgctg tcacaaccac
+     1081 tgcacacctg gccacaacca ggaacactag tcccagcctt ggagagagca ggggtaccaa
+     1141 ggatcttcct ccagtgaagg accctggagc cctatccagg gaggggctgc tggccccact
+     1201 gggtctgctg gccatcctga ccttggcagt agccacactg tatggactat ccctggccac
+     1261 acctggggag taggccaaga aggaaaatct gacgaataaa gacccccgct gccccata
+//

@@ -1,0 +1,26 @@
+{
+    "general_information": {
+        "file_name" : "test",
+	"output_folder_name":"test_polycistron_12-04-24"
+    },
+
+    "gene_information": {
+        "gene_name" : "TREX1",
+        "ncbi_name" : "NM_007248",
+        "chromosome_name" : "3"
+    },
+
+    "data" : {
+            "mirna_table" : "files/data/test sirna.xlsx"
+        },
+
+    "polycistron_data":{
+        "cluster_name" : "17HG",
+        "mirna_members" : ["hsa-mir-17",
+                            "hsa-mir-18a",
+                            "hsa-mir-19a",
+                            "hsa-mir-20a",
+                            "hsa-mir-19b-1"],
+        "pair_mode": "random"
+    }
+}
